@@ -16,6 +16,9 @@ repositories {
 	// Loom adds the essential maven repositories to download Minecraft and libraries from automatically.
 	// See https://docs.gradle.org/current/userguide/declaring_repositories.html
 	// for more information about repositories.
+
+	maven { url 'https://maven.wispforest.io' }
+
 }
 
 fabricApi {
@@ -35,6 +38,16 @@ dependencies {
 	// These are included in the Fabric API production distribution and allow you to update your mod to the latest modules at a later more convenient time.
 
 	// modImplementation "net.fabricmc.fabric-api:fabric-api-deprecated:${project.fabric_version}"
+
+
+	// OWO LIB OWO LIB OWO LIB OWO LIB OWO LIB OWO LIB OWO LIB OWO LIB
+	modImplementation "io.wispforest:owo-lib:${project.owo_version}"
+	// only if you plan to use owo-config
+	annotationProcessor "io.wispforest:owo-lib:${project.owo_version}"
+
+	// include this if you don't want force your users to install owo
+	// sentinel will warn them and give the option to download it automatically
+	include "io.wispforest:owo-sentinel:${project.owo_version}"
 }
 
 processResources {
