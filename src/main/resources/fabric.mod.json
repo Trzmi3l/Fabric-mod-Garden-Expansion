@@ -3,13 +3,13 @@
 	"id": "gardenexpansion",
 	"version": "${version}",
 	"name": "gardenexpansion",
-	"description": "This is an example description! Tell everyone what your mod is about!",
+	"description": "kwiatek sie usmiechnal i zrobil ogrod(ukwaszance ogorki i takie tam)",
 	"authors": [
-		"Me!"
+		"keamelek, v"
 	],
 	"contact": {
 		"homepage": "https://fabricmc.net/",
-		"sources": "https://github.com/FabricMC/fabric-example-mod"
+		"sources": "https://github.com/Trzmi3l/Fabric-mod-Garden-Expansion"
 	},
 	"license": "CC0-1.0",
 	"icon": "assets/gardenexpansion/icon.png",
@@ -17,6 +17,9 @@
 	"entrypoints": {
 		"main": [
 			"com.gex.Gardenexpansion"
+		],
+		"client": [
+			"com.gex.GardenexpansionClient"
 		],
 		"fabric-datagen": [
 			"com.gex.GardenexpansionDataGenerator"
