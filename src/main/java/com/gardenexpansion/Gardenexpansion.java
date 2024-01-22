@@ -1,12 +1,13 @@
-package com.gex;
+package com.gardenexpansion;
 
+import com.gardenexpansion.item.ModItems;
 import net.fabricmc.api.ModInitializer;
 
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 
 public class Gardenexpansion implements ModInitializer {
-	public static final String MOD_ID = "garden_expansion";
+	public static final String MOD_ID = "gardenexpansion";
     public static final Logger LOGGER = LoggerFactory.getLogger(MOD_ID);
 
 	@Override
@@ -14,5 +15,6 @@ public class Gardenexpansion implements ModInitializer {
 
 
 		LOGGER.info("Hello Fabric world!");
+		ModItems.registerModItems();
 	}
 }

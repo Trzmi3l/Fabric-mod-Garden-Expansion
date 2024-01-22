@@ -1,4 +1,4 @@
-package com.gex;
+package com.gardenexpansion;
 
 import net.fabricmc.api.ClientModInitializer;
 public class GardenexpansionClient implements ClientModInitializer {

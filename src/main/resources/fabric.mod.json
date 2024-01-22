@@ -16,13 +16,13 @@
 	"environment": "*",
 	"entrypoints": {
 		"main": [
-			"com.gex.Gardenexpansion"
+          "com.gardenexpansion.Gardenexpansion"
 		],
 		"client": [
-			"com.gex.GardenexpansionClient"
+          "com.gardenexpansion.GardenexpansionClient"
 		],
 		"fabric-datagen": [
-			"com.gex.GardenexpansionDataGenerator"
+          "com.gardenexpansion.GardenexpansionDataGenerator"
 		]
 	},
 	"mixins": [
