@@ -29,7 +29,7 @@ public class CowManureItem extends Item {
 
             BlockState state = context.getWorld().getBlockState(posClick);
 
-            
+
             // TODO: OBSLUGE TEGO GOWNA
 
 
