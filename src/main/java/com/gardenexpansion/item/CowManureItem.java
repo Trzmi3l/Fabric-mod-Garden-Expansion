@@ -2,6 +2,7 @@ package com.gardenexpansion.item;
 
 import net.minecraft.block.BlockState;
 import net.minecraft.block.Blocks;
+import net.minecraft.block.CropBlock;
 import net.minecraft.entity.player.PlayerEntity;
 import net.minecraft.item.Item;
 import net.minecraft.item.ItemUsageContext;
@@ -27,6 +28,12 @@ public class CowManureItem extends Item {
             PlayerEntity playerEntity = context.getPlayer();
 
             BlockState state = context.getWorld().getBlockState(posClick);
+
+            
+            // TODO: OBSLUGE TEGO GOWNA
+
+
+
             if(state.isOf(Blocks.FARMLAND)) {
                 Random rnd = Random.create();
                 state.randomTick((ServerWorld) context.getWorld(), posClick, rnd);
