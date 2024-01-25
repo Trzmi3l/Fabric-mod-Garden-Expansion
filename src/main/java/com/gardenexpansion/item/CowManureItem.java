@@ -1,6 +1,8 @@
 package com.gardenexpansion.item;
 
 import net.minecraft.block.*;
+import net.minecraft.entity.LivingEntity;
+import net.minecraft.entity.passive.CowEntity;
 import net.minecraft.entity.player.PlayerEntity;
 import net.minecraft.item.BoneMealItem;
 import net.minecraft.item.Item;
@@ -24,9 +26,10 @@ public class CowManureItem extends Item {
     }
 
 
+
     @Override
     public ActionResult useOnBlock(ItemUsageContext context) {
-
+        //CowEntity
         if(!context.getWorld().isClient()) {
            BlockState bPos = context.getWorld().getBlockState(context.getBlockPos());
            Block block = bPos.getBlock();
