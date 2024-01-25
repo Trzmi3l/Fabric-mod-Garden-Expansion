@@ -1,6 +1,8 @@
 package com.gardenexpansion.item;
 
 import net.minecraft.block.*;
+import net.minecraft.entity.LivingEntity;
+import net.minecraft.entity.passive.CowEntity;
 import net.minecraft.entity.player.PlayerEntity;
 import net.minecraft.item.BoneMealItem;
 import net.minecraft.item.Item;
@@ -24,24 +26,28 @@ public class CowManureItem extends Item {
     }
 
 
+
     @Override
     public ActionResult useOnBlock(ItemUsageContext context) {
-
+        //CowEntity
         if(!context.getWorld().isClient()) {
            BlockState bPos = context.getWorld().getBlockState(context.getBlockPos());
            Block block = bPos.getBlock();
             if(bPos.isIn(BlockTags.CROPS)) {
                 if (block instanceof Fertilizable fertilizable) {
-
                     if (fertilizable.isFertilizable(context.getWorld(), context.getBlockPos(), bPos)) {
                         if (context.getWorld() instanceof ServerWorld) {
                             if (fertilizable.canGrow(context.getWorld(), context.getWorld().random, context.getBlockPos(), bPos)) {
                                 fertilizable.grow((ServerWorld) context.getWorld(), context.getWorld().random, context.getBlockPos(), bPos);
+
+                                context.getStack().decrement(1);
+
+                                return ActionResult.SUCCESS;
+                            } else {
+                                return ActionResult.FAIL;
                             }
                             // context.getPlayer().getEquippedStack().getItem().getDefaultStack().decrement(1);
-                            context.getStack().decrement(1);
 
-                            return ActionResult.SUCCESS;
                         }
                     }
                 }
