@@ -1,3 +1,5 @@
 {
-  "item.gardenexpansion.cow_manure": "Cow manure"
+  "item.gardenexpansion.cow_manure": "Cow manure",
+
+  "itemgroup.gexgroup": "Garden Expansion"
 }
