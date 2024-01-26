@@ -1,0 +1,7 @@
+{
+  "variants": {
+    "fill=none" : { "model" :  "gardenexpansion:block/water_collector"},
+    "fill=low" : { "model" :  "gardenexpansion:block/water_collector_low"},
+    "fill=full" : { "model" :  "gardenexpansion:block/water_collector_full"}
+  }
+}
