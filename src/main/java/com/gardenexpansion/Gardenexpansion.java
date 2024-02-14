@@ -9,6 +9,7 @@ import org.slf4j.LoggerFactory;
 
 public class Gardenexpansion implements ModInitializer {
 	public static final String MOD_ID = "gardenexpansion";
+	//btw item group id to "gexgroup"
     public static final Logger LOGGER = LoggerFactory.getLogger(MOD_ID);
 
 	@Override

@@ -1,7 +1,6 @@
 package com.gardenexpansion.item;
 
 import com.gardenexpansion.Gardenexpansion;
-import com.gardenexpansion.item.CowManureItem;
 import net.fabricmc.fabric.api.itemgroup.v1.FabricItemGroup;
 import net.minecraft.item.ItemGroup;
 import net.minecraft.item.ItemStack;
@@ -16,7 +15,11 @@ public class ModItemGroups {
             new Identifier(Gardenexpansion.MOD_ID, "gexgroup"),
             FabricItemGroup.builder().displayName(Text.translatable("itemgroup.gexgroup"))
                     .icon(() -> new ItemStack(ModItems.COW_MANURE)).entries((displayContext, entries) -> {
-            }).build());
+
+                    //tutaj mozna wpierdalac rzeczy do Gex grupki i w takiej kolejnosci jak zrobisz enrty w takiej beda w zakladce :3
+                        entries.add(ModItems.COW_MANURE); //1
+
+                    }).build());
     public static void registerItemGroups(){
         Gardenexpansion.LOGGER.info("Registering Creative Item Groups for: "+Gardenexpansion.MOD_ID);
     }
