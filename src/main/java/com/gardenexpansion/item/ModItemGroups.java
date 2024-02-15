@@ -27,6 +27,7 @@ public class ModItemGroups {
                     //tutaj mozna wpierdalac rzeczy do Gex grupki i w takiej kolejnosci jak zrobisz enrty w takiej beda w zakladce :3
                         entries.add(ModItems.COW_MANURE); //1
 
+
                     }).build());
 =======
                     .icon(() -> new ItemStack(ItemsReg.COW_MANURE)).entries((displayContext, entries) -> {
