@@ -1,5 +1,7 @@
 package com.gardenexpansion.item;
 
+import com.gardenexpansion.Gardenexpansion;
+import io.wispforest.owo.itemgroup.OwoItemSettings;
 import net.minecraft.block.*;
 import net.minecraft.entity.LivingEntity;
 import net.minecraft.entity.passive.CowEntity;
@@ -17,7 +19,8 @@ import javax.swing.*;
 
 public class CowManureItem extends Item {
 
-    static Settings s = new Settings();
+    static OwoItemSettings s = new OwoItemSettings().group(Gardenexpansion.ITEM_GROUP);
+
     public static String ITEM_NAME = "cow_manure";
     public CowManureItem() {
 

@@ -13,11 +13,11 @@ import net.minecraft.util.Identifier;
 public class ModItems {
 
     //public static final Item COW_MANURE = registerItem("cow_manure", new Item(new FabricItemSettings()));
-    public static final Item COW_MANURE = registerItem(CowManureItem.ITEM_NAME, new CowManureItem());
+
 
 
     private static void addItemsToIngredientItemGroup(FabricItemGroupEntries entries){
-        entries.add(COW_MANURE);
+      //  entries.add(COW_MANURE);
     }
 
     private static Item registerItem(String name, Item item){
