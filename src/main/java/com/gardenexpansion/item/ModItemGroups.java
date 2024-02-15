@@ -1,12 +1,10 @@
 package com.gardenexpansion.item;
 
 import com.gardenexpansion.Gardenexpansion;
-<<<<<<< HEAD
-=======
+
 import com.gardenexpansion.item.CowManureItem;
 import io.wispforest.owo.itemgroup.Icon;
 import io.wispforest.owo.itemgroup.OwoItemGroup;
->>>>>>> Master
 import net.fabricmc.fabric.api.itemgroup.v1.FabricItemGroup;
 import net.minecraft.block.FlowerBlock;
 import net.minecraft.item.ItemGroup;
