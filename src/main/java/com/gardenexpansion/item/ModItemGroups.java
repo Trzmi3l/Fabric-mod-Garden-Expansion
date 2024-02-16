@@ -25,9 +25,7 @@ public class ModItemGroups {
             FabricItemGroup.builder().displayName(Text.translatable("itemgroup.gexgroup"))
                     .icon(() -> new ItemStack(new CowManureItem())).entries((displayContext, entries) -> {
 
-
                     //tutaj mozna wpierdalac rzeczy do Gex grupki i w takiej kolejnosci jak zrobisz enrty w takiej beda w zakladce :3
-
                         entries.add(new CowManureItem()); // krwoie gowno
 
 
