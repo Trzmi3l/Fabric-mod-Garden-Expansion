@@ -38,10 +38,9 @@ public class ModItemGroups {
 
                     })
 
-                    .icon(() -> new ItemStack(ItemsReg.COW_MANURE)).entries((displayContext, entries) -> {
-            });
 
-                    }).build());
+
+                    ).build());
 
 
     public static void registerItemGroups(){
