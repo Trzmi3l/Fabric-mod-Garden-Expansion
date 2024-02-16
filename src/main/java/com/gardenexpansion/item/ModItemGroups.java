@@ -14,30 +14,31 @@ import net.minecraft.registry.Registries;
 import net.minecraft.registry.Registry;
 import net.minecraft.text.Text;
 import net.minecraft.util.Identifier;
-@Deprecated
+
 public class ModItemGroups {
 
-    /*
+
     public static final ItemGroup GEX_GROUP = Registry.register(Registries.ITEM_GROUP,
-            new Identifier(Gardenexpansion.MOD_ID, "gexgroup"),
-            FabricItemGroup.builder().displayName(Text.translatable("itemgroup.gexgroup"))
-<<<<<<< HEAD
-                    .icon(() -> new ItemStack(ModItems.COW_MANURE)).entries((displayContext, entries) -> {
+            new Identifier(Gardenexpansion.MOD_ID, "gardenexpansion"),
+            FabricItemGroup.builder().displayName(Text.translatable("itemGroup.gardenexpansion.default"))
+
+                    .icon(() -> new ItemStack(Items.ACACIA_FENCE_GATE)).entries((displayContext, entries) -> {
 
                     //tutaj mozna wpierdalac rzeczy do Gex grupki i w takiej kolejnosci jak zrobisz enrty w takiej beda w zakladce :3
-                        entries.add(ModItems.COW_MANURE); //1
+
+                        entries.add(new CowManureItem()); // krwoie gowno
 
 
-                    }).build());
-=======
+                    })
+
                     .icon(() -> new ItemStack(ItemsReg.COW_MANURE)).entries((displayContext, entries) -> {
             }).build());
->>>>>>> Master
+
     public static void registerItemGroups(){
         Gardenexpansion.LOGGER.info("Registering Creative Item Groups for: "+Gardenexpansion.MOD_ID);
     }
 
-     */
+
 
 
 
