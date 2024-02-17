@@ -14,7 +14,7 @@ import net.minecraft.registry.Registries;
 import net.minecraft.registry.Registry;
 import net.minecraft.text.Text;
 import net.minecraft.util.Identifier;
-
+@Deprecated
 public class ModItemGroups {
 
 
@@ -34,17 +34,8 @@ public class ModItemGroups {
                     }).build());
 
 
-
-
-
-
     public static void registerItemGroups(){
         Gardenexpansion.LOGGER.info("Registering Creative Item Groups for: "+Gardenexpansion.MOD_ID);
 
     }
-
-
-
-
-
 }

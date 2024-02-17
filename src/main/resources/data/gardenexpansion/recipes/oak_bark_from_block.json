@@ -1,0 +1,13 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "category": "misc",
+  "ingredients": [
+    {
+      "item": "gardenexpansion:bark_block"
+    }
+  ],
+  "result": {
+    "item": "gardenexpansion:oak_bark",
+    "count": 9
+  }
+}

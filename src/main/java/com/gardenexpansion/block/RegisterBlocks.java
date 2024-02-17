@@ -6,10 +6,9 @@ import io.wispforest.owo.registration.annotations.AssignedName;
 import io.wispforest.owo.registration.reflect.BlockRegistryContainer;
 import net.minecraft.block.Block;
 import net.minecraft.item.BlockItem;
-import net.minecraft.item.Item;
 
 
-public class BlockReg implements BlockRegistryContainer {
+public class RegisterBlocks implements BlockRegistryContainer {
 
     @AssignedName("water_collector")
     public static final Block WATER_COLLECTOR = new WaterCollectorBlock();
@@ -20,5 +19,4 @@ public class BlockReg implements BlockRegistryContainer {
     public BlockItem createBlockItem(Block block, String identifier) {
         return new BlockItem(block, new OwoItemSettings().group(Gardenexpansion.ITEM_GROUP));
     }
-
 }

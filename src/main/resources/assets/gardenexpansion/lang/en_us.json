@@ -1,9 +1,10 @@
 {
-  "item.gardenexpansion.cow_manure": "Cow manure",
+  "item.gardenexpansion.cow_manure": "Cow Manure",
+  "item.gardenexpansion.oak_bark": "Oak Bark",
 
-  "block.gardenexpansion.bark_block": "Bark block",
+  "block.gardenexpansion.bark_block": "Bark Block",
 
 
   "itemGroup.gardenexpansion.default": "Garden Expansion",
-  "itemgroup.gexgroup": "sraka"
+  "itemgroup.gexgroup": "gexgroup"
 }

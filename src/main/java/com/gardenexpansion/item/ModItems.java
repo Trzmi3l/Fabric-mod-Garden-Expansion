@@ -9,7 +9,7 @@ import net.minecraft.item.ItemGroups;
 import net.minecraft.registry.Registries;
 import net.minecraft.registry.Registry;
 import net.minecraft.util.Identifier;
-
+@Deprecated
 public class ModItems {
 
     //public static final Item COW_MANURE = registerItem("cow_manure", new Item(new FabricItemSettings()));
