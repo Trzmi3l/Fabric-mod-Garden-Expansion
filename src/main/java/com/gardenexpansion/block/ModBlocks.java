@@ -11,8 +11,9 @@ import net.minecraft.registry.Registries;
 import net.minecraft.registry.Registry;
 import net.minecraft.sound.BlockSoundGroup;
 import net.minecraft.util.Identifier;
-
+@Deprecated
 public class ModBlocks {
+   /*
     private static Block registerBlock(String name, Block block){
         registerBlockItem(name, block);
         return Registry.register(Registries.BLOCK, new Identifier(Gardenexpansion.MOD_ID, name), block);
@@ -27,5 +28,9 @@ public class ModBlocks {
     }
 
     public static final Block BARK_BLOCK = registerBlock("bark_block",
-            new Block(FabricBlockSettings.copyOf(Blocks.DIRT).sounds(BlockSoundGroup.MANGROVE_ROOTS)));
+            new Block(FabricBlockSettings.copyOf(Blocks.DIRT).sounds(BlockSoundGroup.MANGROVE_ROOTS)))
+
+    */
 }
+
+

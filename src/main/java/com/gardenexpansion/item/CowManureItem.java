@@ -3,19 +3,11 @@ package com.gardenexpansion.item;
 import com.gardenexpansion.Gardenexpansion;
 import io.wispforest.owo.itemgroup.OwoItemSettings;
 import net.minecraft.block.*;
-import net.minecraft.entity.LivingEntity;
-import net.minecraft.entity.passive.CowEntity;
-import net.minecraft.entity.player.PlayerEntity;
-import net.minecraft.item.BoneMealItem;
 import net.minecraft.item.Item;
 import net.minecraft.item.ItemUsageContext;
 import net.minecraft.registry.tag.BlockTags;
 import net.minecraft.server.world.ServerWorld;
 import net.minecraft.util.ActionResult;
-import net.minecraft.util.math.BlockPos;
-import net.minecraft.util.math.random.Random;
-
-import javax.swing.*;
 
 public class CowManureItem extends Item {
 
