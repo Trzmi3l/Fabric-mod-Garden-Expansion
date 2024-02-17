@@ -11,6 +11,10 @@ import net.minecraft.registry.Registries;
 import net.minecraft.registry.Registry;
 import net.minecraft.sound.BlockSoundGroup;
 import net.minecraft.util.Identifier;
+<<<<<<< HEAD
+=======
+
+>>>>>>> origin/pylo_majkraft_odnoga
 @Deprecated
 public class ModBlocks {
    /*
