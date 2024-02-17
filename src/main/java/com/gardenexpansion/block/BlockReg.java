@@ -13,7 +13,7 @@ public class BlockReg implements BlockRegistryContainer {
 
     @AssignedName("water_collector")
     public static final Block WATER_COLLECTOR = new WaterCollectorBlock();
-   // public static final Block BARK_BLOCK = new BarkBlock();
+    public static final Block BARK_BLOCK = new BarkBlock();
 
 
     @Override
