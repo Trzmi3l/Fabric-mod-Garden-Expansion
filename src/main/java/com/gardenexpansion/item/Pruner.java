@@ -14,7 +14,7 @@ import net.minecraft.util.ActionResult;
 import net.minecraft.util.math.BlockPos;
 
 import javax.tools.Tool;
-
+@Deprecated
 public class Pruner extends Item {
 
     static OwoItemSettings s = new OwoItemSettings().group(Gardenexpansion.ITEM_GROUP).maxDamageIfAbsent(400);
