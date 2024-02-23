@@ -1,7 +1,7 @@
 {
   "variants": {
     "": {
-
+      "model": "gardenexpansion:block/bark_block"
     }
   }
 }

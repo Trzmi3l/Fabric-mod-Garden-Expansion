@@ -26,7 +26,7 @@ public class ModItems {
     }
 
     public static void registerModItems(){
-        Gardenexpansion.LOGGER.info("Registering Items for: " + Gardenexpansion.MOD_ID);
+        //Gardenexpansion.LOGGER.info("Registering Items for: " + Gardenexpansion.MOD_ID);
 
         ItemGroupEvents.modifyEntriesEvent(ItemGroups.NATURAL).register(ModItems::addItemsToIngredientItemGroup);
     }
