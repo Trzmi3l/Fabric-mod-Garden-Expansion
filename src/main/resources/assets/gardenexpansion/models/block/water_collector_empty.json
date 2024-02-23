@@ -1,7 +1,6 @@
 {
 	"credit": "Made with Blockbench",
 	"textures": {
-		"0": "minecraft:block/water_still",
 		"1": "minecraft:block/oak_log",
 		"2": "minecraft:block/stone",
 		"3": "minecraft:block/oak_planks",
@@ -115,19 +114,6 @@
 				"up": {"uv": [0, 0, 10, 1], "rotation": 90, "texture": "#3"},
 				"down": {"uv": [0, 0, 10, 1], "rotation": 270, "texture": "#3"}
 			}
-		},
-		{
-			"name": "water",
-			"from": [2, 4, 2],
-			"to": [14, 4, 14],
-			"faces": {
-				"north": {"uv": [0, 0, 12, 2], "texture": "#3"},
-				"east": {"uv": [0, 0, 12, 2], "texture": "#3"},
-				"south": {"uv": [0, 0, 12, 2], "texture": "#3"},
-				"west": {"uv": [0, 0, 12, 2], "texture": "#3"},
-				"up": {"uv": [0, 0, 16, 16], "texture": "#0"},
-				"down": {"uv": [0, 0, 12, 12], "texture": "#3"}
-			}
 		}
 	],
 	"display": {},
@@ -137,12 +123,6 @@
 			"origin": [8, 8, 8],
 			"color": 0,
 			"children": [0, 1, 2, 3, 4, 5, 6, 7, 8]
-		},
-		{
-			"name": "water",
-			"origin": [8, 8, 8],
-			"color": 0,
-			"children": [9]
 		}
 	]
 }
