@@ -1,34 +1,11 @@
 {
-  "variants": {
-      "facing=north" : {
-        "variants": {
-        "fill=none" : { "model" :  "gardenexpansion:block/water_collector" },
-        "fill=low" : { "model" :  "gardenexpansion:block/water_collector_low"},
-        "fill=full" : { "model" :  "gardenexpansion:block/water_collector_full"}
-       }
+    "variants": {
+      "full=false": {
+        "model": "gardenexpansion:block/water_collector_empty"
       },
-    "facing=east" : {
-      "variants": {
-        "fill=none" : { "model" :  "gardenexpansion:block/water_collector", "y": 90 },
-        "fill=low" : { "model" :  "gardenexpansion:block/water_collector_low", "y": 90},
-        "fill=full" : { "model" :  "gardenexpansion:block/water_collector_full", "y": 90}
+      "full=true": {
+        "model": "gardenexpansion:block/water_collector_full"
       }
-    },
-    "facing=south" : {
-      "variants": {
-        "fill=none" : { "model" :  "gardenexpansion:block/water_collector", "y": 180},
-        "fill=low" : { "model" :  "gardenexpansion:block/water_collector_low", "y": 180},
-        "fill=full" : { "model" :  "gardenexpansion:block/water_collector_full", "y": 180}
-      }
-    },
-    "facing=west" : {
-      "variants": {
-        "fill=none" : { "model" :  "gardenexpansion:block/water_collector", "y": 27 },
-        "fill=low" : { "model" :  "gardenexpansion:block/water_collector_low", "y": 27 },
-        "fill=full" : { "model" :  "gardenexpansion:block/water_collector_full", "y": 270}
-      }
-    }
-
-
   }
+
 }

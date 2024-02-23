@@ -3,6 +3,8 @@ package com.gardenexpansion.item;
 import com.gardenexpansion.Gardenexpansion;
 import io.wispforest.owo.itemgroup.OwoItemSettings;
 import net.minecraft.block.BlockState;
+import net.minecraft.block.Blocks;
+import net.minecraft.block.entity.BlockEntity;
 import net.minecraft.entity.ItemEntity;
 import net.minecraft.item.Item;
 import net.minecraft.item.ItemStack;
@@ -36,13 +38,18 @@ public class PrunerItem extends Item {
 
                 if(context.getWorld() instanceof ServerWorld) {
                     int dropcount = new Random().nextInt(3) + 1;
+
                     ItemStack itemDrop = new ItemStack(blockState.getBlock(), dropcount);
 
+
                     ServerWorld serverWorld = ((ServerWorld) context.getWorld()).toServerWorld();
+
+
 
                     serverWorld.spawnEntity(new ItemEntity(serverWorld, positionClicked.getX() + 0.5, positionClicked.getY() + 1, positionClicked.getZ() + 0.5, itemDrop));
 
                     context.getStack().damage(1, Objects.requireNonNull(context.getPlayer()), p -> p.sendToolBreakStatus(context.getHand()));
+                    context.getPlayer().getItemCooldownManager().set(this, 30);
                     return ActionResult.SUCCESS;
                 }
 
