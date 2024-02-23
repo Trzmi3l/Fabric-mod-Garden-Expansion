@@ -19,7 +19,7 @@ import java.util.Objects;
 import java.util.Random;
 
 public class PrunerItem extends Item {
-    public static OwoItemSettings PrunerItemSettings = new OwoItemSettings().group(Gardenexpansion.ITEM_GROUP).maxDamage(64);
+    public static OwoItemSettings PrunerItemSettings = new OwoItemSettings().group(Gardenexpansion.ITEM_GROUP).maxDamage(64).maxCount(1);
 
     public PrunerItem() {
         super(PrunerItemSettings);
