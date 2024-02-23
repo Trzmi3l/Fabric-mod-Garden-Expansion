@@ -10,7 +10,6 @@ import net.minecraft.item.BlockItem;
 
 public class RegisterBlocks implements BlockRegistryContainer {
 
-    @AssignedName("water_collector")
     public static final Block WATER_COLLECTOR = new WaterCollectorBlock();
     public static final Block BARK_BLOCK = new BarkBlock();
 

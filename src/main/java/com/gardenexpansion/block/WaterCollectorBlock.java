@@ -31,8 +31,6 @@ public class WaterCollectorBlock extends Block {
 
     //TOODODODODODODODOD ZMIENIC TO TAK ZBEY DZIALAO BO NEI MA TICKERA W BLOCK I ZMIENIC TO NAJPEWNIEJ NA BLOCKWITHENTITY POMOCY ZONA NIE CHCE OTWORZYC DZRZWI, JESTEM PEWNY ZE WYPILA CALA ZGRZEWKA HARNASIA BEZ EMNIE!!!!!1
 
-
-    public static final String BLOCK_NAME = "water_collector";
     static MapColor mc = MapColor.BLUE;
     static FabricBlockSettings s = FabricBlockSettings.create().strength(3).mapColor(mc);
 
