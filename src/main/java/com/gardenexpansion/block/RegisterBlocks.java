@@ -10,12 +10,14 @@ import net.minecraft.item.BlockItem;
 
 public class RegisterBlocks implements BlockRegistryContainer {
 
+
     public static final Block WATER_COLLECTOR = new WaterCollectorBlock();
     public static final Block BARK_BLOCK = new BarkBlock();
 
 
     @Override
     public BlockItem createBlockItem(Block block, String identifier) {
+
         return new BlockItem(block, new OwoItemSettings().group(Gardenexpansion.ITEM_GROUP));
     }
 }
