@@ -19,7 +19,7 @@ import java.util.Objects;
 import java.util.Random;
 
 public class PrunerItem extends Item {
-    public static OwoItemSettings PrunerItemSettings = new OwoItemSettings().group(Gardenexpansion.ITEM_GROUP).maxDamage(64).maxCount(1);
+    public static OwoItemSettings PrunerItemSettings = new OwoItemSettings().group(Gardenexpansion.ITEM_GROUP).maxDamage(64);
 
     public PrunerItem() {
         super(PrunerItemSettings);
@@ -39,7 +39,7 @@ public class PrunerItem extends Item {
                 if(context.getWorld() instanceof ServerWorld) {
                     int dropcount = new Random().nextInt(3) + 1;
 
-                    ItemStack itemDrop = new ItemStack(blockState.getBlock(), dropcount);
+                    ItemStack itemDrop = new ItemStack(RegisterItems.LEAVES_CLAMP, dropcount);
 
 
                     ServerWorld serverWorld = ((ServerWorld) context.getWorld()).toServerWorld();
@@ -50,7 +50,7 @@ public class PrunerItem extends Item {
 
                     context.getStack().damage(1, Objects.requireNonNull(context.getPlayer()), p -> p.sendToolBreakStatus(context.getHand()));
                     context.getPlayer().getItemCooldownManager().set(this, 30);
-                    return ActionResult.SUCCESS;
+                    return ActionResult.CONSUME;
                 }
 
 
