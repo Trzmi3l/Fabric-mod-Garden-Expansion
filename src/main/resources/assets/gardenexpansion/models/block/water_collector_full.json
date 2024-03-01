@@ -125,7 +125,7 @@
 				"east": {"uv": [0, 0, 12, 2], "texture": "#3"},
 				"south": {"uv": [0, 0, 12, 2], "texture": "#3"},
 				"west": {"uv": [0, 0, 12, 2], "texture": "#3"},
-				"up": {"uv": [0, 0, 16, 16], "texture": "#0"},
+				"up": {"uv": [0, 0, 16, 16], "texture": "#0", "tintindex": 0},
 				"down": {"uv": [0, 0, 12, 12], "texture": "#3"}
 			}
 		}
@@ -142,7 +142,8 @@
 			"name": "water",
 			"origin": [8, 8, 8],
 			"color": 0,
-			"children": [9]
+			"children": [9],
+			"tintindex": 0
 		}
 	]
 }
