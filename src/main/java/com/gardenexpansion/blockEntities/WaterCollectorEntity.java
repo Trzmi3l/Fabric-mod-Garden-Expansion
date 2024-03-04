@@ -1,13 +1,16 @@
 package com.gardenexpansion.blockEntities;
 
+import com.gardenexpansion.block.WaterCollectorBlock;
 import net.minecraft.block.BlockState;
 import net.minecraft.block.FluidDrainable;
 import net.minecraft.block.entity.BlockEntity;
 import net.minecraft.block.entity.BlockEntityType;
 import net.minecraft.entity.player.PlayerEntity;
+import net.minecraft.fluid.Fluid;
 import net.minecraft.fluid.Fluids;
 import net.minecraft.inventory.Inventories;
 import net.minecraft.item.BucketItem;
+import net.minecraft.item.Item;
 import net.minecraft.item.ItemStack;
 import net.minecraft.item.Items;
 import net.minecraft.nbt.NbtCompound;
@@ -27,8 +30,8 @@ public class WaterCollectorEntity extends BlockEntity implements FluidDrainable 
         super(BlockEntityRegister.WATER_COLLECTOR_BLOCK_ENITY, pos, state);
     }
     private int waterStored = 0;
-    private int maxWaterCapacity = 1000;
-    private boolean isFull = false;
+    private int maxWaterCapacity = 100;
+    public boolean isFull = false;
 
     @Override
     protected void writeNbt(NbtCompound nbt) {
@@ -45,55 +48,54 @@ public class WaterCollectorEntity extends BlockEntity implements FluidDrainable 
     }
 
     public void tick(World world, BlockPos pos, BlockState state) {
-        if(world.isClient) return;
-
-        if(world.isRaining()) {
-            if(waterStored < maxWaterCapacity) {
+        if (world.isRaining()) {
+            if (waterStored < maxWaterCapacity) {
                 waterStored++;
-            } else {
+                isFull = false;
+            } else if(waterStored == maxWaterCapacity){
                 isFull = true;
             }
         }
-
+        world.setBlockState(pos, state.with(WaterCollectorBlock.IS_FILLED, isFull));
     }
 
+
     public ActionResult onUse(PlayerEntity p, Hand h, BlockHitResult bhr) {
-        System.out.println("kon sie zlal");
-       if(!world.isClient()) {
-           ItemStack handled = p.getStackInHand(h);
+        if (world.isClient()) {
+            ItemStack handled = p.getStackInHand(h);
 
-           if(handled.getItem() instanceof BucketItem) {
-               FluidDrainable drainable = (FluidDrainable) this;
-               ItemStack filledBucket = drainable.tryDrainFluid(p, world, pos, world.getBlockState(pos));
+            if (handled.getItem() == Items.BUCKET) {
+                FluidDrainable drainable = (FluidDrainable) this;
+                ItemStack filledBucket = drainable.tryDrainFluid(p, world, pos, world.getBlockState(pos));
 
-               if(!filledBucket.isEmpty()) {
-                   p.setStackInHand(h, filledBucket);
-                   return ActionResult.SUCCESS;
-               } else {
-                   return ActionResult.FAIL;
-               }
-
-           }
-           return ActionResult.PASS;
-       }
+                if (handled.getItem() == Items.BUCKET && handled.getItem() != Items.WATER_BUCKET) {
+                    p.setStackInHand(h, filledBucket);
+                    world.setBlockState(pos, world.getBlockState(pos).with(WaterCollectorBlock.IS_FILLED, isFull));
+                    return ActionResult.SUCCESS;
+                } else {
+                    return ActionResult.FAIL;
+                }
+            }
+            return ActionResult.FAIL;
+        }
         return ActionResult.FAIL;
     }
 
 
+
     @Override
     public ItemStack tryDrainFluid(@Nullable PlayerEntity player, WorldAccess world, BlockPos pos, BlockState state) {
-        System.out.println("cipsko1");
-        if(isFull) {
+        if (isFull) {
             waterStored = 0;
             isFull = false;
-            System.out.println("cipsko2");
-            return new ItemStack(Fluids.WATER.getBucketItem());
+            // Utwórz nowe wiadro z wodą i zwróć je
+            return new ItemStack(Items.WATER_BUCKET);
         } else {
-            assert player != null;
-            System.out.println("cipsko3");
-            return player.getActiveItem().getItem().getDefaultStack();
+            // Zwróć puste wiadro, jeśli gracz trzymało puste wiadro
+            return player != null && player.getActiveItem().isEmpty() ? new ItemStack(Items.BUCKET) : ItemStack.EMPTY;
         }
     }
+
 
     @Override
     public Optional<SoundEvent> getBucketFillSound() {

@@ -11,7 +11,9 @@ import net.minecraft.block.entity.BlockEntityType;
 import net.minecraft.client.option.StickyKeyBinding;
 import net.minecraft.entity.player.PlayerEntity;
 import net.minecraft.fluid.Fluid;
+import net.minecraft.fluid.Fluids;
 import net.minecraft.item.ItemStack;
+import net.minecraft.item.Items;
 import net.minecraft.sound.SoundEvent;
 import net.minecraft.state.StateManager;
 import net.minecraft.state.property.BooleanProperty;
@@ -48,16 +50,23 @@ public class WaterCollectorBlock extends BlockWithEntity implements BlockEntityP
     }
 
 
+
+
     @Override
     public ActionResult onUse(BlockState state, World world, BlockPos pos, PlayerEntity player, Hand hand, BlockHitResult hit) {
-
+        if(!world.isClient) return ActionResult.FAIL;
+        if(player.getActiveItem().getItem() == Items.WATER_BUCKET && !hand.equals(Hand.MAIN_HAND)) return ActionResult.FAIL;
+        if (hand.equals(Hand.MAIN_HAND) && player.getMainHandStack().getItem() == Items.WATER_BUCKET) {
+            // Blokuj dodawanie wody do WaterCollectorBlock
+            return ActionResult.FAIL;
+        }
+        //if(player.getActiveItem().getItem() == Items.WATER_BUCKET) return ActionResult.PASS ;
         BlockEntity be = world.getBlockEntity(pos);
-        if(be instanceof WaterCollectorEntity) {
+        if (be instanceof WaterCollectorEntity) {
             ActionResult result = ((WaterCollectorEntity) be).onUse(player, hand, hit);
-            if(result == ActionResult.SUCCESS) {
+            if (result == ActionResult.SUCCESS) {
+                world.setBlockState(pos, state.with(IS_FILLED, ((WaterCollectorEntity) be).isFull));
                 return ActionResult.SUCCESS;
-            } else {
-                return ActionResult.FAIL;
             }
         }
         return ActionResult.PASS;
@@ -91,7 +100,7 @@ public class WaterCollectorBlock extends BlockWithEntity implements BlockEntityP
     @Nullable
     @Override
     public BlockEntity createBlockEntity(BlockPos pos, BlockState state) {
-        return null;
+        return new WaterCollectorEntity(pos, state);
     }
 
     @Nullable
