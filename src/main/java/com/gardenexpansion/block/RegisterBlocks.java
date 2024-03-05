@@ -11,7 +11,7 @@ public class RegisterBlocks implements BlockRegistryContainer {
 
 
     //public static final Block WATER_COLLECTOR = new WaterCollectorBlockOld();
-   // public static final BlockEntity WATER_COLLECTOR = new WaterCollectorBlockEntity();
+    //public static final BlockEntity WATER_COLLECTOR = new WaterCollectorBlockEntity();
 
     public static final Block WATER_COLLECTOR = new WaterCollectorBlock();
 
