@@ -16,7 +16,6 @@ public class GexTags {
     }
 
     public static class Items {
-    // dupa
         private static TagKey<Item> createTag(String name) {
             return TagKey.of(RegistryKeys.ITEM, new Identifier(Gardenexpansion.MOD_ID, name));
         }

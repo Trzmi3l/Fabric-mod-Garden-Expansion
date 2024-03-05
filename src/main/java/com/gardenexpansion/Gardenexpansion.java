@@ -1,6 +1,7 @@
 package com.gardenexpansion;
 
 import com.gardenexpansion.block.RegisterBlocks;
+import com.gardenexpansion.blockEntities.BlockEntityRegister;
 import com.gardenexpansion.item.RegisterItems;
 import io.wispforest.owo.itemgroup.Icon;
 import io.wispforest.owo.itemgroup.OwoItemGroup;
@@ -30,6 +31,7 @@ public class Gardenexpansion implements ModInitializer {
 
 		FieldRegistrationHandler.register(RegisterItems.class, MOD_ID, false);
 		FieldRegistrationHandler.register(RegisterBlocks.class, MOD_ID,false);
+		FieldRegistrationHandler.register(BlockEntityRegister.class, MOD_ID,false);
 
 		BlockRenderLayerMap.INSTANCE.putBlock(RegisterBlocks.WATER_COLLECTOR, RenderLayer.getCutout());
 	}
