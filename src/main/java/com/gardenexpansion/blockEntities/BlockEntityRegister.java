@@ -7,6 +7,7 @@ import net.minecraft.block.Block;
 import net.minecraft.block.BlockRenderType;
 import net.minecraft.block.entity.BlockEntity;
 import net.minecraft.block.entity.BlockEntityType;
+import net.minecraft.client.color.world.BiomeColors;
 import net.minecraft.registry.Registries;
 import net.minecraft.registry.Registry;
 import net.minecraft.registry.RegistryKeys;
@@ -24,6 +25,7 @@ public class BlockEntityRegister implements AutoRegistryContainer<BlockEntityTyp
     @Override
     public Registry<BlockEntityType<?>> getRegistry() {
         return (Registry<BlockEntityType<?>>) Registries.BLOCK_ENTITY_TYPE;
+
     }
 
     @Override

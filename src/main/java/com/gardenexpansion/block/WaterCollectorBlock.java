@@ -60,6 +60,7 @@ public class WaterCollectorBlock extends BlockWithEntity implements BlockEntityP
             // Blokuj dodawanie wody do WaterCollectorBlock
             return ActionResult.FAIL;
         }
+
         //if(player.getActiveItem().getItem() == Items.WATER_BUCKET) return ActionResult.PASS ;
         BlockEntity be = world.getBlockEntity(pos);
         if (be instanceof WaterCollectorEntity) {
