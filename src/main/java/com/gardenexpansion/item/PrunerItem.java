@@ -54,14 +54,14 @@ public class PrunerItem extends Item {
 
                     context.getStack().damage(1, Objects.requireNonNull(context.getPlayer()), p -> p.sendToolBreakStatus(context.getHand()));
                     context.getPlayer().getItemCooldownManager().set(this, 30);
-                    return ActionResult.CONSUME;
+                    return ActionResult.SUCCESS;
                 }
 
 
             }
         }
 
-        return ActionResult.PASS;
+        return ActionResult.FAIL;
     }
 
 

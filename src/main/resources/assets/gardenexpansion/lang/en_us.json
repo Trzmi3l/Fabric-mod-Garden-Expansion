@@ -4,13 +4,13 @@
   "item.gardenexpansion.shit_ingot": "brutha what even is this fuc i look like to u",
   "item.gardenexpansion.pruner": "Pruner",
   "item.gardenexpansion.leaves_clamp": "Clamp of Leaves",
+
   "block.gardenexpansion.water_collector": "Water Collector",
-
-
-  "tooltip.gardenexpansion.cow_manure.tooltip": "§2§oFertilizes crops like bone meal",
-
-
   "block.gardenexpansion.bark_block": "Bark Block",
+
+
+  "tooltip.gardenexpansion.cow_manure.tooltip": "§aFertilizes crops like bone meal",
+
 
 
   "itemGroup.gardenexpansion.default": "Garden Expansion",
