@@ -5,16 +5,20 @@ import io.wispforest.owo.itemgroup.OwoItemSettings;
 import net.minecraft.block.BlockState;
 import net.minecraft.block.Blocks;
 import net.minecraft.block.entity.BlockEntity;
+import net.minecraft.client.item.TooltipContext;
 import net.minecraft.entity.ItemEntity;
 import net.minecraft.item.Item;
 import net.minecraft.item.ItemStack;
 import net.minecraft.item.ItemUsageContext;
 import net.minecraft.registry.tag.BlockTags;
 import net.minecraft.server.world.ServerWorld;
+import net.minecraft.text.Text;
 import net.minecraft.util.ActionResult;
 import net.minecraft.util.math.BlockPos;
 import net.minecraft.world.World;
+import org.jetbrains.annotations.Nullable;
 
+import java.util.List;
 import java.util.Objects;
 import java.util.Random;
 
@@ -60,10 +64,18 @@ public class PrunerItem extends Item {
         return ActionResult.PASS;
     }
 
-    @Deprecated
-    /** Metoda sprawdzala czy blokc jest liscmi. Przestazala bo niepotrzebna  a sprawdzanie czy jest liscmi przenioslem do ifa :33
-     */
+
+    /* Metoda sprawdzala czy blokc jest liscmi. Przestazala bo niepotrzebna  a sprawdzanie czy jest liscmi przenioslem do ifa :33
+
     private boolean isLeaves(BlockState blockState) {
         return blockState.isIn(BlockTags.LEAVES);
     }
+    */
+
+    @Override
+    public void appendTooltip(ItemStack stack, @Nullable World world, List<Text> tooltip, TooltipContext context){
+        tooltip.add(Text.translatable("tooltip.gardenexpansion.pruner.tooltip"));
+        super.appendTooltip(stack, world, tooltip, context);
+    }
+
 }

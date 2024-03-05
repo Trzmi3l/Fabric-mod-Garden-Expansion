@@ -6,7 +6,7 @@ import net.minecraft.registry.RegistryKeys;
 import net.minecraft.registry.tag.TagKey;
 import net.minecraft.block.Block;
 import net.minecraft.util.Identifier;
-@Deprecated
+
 public class GexTags {
     public static class Blocks {
 
@@ -16,7 +16,6 @@ public class GexTags {
     }
 
     public static class Items {
-    // dupa
         private static TagKey<Item> createTag(String name) {
             return TagKey.of(RegistryKeys.ITEM, new Identifier(Gardenexpansion.MOD_ID, name));
         }
