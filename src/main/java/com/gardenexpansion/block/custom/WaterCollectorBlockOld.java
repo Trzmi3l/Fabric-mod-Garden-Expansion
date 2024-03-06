@@ -1,4 +1,4 @@
-package com.gardenexpansion.block;
+package com.gardenexpansion.block.custom;
 
 import com.mojang.serialization.MapCodec;
 import net.fabricmc.fabric.api.object.builder.v1.block.FabricBlockSettings;

@@ -1,6 +1,7 @@
-package com.gardenexpansion.item;
+package com.gardenexpansion.item.custom;
 
 import com.gardenexpansion.Gardenexpansion;
+import com.gardenexpansion.item.RegisterItems;
 import io.wispforest.owo.itemgroup.OwoItemSettings;
 import net.minecraft.block.BlockState;
 import net.minecraft.block.Blocks;
@@ -10,6 +11,7 @@ import net.minecraft.entity.ItemEntity;
 import net.minecraft.item.Item;
 import net.minecraft.item.ItemStack;
 import net.minecraft.item.ItemUsageContext;
+import net.minecraft.item.ToolMaterial;
 import net.minecraft.registry.tag.BlockTags;
 import net.minecraft.server.world.ServerWorld;
 import net.minecraft.text.Text;
@@ -26,6 +28,7 @@ public class PrunerItem extends Item {
     public static OwoItemSettings PrunerItemSettings = new OwoItemSettings().group(Gardenexpansion.ITEM_GROUP).maxDamage(64);
 
     public PrunerItem() {
+
         super(PrunerItemSettings);
     }
 
@@ -74,7 +77,7 @@ public class PrunerItem extends Item {
 
     @Override
     public void appendTooltip(ItemStack stack, @Nullable World world, List<Text> tooltip, TooltipContext context){
-        tooltip.add(Text.translatable("tooltip.gardenexpansion.pruner.tooltip"));
+        //tooltip.add(Text.translatable("tooltip.gardenexpansion.pruner.tooltip"));
         super.appendTooltip(stack, world, tooltip, context);
     }
 

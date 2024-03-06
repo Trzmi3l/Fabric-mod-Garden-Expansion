@@ -1,4 +1,4 @@
-package com.gardenexpansion.item;
+package com.gardenexpansion.item.custom;
 
 import com.gardenexpansion.Gardenexpansion;
 import io.wispforest.owo.itemgroup.OwoItemSettings;

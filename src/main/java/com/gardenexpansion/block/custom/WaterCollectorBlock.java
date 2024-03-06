@@ -1,4 +1,4 @@
-package com.gardenexpansion.block;
+package com.gardenexpansion.block.custom;
 
 import com.gardenexpansion.blockEntities.BlockEntityRegister;
 import com.gardenexpansion.blockEntities.WaterCollectorEntity;
