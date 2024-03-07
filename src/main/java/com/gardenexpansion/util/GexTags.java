@@ -3,11 +3,10 @@ package com.gardenexpansion.util;
 import com.gardenexpansion.Gardenexpansion;
 import net.minecraft.item.Item;
 import net.minecraft.registry.RegistryKeys;
+import net.minecraft.registry.tag.BlockTags;
 import net.minecraft.registry.tag.TagKey;
 import net.minecraft.block.Block;
 import net.minecraft.util.Identifier;
-
-import javax.swing.text.html.HTML;
 
 public class GexTags {
     public static class Blocks {

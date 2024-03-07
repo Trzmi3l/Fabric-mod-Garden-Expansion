@@ -2,17 +2,12 @@ package com.gardenexpansion.item.custom;
 
 import com.gardenexpansion.Gardenexpansion;
 import com.gardenexpansion.item.RegisterItems;
+import com.gardenexpansion.util.GexTags;
 import io.wispforest.owo.itemgroup.OwoItemSettings;
 import net.minecraft.block.BlockState;
-import net.minecraft.block.Blocks;
-import net.minecraft.block.entity.BlockEntity;
 import net.minecraft.client.item.TooltipContext;
 import net.minecraft.entity.ItemEntity;
-import net.minecraft.item.Item;
-import net.minecraft.item.ItemStack;
-import net.minecraft.item.ItemUsageContext;
-import net.minecraft.item.ToolMaterial;
-import net.minecraft.registry.tag.BlockTags;
+import net.minecraft.item.*;
 import net.minecraft.server.world.ServerWorld;
 import net.minecraft.text.Text;
 import net.minecraft.util.ActionResult;
@@ -41,7 +36,7 @@ public class PrunerItem extends Item {
             BlockState blockState = context.getWorld().getBlockState(positionClicked);
 
 
-            if(blockState.isIn(BlockTags.LEAVES)){
+            if(blockState.isIn(GexTags.Blocks.PRUNER_PRUNABLE)){
 
                 if(context.getWorld() instanceof ServerWorld) {
                     int dropcount = new Random().nextInt(3) + 1;
