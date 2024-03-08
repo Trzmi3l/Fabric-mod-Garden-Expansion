@@ -3,7 +3,8 @@
 	"package": "com.gardenexpansion.mixin",
 	"compatibilityLevel": "JAVA_17",
 	"mixins": [
-		"ExampleMixin"
+		"ExampleMixin",
+		"StripWoodMixin"
 	],
 	"injectors": {
 		"defaultRequire": 1

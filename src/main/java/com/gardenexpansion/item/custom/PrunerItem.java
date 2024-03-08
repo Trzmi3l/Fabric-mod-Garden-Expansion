@@ -5,9 +5,12 @@ import com.gardenexpansion.item.RegisterItems;
 import com.gardenexpansion.util.GexTags;
 import io.wispforest.owo.itemgroup.OwoItemSettings;
 import net.minecraft.block.BlockState;
+import net.minecraft.block.Blocks;
+import net.minecraft.block.FlowerBlock;
 import net.minecraft.client.item.TooltipContext;
 import net.minecraft.entity.ItemEntity;
 import net.minecraft.item.*;
+import net.minecraft.registry.tag.BlockTags;
 import net.minecraft.server.world.ServerWorld;
 import net.minecraft.text.Text;
 import net.minecraft.util.ActionResult;
@@ -34,14 +37,27 @@ public class PrunerItem extends Item {
 
             BlockPos positionClicked = context.getBlockPos();
             BlockState blockState = context.getWorld().getBlockState(positionClicked);
-
-
-            if(blockState.isIn(GexTags.Blocks.PRUNER_PRUNABLE)){
-
+            //System.out.println(blockState.isIn(BlockTags.));
+            if(true){
+                //blockState.isIn(GexTags.Blocks.PRUNER_PRUNABLE)
                 if(context.getWorld() instanceof ServerWorld) {
                     int dropcount = new Random().nextInt(3) + 1;
 
-                    ItemStack itemDrop = new ItemStack(RegisterItems.LEAVES_CLAMP, dropcount);
+                    ItemStack itemDrop;
+
+
+                    if(blockState.isOf(Blocks.CHERRY_LEAVES)){
+                        itemDrop = new ItemStack(Blocks.PINK_PETALS, dropcount);
+                    } else
+                    if(blockState.isIn(BlockTags.LEAVES)) {
+                        itemDrop = new ItemStack(RegisterItems.LEAVES_CLAMP, dropcount);
+                    } else if(blockState.isIn(BlockTags.FLOWERS)) {
+                        itemDrop = new ItemStack(blockState.getBlock(), dropcount);
+                    } else  {
+                        return ActionResult.FAIL;
+                    }
+
+
 
 
                     ServerWorld serverWorld = ((ServerWorld) context.getWorld()).toServerWorld();
