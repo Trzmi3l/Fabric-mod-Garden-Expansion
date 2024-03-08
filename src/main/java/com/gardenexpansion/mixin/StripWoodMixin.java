@@ -39,7 +39,7 @@ public class StripWoodMixin {
             info.setReturnValue(result);
         } else {
 
-            info.getReturnValue(); 
+            info.getReturnValue();
         }
     }
 
