@@ -22,7 +22,6 @@ import org.spongepowered.asm.mixin.injection.callback.CallbackInfoReturnable;
 
 @Mixin(AxeItem.class)
 public class StripWoodMixin {
-
     @Inject(method = "useOnBlock", at = @At("TAIL"), cancellable = true)
     private void onUseOnBlock(ItemUsageContext context, CallbackInfoReturnable<ActionResult> info) {
 
