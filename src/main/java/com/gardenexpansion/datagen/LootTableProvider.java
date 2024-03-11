@@ -20,7 +20,7 @@ import net.minecraft.loot.function.SetCountLootFunction;
 import net.minecraft.loot.provider.number.UniformLootNumberProvider;
 
 public class LootTableProvider extends FabricBlockLootTableProvider {
-    protected LootTableProvider(FabricDataOutput dataOutput) {
+    public LootTableProvider(FabricDataOutput dataOutput) {
         super(dataOutput);
     }
 

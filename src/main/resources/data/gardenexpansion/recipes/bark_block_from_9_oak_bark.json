@@ -7,9 +7,9 @@
     "000"
   ],
   "key": {
-    "0": {"item": "gardenexpansion:oak_bark"}
+    "0": {"item": "gardenexpansion:leaves_clamp"}
   },
   "result": {
-    "item": "gardenexpansion:bark_block"
+    "item": "minecraft:oak_leaves"
   }
 }

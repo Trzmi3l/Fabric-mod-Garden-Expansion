@@ -18,6 +18,7 @@ public class GardenexpansionClient implements ClientModInitializer {
         registryColorProviders();
     }
 
+
     private void registryColorProviders() {
        // BlockColorProvider grassColorProvider = ColorProviderRegistry.BLOCK.get(Blocks.SHORT_GRASS);
 
