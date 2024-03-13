@@ -34,7 +34,7 @@ public class Gardenexpansion implements ModInitializer {
 		FieldRegistrationHandler.register(RegisterBlocks.class, MOD_ID,false);
 		FieldRegistrationHandler.register(BlockEntityRegister.class, MOD_ID,false);
 
-		BlockRenderLayerMap.INSTANCE.putBlock(RegisterBlocks.WATER_COLLECTOR, RenderLayer.getCutout());
+
 
 
 
