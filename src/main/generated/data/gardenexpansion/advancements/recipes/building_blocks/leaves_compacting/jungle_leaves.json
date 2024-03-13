@@ -1,12 +1,12 @@
 {
   "parent": "minecraft:recipes/root",
   "criteria": {
-    "has_oak_leaves": {
+    "has_leaves_clamp": {
       "conditions": {
         "items": [
           {
             "items": [
-              "minecraft:oak_leaves"
+              "gardenexpansion:leaves_clamp"
             ]
           }
         ]
@@ -15,7 +15,7 @@
     },
     "has_the_recipe": {
       "conditions": {
-        "recipe": "minecraft:leaves_clamp"
+        "recipe": "minecraft:jungle_leaves"
       },
       "trigger": "minecraft:recipe_unlocked"
     }
@@ -23,12 +23,12 @@
   "requirements": [
     [
       "has_the_recipe",
-      "has_oak_leaves"
+      "has_leaves_clamp"
     ]
   ],
   "rewards": {
     "recipes": [
-      "minecraft:leaves_clamp"
+      "minecraft:jungle_leaves"
     ]
   }
 }
