@@ -28,7 +28,7 @@ public class LootTableProvider extends FabricBlockLootTableProvider {
     public void generate() {
         addDrop(RegisterBlocks.BARK_BLOCK);
         addDrop(RegisterBlocks.WATER_COLLECTOR);
-        //addDrop(Blocks.OAK_LEAVES, copperLikeOreDrops());
+        addDrop(RegisterBlocks.CROSS_FENCE);
     }
 
     public LootTable.Builder copperLikeOreDrops(Block drop, Item item){

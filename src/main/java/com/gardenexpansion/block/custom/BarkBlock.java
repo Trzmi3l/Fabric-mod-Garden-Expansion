@@ -32,40 +32,4 @@ public class BarkBlock extends Block {
         super(BarkBlockSettings);
     }
 
-    @Override
-    public BlockState onBreak(World world, BlockPos pos, BlockState state, PlayerEntity player) {
-        this.spawnBreakParticles(world, player, pos, state);
-        if (state.isIn(BlockTags.GUARDED_BY_PIGLINS)) {
-            PiglinBrain.onGuardedBlockInteracted(player, false);
-        }
-        /*
-        if do tej lopaty pierdolonej
-        if(state.isIn(BlockTags.SHOVEL_MINEABLE)){
-            player.getMainHandStack()
-
-        }
-        */
-
-        world.emitGameEvent(GameEvent.BLOCK_DESTROY, pos, GameEvent.Emitter.of(player, state));
-        return state;
-    }
-
-
-    /*
-    public static float strength() {
-        ItemStack shovelStack = new ItemStack(Items.AIR);
-        if (SHOVELS.contains(shovelStack.getItem())) {
-            return 0.2f;
-        } else {
-            return Blocks.DIRT.getHardness();
-        }
-    }
-    private static final List<Item> SHOVELS = Arrays.asList(Items.WOODEN_SHOVEL, Items.STONE_SHOVEL, Items.IRON_SHOVEL,
-                Items.GOLDEN_SHOVEL, Items.DIAMOND_SHOVEL, Items.NETHERITE_SHOVEL);
-    */
-    public boolean isShovel(BlockState state){
-        return state.isIn(BlockTags.SHOVEL_MINEABLE);
-    }
-
-
 }

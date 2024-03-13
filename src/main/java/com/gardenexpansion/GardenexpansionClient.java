@@ -2,6 +2,7 @@ package com.gardenexpansion;
 
 import com.gardenexpansion.block.RegisterBlocks;
 import net.fabricmc.api.ClientModInitializer;
+import net.fabricmc.fabric.api.blockrenderlayer.v1.BlockRenderLayerMap;
 import net.fabricmc.fabric.api.client.rendering.v1.ColorProviderRegistry;
 import net.fabricmc.fabric.impl.blockrenderlayer.BlockRenderLayerMapImpl;
 import net.fabricmc.fabric.impl.client.rendering.ColorProviderRegistryImpl;
@@ -36,6 +37,7 @@ public class GardenexpansionClient implements ClientModInitializer {
         );
 
         BlockRenderLayerMapImpl.INSTANCE.putBlock(RegisterBlocks.WATER_COLLECTOR, RenderLayer.getCutoutMipped());
+        BlockRenderLayerMap.INSTANCE.putBlock(RegisterBlocks.CROSS_FENCE, RenderLayer.getCutout());
 
 
 

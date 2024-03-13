@@ -27,16 +27,22 @@ public class RecipeProvider extends FabricRecipeProvider {
 
 
         ShapedRecipeJsonBuilder.create(RecipeCategory.TOOLS, RegisterItems.PRUNER, 1)
-                .pattern("#0#")
-                .pattern("0#0")
-                .pattern("S0S")
+                .pattern("# #")
+                .pattern(" # ")
+                .pattern("S S")
                 .input('#', Items.IRON_INGOT)
                 .input('S', Items.STICK)
-                .input('0', Items.AIR)
                 .criterion(hasItem(Items.IRON_INGOT), conditionsFromItem(Items.IRON_INGOT))
                 .criterion(hasItem(Items.STICK), conditionsFromItem(Items.STICK))
                 .offerTo(exporter, "pruner");
 
-    }
+        ShapedRecipeJsonBuilder.create(RecipeCategory.DECORATIONS, RegisterBlocks.CROSS_FENCE, 8)
+                .pattern("S S")
+                .pattern(" S ")
+                .pattern("S S")
+                .input('S', Items.STICK)
+                .criterion(hasItem(Items.STICK), conditionsFromItem(Items.STICK))
+                .offerTo(exporter, "cross_fence");
 
+    }
 }

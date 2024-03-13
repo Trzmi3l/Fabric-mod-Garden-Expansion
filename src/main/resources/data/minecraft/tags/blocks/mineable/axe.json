@@ -1,6 +1,7 @@
 {
   "replace": false,
   "values": [
-    "gardenexpansion:water_collector"
+    "gardenexpansion:water_collector",
+    "gardenexpansion:cross_fence"
   ]
 }

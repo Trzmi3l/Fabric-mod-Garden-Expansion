@@ -28,6 +28,9 @@ public class BlockTagProvider extends FabricTagProvider.BlockTagProvider {
         getOrCreateTagBuilder(BlockTags.AXE_MINEABLE)
                 .add(RegisterBlocks.WATER_COLLECTOR);
 
+        getOrCreateTagBuilder(BlockTags.AXE_MINEABLE)
+                .add(RegisterBlocks.CROSS_FENCE);
+
         //getOrCreateTagBuilder(GexTags.Blocks.PRUNER_PRUNABLE)
         //        .forceAddTag(BlockTags.LEAVES);   (jak tamto nie zadziala to zdekomnetuhj to)
 
