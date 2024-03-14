@@ -26,15 +26,14 @@ public class BlockTagProvider extends FabricTagProvider.BlockTagProvider {
                 .add(RegisterBlocks.BARK_BLOCK);
 
         getOrCreateTagBuilder(BlockTags.AXE_MINEABLE)
-                .add(RegisterBlocks.WATER_COLLECTOR);
-
-        getOrCreateTagBuilder(BlockTags.AXE_MINEABLE)
+                .add(RegisterBlocks.WATER_COLLECTOR)
                 .add(RegisterBlocks.CROSS_FENCE);
 
-        //getOrCreateTagBuilder(GexTags.Blocks.PRUNER_PRUNABLE)
-        //        .forceAddTag(BlockTags.LEAVES);   (jak tamto nie zadziala to zdekomnetuhj to)
 
-        getOrCreateTagBuilder(TagKey.of(RegistryKeys.BLOCK, new Identifier("fabric", "pruner_prunable")))
+        getOrCreateTagBuilder(GexTags.Blocks.PRUNER_PRUNABLE)
                 .forceAddTag(BlockTags.LEAVES);
+
+        //getOrCreateTagBuilder(TagKey.of(RegistryKeys.BLOCK, new Identifier("fabric", "pruner_prunable")))
+        //        .forceAddTag(BlockTags.LEAVES);
     }
 }

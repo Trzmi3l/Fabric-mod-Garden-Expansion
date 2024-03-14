@@ -22,8 +22,21 @@ public class RecipeProvider extends FabricRecipeProvider {
     @Override
     public void generate(RecipeExporter exporter) {
 
-        offerReversibleCompactingRecipes(exporter, RecipeCategory.BUILDING_BLOCKS, RegisterItems.OAK_BARK, RecipeCategory.MISC, RegisterBlocks.BARK_BLOCK);
-        offerReversibleCompactingRecipes(exporter, RecipeCategory.BUILDING_BLOCKS, RegisterItems.LEAVES_CLAMP, RecipeCategory.MISC, Blocks.OAK_LEAVES);
+        offerReversibleCompactingRecipes(exporter, RecipeCategory.MISC, RegisterItems.OAK_BARK, RecipeCategory.BUILDING_BLOCKS, RegisterBlocks.BARK_BLOCK);
+        //wszytkie rodzaje lisci craftable z 9 leaves clampow =========================================================
+        offerCompactingRecipe(exporter, RecipeCategory.BUILDING_BLOCKS, Blocks.OAK_LEAVES, RegisterItems.LEAVES_CLAMP);
+        offerCompactingRecipe(exporter, RecipeCategory.BUILDING_BLOCKS, Blocks.DARK_OAK_LEAVES, RegisterItems.LEAVES_CLAMP);
+        offerCompactingRecipe(exporter, RecipeCategory.BUILDING_BLOCKS, Blocks.BIRCH_LEAVES, RegisterItems.LEAVES_CLAMP);
+        offerCompactingRecipe(exporter, RecipeCategory.BUILDING_BLOCKS, Blocks.SPRUCE_LEAVES, RegisterItems.LEAVES_CLAMP);
+        offerCompactingRecipe(exporter, RecipeCategory.BUILDING_BLOCKS, Blocks.JUNGLE_LEAVES, RegisterItems.LEAVES_CLAMP);
+        offerCompactingRecipe(exporter, RecipeCategory.BUILDING_BLOCKS, Blocks.ACACIA_LEAVES, RegisterItems.LEAVES_CLAMP);
+        offerCompactingRecipe(exporter, RecipeCategory.BUILDING_BLOCKS, Blocks.AZALEA_LEAVES, RegisterItems.LEAVES_CLAMP);
+        offerCompactingRecipe(exporter, RecipeCategory.BUILDING_BLOCKS, Blocks.FLOWERING_AZALEA_LEAVES, RegisterItems.LEAVES_CLAMP);
+        offerCompactingRecipe(exporter, RecipeCategory.BUILDING_BLOCKS, Blocks.MANGROVE_LEAVES, RegisterItems.LEAVES_CLAMP);
+        offerCompactingRecipe(exporter, RecipeCategory.BUILDING_BLOCKS, Blocks.CHERRY_LEAVES, RegisterItems.LEAVES_CLAMP);
+        //=============================================================================================================
+
+
 
 
         ShapedRecipeJsonBuilder.create(RecipeCategory.TOOLS, RegisterItems.PRUNER, 1)
@@ -44,5 +57,15 @@ public class RecipeProvider extends FabricRecipeProvider {
                 .criterion(hasItem(Items.STICK), conditionsFromItem(Items.STICK))
                 .offerTo(exporter, "cross_fence");
 
+        /*
+        ShapedRecipeJsonBuilder.create(RecipeCategory.DECORATIONS, RegisterBlocks.CROSS_FENCE, 8)
+                .pattern("###")
+                .pattern("###")
+                .pattern("###")
+                .input('#', RegisterItems.LEAVES_CLAMP)
+                .criterion(hasItem(RegisterItems.LEAVES_CLAMP), conditionsFromItem(RegisterItems.LEAVES_CLAMP))
+                .offerTo(exporter, new Identifier());
+
+         */
     }
 }
