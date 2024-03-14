@@ -1,7 +1,9 @@
 package com.gardenexpansion;
 
 import com.gardenexpansion.block.RegisterBlocks;
+import com.gardenexpansion.item.RegisterItems;
 import net.fabricmc.api.ClientModInitializer;
+import net.fabricmc.fabric.api.blockrenderlayer.v1.BlockRenderLayerMap;
 import net.fabricmc.fabric.api.client.rendering.v1.ColorProviderRegistry;
 import net.fabricmc.fabric.impl.blockrenderlayer.BlockRenderLayerMapImpl;
 import net.fabricmc.fabric.impl.client.rendering.ColorProviderRegistryImpl;
@@ -9,7 +11,10 @@ import net.minecraft.block.Blocks;
 import net.minecraft.client.color.block.BlockColorProvider;
 import net.minecraft.client.color.world.BiomeColors;
 import net.minecraft.client.color.world.GrassColors;
+import net.minecraft.client.item.ModelPredicateProviderRegistry;
 import net.minecraft.client.render.RenderLayer;
+import net.minecraft.entity.LivingEntity;
+import net.minecraft.util.Identifier;
 
 public class GardenexpansionClient implements ClientModInitializer {
 
@@ -34,10 +39,15 @@ public class GardenexpansionClient implements ClientModInitializer {
         }), RegisterBlocks.WATER_COLLECTOR
         );
 
-        BlockRenderLayerMapImpl.INSTANCE.putBlock(RegisterBlocks.WATER_COLLECTOR, RenderLayer.getCutoutMipped());
+        BlockRenderLayerMap.INSTANCE.putBlock(RegisterBlocks.WATER_COLLECTOR, RenderLayer.getCutoutMipped());
+        BlockRenderLayerMap.INSTANCE.putBlock(RegisterBlocks.CROSS_FENCE, RenderLayer.getCutout());
+
+       // BlockRenderLayerMap.INSTANCE.putBlock(RegisterBlocks.WATER_COLLECTOR, RenderLayer.getCutout());
 
 
 
     }
+
+
 
 }

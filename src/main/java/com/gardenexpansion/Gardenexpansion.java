@@ -34,7 +34,6 @@ public class Gardenexpansion implements ModInitializer {
 		FieldRegistrationHandler.register(RegisterBlocks.class, MOD_ID,false);
 		FieldRegistrationHandler.register(BlockEntityRegister.class, MOD_ID,false);
 
-		BlockRenderLayerMap.INSTANCE.putBlock(RegisterBlocks.WATER_COLLECTOR, RenderLayer.getCutout());
 
 
 
@@ -62,7 +61,7 @@ public class Gardenexpansion implements ModInitializer {
 
 
 
-		LOGGER.info("Policjant mnie dusi, strach ściska mi gardło,\n" +
+		LOGGER.info("\n"+"Policjant mnie dusi, strach ściska mi gardło,\n" +
 				"A w myślach myśl jedna: \"Czy to już piekło?\".\n" +
 				"Lecz nagle ocknienie, mixiny działają!\n" +
 				"I znika oprawca, a ja znów oddycham.\n" +
