@@ -2,41 +2,25 @@ package com.gardenexpansion.item.custom;
 
 import com.gardenexpansion.Gardenexpansion;
 import com.gardenexpansion.item.RegisterItems;
-import com.gardenexpansion.util.GexTags;
 import io.wispforest.owo.itemgroup.OwoItemSettings;
-import net.fabricmc.fabric.api.object.builder.v1.client.model.FabricModelPredicateProviderRegistry;
 import net.minecraft.block.BlockState;
 import net.minecraft.block.Blocks;
-import net.minecraft.block.FlowerBlock;
-import net.minecraft.client.MinecraftClient;
-import net.minecraft.client.item.ModelPredicateProviderRegistry;
 import net.minecraft.client.item.TooltipContext;
-import net.minecraft.client.render.model.json.ModelElementTexture;
-import net.minecraft.client.sound.Sound;
-import net.minecraft.client.world.ClientWorld;
 import net.minecraft.entity.ItemEntity;
 import net.minecraft.entity.player.PlayerEntity;
-import net.minecraft.item.*;
+import net.minecraft.item.Item;
+import net.minecraft.item.ItemStack;
+import net.minecraft.item.ItemUsageContext;
 import net.minecraft.registry.tag.BlockTags;
-import net.minecraft.registry.tag.FluidTags;
 import net.minecraft.server.world.ServerWorld;
-<<<<<<< HEAD
 import net.minecraft.sound.SoundCategory;
-=======
->>>>>>> 5bfd468650465f6fe3497b2b81090e09218ad6c0
 import net.minecraft.sound.SoundEvent;
 import net.minecraft.sound.SoundEvents;
 import net.minecraft.text.Text;
 import net.minecraft.util.ActionResult;
-import net.minecraft.util.Identifier;
 import net.minecraft.util.math.BlockPos;
 import net.minecraft.world.World;
-<<<<<<< HEAD
 import net.minecraft.world.WorldAccess;
-import net.minecraft.world.event.GameEvent;
-=======
-import org.apache.logging.log4j.core.appender.AbstractOutputStreamAppender;
->>>>>>> 5bfd468650465f6fe3497b2b81090e09218ad6c0
 import org.jetbrains.annotations.Nullable;
 
 import java.util.List;
@@ -95,7 +79,6 @@ public class PrunerItem extends Item {
 
         return ActionResult.FAIL;
     }
-<<<<<<< HEAD
 
 
     /* Metoda sprawdzala czy blokc jest liscmi. Przestazala bo niepotrzebna  a sprawdzanie czy jest liscmi przenioslem do ifa :33
@@ -111,9 +94,6 @@ public class PrunerItem extends Item {
         //world.emitGameEvent(player, GameEvent.FLUID_PLACE, pos);
     }
 
-=======
-    
->>>>>>> 5bfd468650465f6fe3497b2b81090e09218ad6c0
     @Override
     public void appendTooltip(ItemStack stack, @Nullable World world, List<Text> tooltip, TooltipContext context){
         //tooltip.add(Text.translatable("tooltip.gardenexpansion.pruner.tooltip"));
