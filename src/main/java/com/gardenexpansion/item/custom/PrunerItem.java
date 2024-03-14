@@ -84,7 +84,7 @@ public class PrunerItem extends Item {
 
         return ActionResult.FAIL;
     }
-    
+
     @Override
     public void appendTooltip(ItemStack stack, @Nullable World world, List<Text> tooltip, TooltipContext context){
         //tooltip.add(Text.translatable("tooltip.gardenexpansion.pruner.tooltip"));
