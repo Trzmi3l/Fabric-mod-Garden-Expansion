@@ -1,20 +1,24 @@
 package com.gardenexpansion.block.custom;
 
+import java.util.stream.Stream;
+
+import org.jetbrains.annotations.Nullable;
+
 import com.gardenexpansion.blockEntities.BlockEntityRegister;
 import com.gardenexpansion.blockEntities.WaterCollectorEntity;
 import com.mojang.serialization.MapCodec;
+
 import net.fabricmc.fabric.api.object.builder.v1.block.FabricBlockSettings;
-import net.minecraft.block.*;
+import net.minecraft.block.Block;
+import net.minecraft.block.BlockRenderType;
+import net.minecraft.block.BlockState;
+import net.minecraft.block.BlockWithEntity;
+import net.minecraft.block.ShapeContext;
 import net.minecraft.block.entity.BlockEntity;
 import net.minecraft.block.entity.BlockEntityTicker;
 import net.minecraft.block.entity.BlockEntityType;
-import net.minecraft.client.option.StickyKeyBinding;
 import net.minecraft.entity.player.PlayerEntity;
-import net.minecraft.fluid.Fluid;
-import net.minecraft.fluid.Fluids;
-import net.minecraft.item.ItemStack;
 import net.minecraft.item.Items;
-import net.minecraft.sound.SoundEvent;
 import net.minecraft.state.StateManager;
 import net.minecraft.state.property.BooleanProperty;
 import net.minecraft.util.ActionResult;
@@ -26,15 +30,8 @@ import net.minecraft.util.shape.VoxelShape;
 import net.minecraft.util.shape.VoxelShapes;
 import net.minecraft.world.BlockView;
 import net.minecraft.world.World;
-import net.minecraft.world.WorldAccess;
-import net.minecraft.world.event.Vibrations;
-import org.jetbrains.annotations.Nullable;
 
-import javax.swing.*;
-import java.util.Optional;
-import java.util.stream.Stream;
-
-public class WaterCollectorBlock extends BlockWithEntity implements BlockEntityProvider {
+public class WaterCollectorBlock extends BlockWithEntity {
     private static final VoxelShape d = Stream.of(Block.createCuboidShape(1, 0, 1, 15, 1, 15), Block.createCuboidShape(1, 1, 1, 3, 5, 3), Block.createCuboidShape(1, 1, 13, 3, 5, 15), Block.createCuboidShape(13, 1, 1, 15, 5, 3), Block.createCuboidShape(13, 1, 13, 15, 5, 15), Block.createCuboidShape(3, 1, 1, 13, 5, 2), Block.createCuboidShape(3, 1, 14, 13, 5, 15), Block.createCuboidShape(14, 1, 3, 15, 5, 13), Block.createCuboidShape(2, 4, 2, 14, 4, 14), Block.createCuboidShape(1, 1, 3, 2, 5, 13)).reduce((v1, v2) -> VoxelShapes.combineAndSimplify(v1, v2, BooleanBiFunction.OR)).get();
 
 

@@ -1,15 +1,13 @@
 package com.gardenexpansion.item;
 
-import com.gardenexpansion.Gardenexpansion;
 import com.gardenexpansion.item.custom.CowManureItem;
 import com.gardenexpansion.item.custom.LeavesClampItem;
 import com.gardenexpansion.item.custom.OakBarkItem;
 import com.gardenexpansion.item.custom.PrunerItem;
+
 import io.wispforest.owo.itemgroup.OwoItemSettings;
 import io.wispforest.owo.registration.reflect.ItemRegistryContainer;
 import net.minecraft.item.Item;
-import net.minecraft.item.ShovelItem;
-import net.minecraft.item.ToolMaterials;
 
 public class RegisterItems implements ItemRegistryContainer {
     public static final Item COW_MANURE = new CowManureItem();

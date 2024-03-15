@@ -1,19 +1,18 @@
 package com.gardenexpansion;
 
+import org.slf4j.Logger;
+import org.slf4j.LoggerFactory;
+
 import com.gardenexpansion.block.RegisterBlocks;
 import com.gardenexpansion.blockEntities.BlockEntityRegister;
 import com.gardenexpansion.item.RegisterItems;
+
 import io.wispforest.owo.itemgroup.Icon;
 import io.wispforest.owo.itemgroup.OwoItemGroup;
 import io.wispforest.owo.registration.reflect.FieldRegistrationHandler;
 import net.fabricmc.api.ModInitializer;
-
-import net.fabricmc.fabric.api.blockrenderlayer.v1.BlockRenderLayerMap;
-import net.minecraft.client.render.RenderLayer;
 import net.minecraft.item.Items;
 import net.minecraft.util.Identifier;
-import org.slf4j.Logger;
-import org.slf4j.LoggerFactory;
 
 public class Gardenexpansion implements ModInitializer {
 	public static final String MOD_ID = "gardenexpansion";

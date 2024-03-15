@@ -1,14 +1,11 @@
 package com.gardenexpansion.datagen;
 
 import com.gardenexpansion.block.RegisterBlocks;
-import com.gardenexpansion.block.custom.BarkBlock;
+
 import net.fabricmc.fabric.api.datagen.v1.FabricDataOutput;
 import net.fabricmc.fabric.api.datagen.v1.provider.FabricBlockLootTableProvider;
-import net.fabricmc.fabric.api.loot.v2.FabricLootTableBuilder;
 import net.minecraft.block.Block;
-import net.minecraft.block.Blocks;
 import net.minecraft.data.server.loottable.BlockLootTableGenerator;
-import net.minecraft.enchantment.Enchantment;
 import net.minecraft.enchantment.Enchantments;
 import net.minecraft.item.Item;
 import net.minecraft.loot.LootTable;
@@ -31,6 +28,7 @@ public class LootTableProvider extends FabricBlockLootTableProvider {
         addDrop(RegisterBlocks.CROSS_FENCE);
     }
 
+    @SuppressWarnings({ "unchecked", "rawtypes" })
     public LootTable.Builder copperLikeOreDrops(Block drop, Item item){
         return BlockLootTableGenerator.dropsWithSilkTouch(drop, (LootPoolEntry.Builder)this.applyExplosionDecay(drop,
                 ((LeafEntry.Builder)
