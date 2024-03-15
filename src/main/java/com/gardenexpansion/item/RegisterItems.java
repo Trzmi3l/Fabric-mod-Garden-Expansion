@@ -7,6 +7,7 @@ import com.gardenexpansion.item.custom.OakBarkItem;
 import com.gardenexpansion.item.custom.PrunerItem;
 import io.wispforest.owo.itemgroup.OwoItemSettings;
 import io.wispforest.owo.registration.reflect.ItemRegistryContainer;
+import net.minecraft.item.ArmorItem;
 import net.minecraft.item.Item;
 import net.minecraft.item.ShovelItem;
 import net.minecraft.item.ToolMaterials;
@@ -17,6 +18,7 @@ public class RegisterItems implements ItemRegistryContainer {
     public static final Item SHIT_INGOT = new Item(new OwoItemSettings());
     public static final Item PRUNER = new PrunerItem(); //rzytnia bezglutenowa
     public static final Item LEAVES_CLAMP = new LeavesClampItem();
+    public static final Item GRASS_HELMET = new ArmorItem();
 
 /*
     public Item createItem(Item item, String Identifier) {

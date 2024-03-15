@@ -1,4 +1,4 @@
-package com.gardenexpansion.item;
+package com.gardenexpansion.item.Materials;
 
 import com.gardenexpansion.block.custom.BarkBlock;
 import net.minecraft.block.BlockState;
