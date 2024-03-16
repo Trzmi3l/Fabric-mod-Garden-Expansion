@@ -4,6 +4,7 @@ import net.minecraft.item.ArmorItem;
 import net.minecraft.item.ArmorMaterial;
 import net.minecraft.recipe.Ingredient;
 import net.minecraft.sound.SoundEvent;
+import net.minecraft.sound.SoundEvents;
 
 import java.util.function.Supplier;
 
@@ -47,7 +48,7 @@ public class GrassArmorMaterial implements ArmorMaterial {
 
     @Override
     public SoundEvent getEquipSound() {
-        return null;
+        return SoundEvents.;
     }
 
     @Override
