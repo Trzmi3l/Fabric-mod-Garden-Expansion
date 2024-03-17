@@ -26,6 +26,15 @@ public class LootTableProvider extends FabricBlockLootTableProvider {
         addDrop(RegisterBlocks.BARK_BLOCK);
         addDrop(RegisterBlocks.WATER_COLLECTOR);
         addDrop(RegisterBlocks.CROSS_FENCE);
+
+        addDrop(RegisterBlocks.MAPLE_LOG);
+        addDrop(RegisterBlocks.MAPLE_PLANKS);
+        addDrop(RegisterBlocks.MAPLE_WOOD);
+        addDrop(RegisterBlocks.MAPLE_STRIPPED_LOG);
+
+        addDrop(RegisterBlocks.MAPLE_STRIPPED_WOOD);
+
+        addDrop(RegisterBlocks.MAPLE_LEAVES, leavesDrops(RegisterBlocks.MAPLE_LEAVES, RegisterBlocks.MAPLE_WOOD, 0.0025f)); // TODO
     }
 
     @SuppressWarnings({ "unchecked", "rawtypes" })

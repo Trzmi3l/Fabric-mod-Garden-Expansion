@@ -1,0 +1,9 @@
+{
+  "replace": false,
+  "values": [
+    "gardenexpansion:maple_log",
+    "gardenexpansion:maple_wood",
+    "gardenexpansion:maple_stripped_log",
+    "gardenexpansion:maple_stripped_wood"
+  ]
+}

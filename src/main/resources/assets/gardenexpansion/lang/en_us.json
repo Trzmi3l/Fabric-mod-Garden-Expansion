@@ -10,6 +10,14 @@
   "block.gardenexpansion.cross_fence": "Cross Fence",
 
 
+  "block.gardenexpansion.maple_log": "Maple log",
+  "block.gardenexpansion.maple_stripped_log": "Maple stripped log",
+  "block.gardenexpansion.maple_planks": "Maple planks",
+  "block.gardenexpansion.maple_wood": "Maple wood",
+  "block.gardenexpansion.maple_stripped_wood": "Maple stripped wood",
+  "block.gardenexpansion.maple_leaves": "Maple leaves",
+
+
   "tooltip.gardenexpansion.cow_manure.tooltip": "§aFertilizes crops like bone meal",
 
 
