@@ -31,7 +31,6 @@ public class PrunerItem extends Item {
     public static OwoItemSettings PrunerItemSettings = new OwoItemSettings().group(Gardenexpansion.ITEM_GROUP).maxDamage(64);
 
     public PrunerItem() {
-
         super(PrunerItemSettings);
     }
 

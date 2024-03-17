@@ -13,9 +13,21 @@
       },
       "trigger": "minecraft:inventory_changed"
     },
+    "has_slime_ball": {
+      "conditions": {
+        "items": [
+          {
+            "items": [
+              "minecraft:slime_ball"
+            ]
+          }
+        ]
+      },
+      "trigger": "minecraft:inventory_changed"
+    },
     "has_the_recipe": {
       "conditions": {
-        "recipe": "minecraft:jungle_leaves"
+        "recipe": "minecraft:grass_helmet"
       },
       "trigger": "minecraft:recipe_unlocked"
     }
@@ -23,12 +35,13 @@
   "requirements": [
     [
       "has_the_recipe",
-      "has_leaves_clamp"
+      "has_leaves_clamp",
+      "has_slime_ball"
     ]
   ],
   "rewards": {
     "recipes": [
-      "minecraft:jungle_leaves"
+      "minecraft:grass_helmet"
     ]
   }
 }

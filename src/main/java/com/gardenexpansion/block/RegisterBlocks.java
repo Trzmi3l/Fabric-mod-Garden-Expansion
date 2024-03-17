@@ -7,9 +7,7 @@ import com.gardenexpansion.block.custom.WaterCollectorBlock;
 import io.wispforest.owo.itemgroup.OwoItemSettings;
 import io.wispforest.owo.registration.reflect.BlockRegistryContainer;
 import net.minecraft.block.Block;
-import net.minecraft.block.LadderBlock;
 import net.minecraft.item.BlockItem;
-import net.minecraft.registry.tag.BlockTags;
 
 
 public class RegisterBlocks implements BlockRegistryContainer {
@@ -27,7 +25,6 @@ public class RegisterBlocks implements BlockRegistryContainer {
 
     @Override
     public BlockItem createBlockItem(Block block, String identifier) {
-
         return new BlockItem(block, new OwoItemSettings().group(Gardenexpansion.ITEM_GROUP));
     }
 }

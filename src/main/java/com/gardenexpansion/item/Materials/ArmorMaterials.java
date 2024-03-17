@@ -1,5 +1,6 @@
 package com.gardenexpansion.item.Materials;
 
+import com.gardenexpansion.Gardenexpansion;
 import net.minecraft.item.ArmorItem;
 import net.minecraft.item.ArmorMaterial;
 import net.minecraft.recipe.Ingredient;
@@ -8,7 +9,11 @@ import net.minecraft.sound.SoundEvents;
 
 import java.util.function.Supplier;
 
-public class GrassArmorMaterial implements ArmorMaterial {
+public enum ArmorMaterials implements ArmorMaterial {
+
+    GRASS("grass", 33, new int[] {0,0,0,0}, 19,
+            SoundEvents.BLOCK_MOSS_PLACE, 0f, 0.1f, Ingredient::empty);
+
     private final String name;
     private final int durabilityMultiplier;
     private final int[] protectionAmounts;
@@ -19,8 +24,8 @@ public class GrassArmorMaterial implements ArmorMaterial {
     private final Supplier<Ingredient> repairIngredient;
     private static final int[] BASE_DURABILITY = new int[] {-1, -1, -1, -1};
 
-    public GrassArmorMaterial(String name, int durabilityMultiplier, int[] protectionAmounts, int enchantability, SoundEvent equipSound,
-                              float toughness, float knockbackResistance, Supplier<Ingredient> repairIngredient) {
+    ArmorMaterials(String name, int durabilityMultiplier, int[] protectionAmounts, int enchantability, SoundEvent equipSound,
+                          float toughness, float knockbackResistance, Supplier<Ingredient> repairIngredient) {
         this.name = name;
         this.durabilityMultiplier = durabilityMultiplier;
         this.protectionAmounts = protectionAmounts;
@@ -43,32 +48,33 @@ public class GrassArmorMaterial implements ArmorMaterial {
 
     @Override
     public int getEnchantability() {
-        return 0;
+        return this.enchantability;
     }
 
     @Override
     public SoundEvent getEquipSound() {
-        return SoundEvents.;
+
+        return this.equipSound;
     }
 
     @Override
     public Ingredient getRepairIngredient() {
-        return null;
+        return this.repairIngredient.get();
     }
 
     @Override
     public String getName() {
-        return null;
+        return Gardenexpansion.MOD_ID + ":" + this.name;
     }
 
     @Override
     public float getToughness() {
-        return 0;
+        return this.toughness;
     }
 
     @Override
     public float getKnockbackResistance() {
-        return 0;
+        return this.knockbackResistance;
     }
 }
 

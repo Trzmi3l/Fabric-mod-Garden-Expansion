@@ -7,9 +7,6 @@ import io.wispforest.owo.itemgroup.Icon;
 import io.wispforest.owo.itemgroup.OwoItemGroup;
 import io.wispforest.owo.registration.reflect.FieldRegistrationHandler;
 import net.fabricmc.api.ModInitializer;
-
-import net.fabricmc.fabric.api.blockrenderlayer.v1.BlockRenderLayerMap;
-import net.minecraft.client.render.RenderLayer;
 import net.minecraft.item.Items;
 import net.minecraft.util.Identifier;
 import org.slf4j.Logger;
@@ -22,6 +19,10 @@ public class Gardenexpansion implements ModInitializer {
 
 	public static final OwoItemGroup ITEM_GROUP = OwoItemGroup
 			.builder(new Identifier(Gardenexpansion.MOD_ID, "default"), () -> Icon.of(Items.FLOWERING_AZALEA))
+			.build();
+
+	public static final OwoItemGroup GRASS_ARMOR_GROUP = OwoItemGroup
+			.builder(new Identifier(Gardenexpansion.MOD_ID, "grass_armor_group"), () -> Icon.of(RegisterItems.GRASS_HELMET))
 			.build();
 
 

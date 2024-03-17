@@ -1,16 +1,12 @@
 package com.gardenexpansion.item;
 
 import com.gardenexpansion.Gardenexpansion;
-import com.gardenexpansion.item.custom.CowManureItem;
-import com.gardenexpansion.item.custom.LeavesClampItem;
-import com.gardenexpansion.item.custom.OakBarkItem;
-import com.gardenexpansion.item.custom.PrunerItem;
+import com.gardenexpansion.item.Materials.ArmorMaterials;
+import com.gardenexpansion.item.custom.*;
 import io.wispforest.owo.itemgroup.OwoItemSettings;
 import io.wispforest.owo.registration.reflect.ItemRegistryContainer;
 import net.minecraft.item.ArmorItem;
 import net.minecraft.item.Item;
-import net.minecraft.item.ShovelItem;
-import net.minecraft.item.ToolMaterials;
 
 public class RegisterItems implements ItemRegistryContainer {
     public static final Item COW_MANURE = new CowManureItem();
@@ -18,13 +14,13 @@ public class RegisterItems implements ItemRegistryContainer {
     public static final Item SHIT_INGOT = new Item(new OwoItemSettings());
     public static final Item PRUNER = new PrunerItem(); //rzytnia bezglutenowa
     public static final Item LEAVES_CLAMP = new LeavesClampItem();
-    public static final Item GRASS_HELMET = new ArmorItem();
+    public static final Item GRASS_HELMET = new GrassArmorItem(ArmorMaterials.GRASS, ArmorItem.Type.HELMET, new OwoItemSettings().group(Gardenexpansion.GRASS_ARMOR_GROUP));
+    public static final Item GRASS_CHESTPLATE = new GrassArmorItem(ArmorMaterials.GRASS, ArmorItem.Type.CHESTPLATE, new OwoItemSettings().group(Gardenexpansion.GRASS_ARMOR_GROUP));
+    public static final Item GRASS_LEGGINGS = new GrassArmorItem(ArmorMaterials.GRASS, ArmorItem.Type.LEGGINGS, new OwoItemSettings().group(Gardenexpansion.GRASS_ARMOR_GROUP));
+    public static final Item GRASS_BOOTS = new GrassArmorItem(ArmorMaterials.GRASS, ArmorItem.Type.BOOTS, new OwoItemSettings().group(Gardenexpansion.GRASS_ARMOR_GROUP));
 
-/*
-    public Item createItem(Item item, String Identifier) {
-        return new Item(new OwoItemSettings().group(Gardenexpansion.ITEM_GROUP));
-    }
 
- */
+
+
 }
 

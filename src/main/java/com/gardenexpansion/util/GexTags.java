@@ -1,11 +1,10 @@
 package com.gardenexpansion.util;
 
 import com.gardenexpansion.Gardenexpansion;
+import net.minecraft.block.Block;
 import net.minecraft.item.Item;
 import net.minecraft.registry.RegistryKeys;
-import net.minecraft.registry.tag.BlockTags;
 import net.minecraft.registry.tag.TagKey;
-import net.minecraft.block.Block;
 import net.minecraft.util.Identifier;
 
 public class GexTags {
@@ -17,6 +16,8 @@ public class GexTags {
     }
 
     public static class Items {
+
+        public static final TagKey<Item> GRASS_TIER = createTag("grass_tier");
         private static TagKey<Item> createTag(String name) {
             return TagKey.of(RegistryKeys.ITEM, new Identifier(Gardenexpansion.MOD_ID, name));
         }
