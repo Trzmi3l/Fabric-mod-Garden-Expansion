@@ -32,11 +32,15 @@ import net.minecraft.world.BlockView;
 import net.minecraft.world.World;
 
 public class WaterCollectorBlock extends BlockWithEntity {
-    private static final VoxelShape d = Stream.of(Block.createCuboidShape(1, 0, 1, 15, 1, 15), Block.createCuboidShape(1, 1, 1, 3, 5, 3), Block.createCuboidShape(1, 1, 13, 3, 5, 15), Block.createCuboidShape(13, 1, 1, 15, 5, 3), Block.createCuboidShape(13, 1, 13, 15, 5, 15), Block.createCuboidShape(3, 1, 1, 13, 5, 2), Block.createCuboidShape(3, 1, 14, 13, 5, 15), Block.createCuboidShape(14, 1, 3, 15, 5, 13), Block.createCuboidShape(2, 4, 2, 14, 4, 14), Block.createCuboidShape(1, 1, 3, 2, 5, 13)).reduce((v1, v2) -> VoxelShapes.combineAndSimplify(v1, v2, BooleanBiFunction.OR)).get();
-
+    private static final VoxelShape d = Stream
+            .of(Block.createCuboidShape(1, 0, 1, 15, 1, 15), Block.createCuboidShape(1, 1, 1, 3, 5, 3),
+                    Block.createCuboidShape(1, 1, 13, 3, 5, 15), Block.createCuboidShape(13, 1, 1, 15, 5, 3),
+                    Block.createCuboidShape(13, 1, 13, 15, 5, 15), Block.createCuboidShape(3, 1, 1, 13, 5, 2),
+                    Block.createCuboidShape(3, 1, 14, 13, 5, 15), Block.createCuboidShape(14, 1, 3, 15, 5, 13),
+                    Block.createCuboidShape(2, 4, 2, 14, 4, 14), Block.createCuboidShape(1, 1, 3, 2, 5, 13))
+            .reduce((v1, v2) -> VoxelShapes.combineAndSimplify(v1, v2, BooleanBiFunction.OR)).get();
 
     static FabricBlockSettings s = FabricBlockSettings.create().strength(3).nonOpaque();
-
 
     public static final BooleanProperty IS_FILLED = BooleanProperty.of("full");
 
@@ -46,25 +50,27 @@ public class WaterCollectorBlock extends BlockWithEntity {
 
     }
 
-
-
-
     @Override
-    public ActionResult onUse(BlockState state, World world, BlockPos pos, PlayerEntity player, Hand hand, BlockHitResult hit) {
-        if(!world.isClient) return ActionResult.FAIL;
-        if(player.getActiveItem().getItem() == Items.WATER_BUCKET && !hand.equals(Hand.MAIN_HAND)) return ActionResult.FAIL;
+    public ActionResult onUse(BlockState state, World world, BlockPos pos, PlayerEntity player, Hand hand,
+            BlockHitResult hit) {
+        if (!world.isClient)
+            return ActionResult.FAIL;
+        if (player.getActiveItem().getItem() == Items.WATER_BUCKET && !hand.equals(Hand.MAIN_HAND))
+            return ActionResult.FAIL;
         if (hand.equals(Hand.MAIN_HAND) && player.getMainHandStack().getItem() == Items.WATER_BUCKET) {
             // Blokuj dodawanie wody do WaterCollectorBlock
             return ActionResult.FAIL;
         }
 
-        //if(player.getActiveItem().getItem() == Items.WATER_BUCKET) return ActionResult.PASS ;
+        // if(player.getActiveItem().getItem() == Items.WATER_BUCKET) return
+        // ActionResult.PASS ;
         BlockEntity be = world.getBlockEntity(pos);
         if (be instanceof WaterCollectorEntity) {
             ActionResult result = ((WaterCollectorEntity) be).onUse(player, hand, hit);
             if (result == ActionResult.SUCCESS) {
                 world.setBlockState(pos, state.with(IS_FILLED, ((WaterCollectorEntity) be).isFull));
                 return ActionResult.SUCCESS;
+
             }
         }
         return ActionResult.PASS;
@@ -85,15 +91,10 @@ public class WaterCollectorBlock extends BlockWithEntity {
         return BlockRenderType.MODEL;
     }
 
-
-
-
-
     @Override
     protected MapCodec<? extends BlockWithEntity> getCodec() {
         return null;
     }
-
 
     @Nullable
     @Override
@@ -103,10 +104,10 @@ public class WaterCollectorBlock extends BlockWithEntity {
 
     @Nullable
     @Override
-    public <T extends BlockEntity> BlockEntityTicker<T> getTicker(World world, BlockState state, BlockEntityType<T> type) {
+    public <T extends BlockEntity> BlockEntityTicker<T> getTicker(World world, BlockState state,
+            BlockEntityType<T> type) {
         return validateTicker(type, BlockEntityRegister.WATER_COLLECTOR_BLOCK_ENITY,
                 (world1, pos, state1, blockEntity) -> blockEntity.tick(world1, pos, state1));
     }
-
 
 }
