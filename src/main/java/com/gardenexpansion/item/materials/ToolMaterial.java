@@ -1,10 +1,6 @@
-package com.gardenexpansion.item.Materials;
+package com.gardenexpansion.item.materials;
 
-import com.gardenexpansion.block.custom.BarkBlock;
-import net.minecraft.block.BlockState;
-import net.minecraft.item.ItemStack;
 import net.minecraft.recipe.Ingredient;
-import net.minecraft.registry.tag.ItemTags;
 
 public enum ToolMaterial implements net.minecraft.item.ToolMaterial {
     ;

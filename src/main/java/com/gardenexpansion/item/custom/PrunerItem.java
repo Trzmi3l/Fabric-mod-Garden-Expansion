@@ -11,6 +11,7 @@ import net.minecraft.entity.player.PlayerEntity;
 import net.minecraft.item.Item;
 import net.minecraft.item.ItemStack;
 import net.minecraft.item.ItemUsageContext;
+import net.minecraft.particle.ParticleTypes;
 import net.minecraft.registry.tag.BlockTags;
 import net.minecraft.server.world.ServerWorld;
 import net.minecraft.sound.SoundCategory;
@@ -62,8 +63,9 @@ public class PrunerItem extends Item {
 
 
                     ServerWorld serverWorld = ((ServerWorld) context.getWorld()).toServerWorld();
-
-                    playPruningSound(context.getPlayer(), serverWorld, positionClicked);
+                    serverWorld.spawnParticles(ParticleTypes.FALLING_SPORE_BLOSSOM, positionClicked.getX()+0.5f, positionClicked.getY()+0.5f, positionClicked.getZ()+0.5f, 100, 0.6f, 0.6f, 0.6f, 0.5f);
+                    //playPruningSound(context.getPlayer(), serverWorld, positionClicked);
+                    context.getPlayer().playSound(SoundEvents.BLOCK_SMALL_DRIPLEAF_BREAK, SoundCategory.BLOCKS, 1.0F, 1.0F);
 
                     serverWorld.spawnEntity(new ItemEntity(serverWorld, positionClicked.getX() + 0.5, positionClicked.getY() + 1, positionClicked.getZ() + 0.5, itemDrop));
                     Objects.requireNonNull(context.getPlayer()).playSound(SoundEvents.ENTITY_SHEEP_SHEAR, 1.0f, 1.0f);

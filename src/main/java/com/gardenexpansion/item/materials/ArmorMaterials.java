@@ -1,4 +1,4 @@
-package com.gardenexpansion.item.Materials;
+package com.gardenexpansion.item.materials;
 
 import com.gardenexpansion.Gardenexpansion;
 import net.minecraft.item.ArmorItem;

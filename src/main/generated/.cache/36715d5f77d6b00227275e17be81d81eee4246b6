@@ -1,4 +1,4 @@
-// 1.20.4	2024-03-17T02:00:27.5971925	gardenexpansion/Recipes
+// 1.20.4	2024-03-17T21:30:12.9079573	gardenexpansion/Recipes
 d5ea5ff83be11e768b5f0a7bf57de886dc95bd40 data\gardenexpansion\advancements\recipes\building_blocks\bark_block.json
 656bb60ebb27db37e52bf08ea378892f67d15613 data\gardenexpansion\recipes\grass_chestplate.json
 54581dfdb90d29de5315490839d743fc9eb4c4f1 data\gardenexpansion\advancements\recipes\combat\grass_chestplate.json
@@ -16,4 +16,4 @@ c3e26bc2296a1b375a2a189499fb0815b227c1ae data\gardenexpansion\advancements\recip
 a71d7c70d783280916a7835e3a5d253258d5983e data\gardenexpansion\recipes\bark_block.json
 ffe1f241a7911bd0948694200a903548141fc0f4 data\gardenexpansion\recipes\oak_bark.json
 f8a37b9ab8edb8d463b331f681d50bf4d47d0d1f data\gardenexpansion\recipes\grass_helmet.json
-1dfc6fe0802c75b5edaa5c58fdaf95e653aeee9c data\gardenexpansion\recipes\grass_boots.json
+0c493c01fea829ee492a55fc9732385966ec760e data\gardenexpansion\recipes\grass_boots.json
