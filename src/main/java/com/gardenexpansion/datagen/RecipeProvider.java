@@ -9,6 +9,7 @@ import net.minecraft.data.server.recipe.RecipeExporter;
 import net.minecraft.data.server.recipe.ShapedRecipeJsonBuilder;
 import net.minecraft.item.Items;
 import net.minecraft.recipe.book.RecipeCategory;
+import net.minecraft.util.Identifier;
 
 public class RecipeProvider extends FabricRecipeProvider {
 
@@ -61,7 +62,7 @@ public class RecipeProvider extends FabricRecipeProvider {
                 .input('0', Items.SLIME_BALL)
                 .criterion(hasItem(RegisterItems.LEAVES_CLAMP), conditionsFromItem(RegisterItems.LEAVES_CLAMP))
                 .criterion(hasItem(Items.SLIME_BALL), conditionsFromItem(Items.SLIME_BALL))
-                .offerTo(exporter, "grass_helmet");
+                .offerTo(exporter, new Identifier(getRecipeName(RegisterItems.GRASS_HELMET)));
 
         ShapedRecipeJsonBuilder.create(RecipeCategory.COMBAT, RegisterItems.GRASS_CHESTPLATE, 1)
                 .pattern("S0S")
@@ -71,7 +72,7 @@ public class RecipeProvider extends FabricRecipeProvider {
                 .input('0', Items.SLIME_BALL)
                 .criterion(hasItem(RegisterItems.LEAVES_CLAMP), conditionsFromItem(RegisterItems.LEAVES_CLAMP))
                 .criterion(hasItem(Items.SLIME_BALL), conditionsFromItem(Items.SLIME_BALL))
-                .offerTo(exporter, "grass_chestplate");
+                .offerTo(exporter, new Identifier(getRecipeName(RegisterItems.GRASS_CHESTPLATE)));
 
         ShapedRecipeJsonBuilder.create(RecipeCategory.COMBAT, RegisterItems.GRASS_LEGGINGS, 1)
                 .pattern("SSS")
@@ -81,15 +82,15 @@ public class RecipeProvider extends FabricRecipeProvider {
                 .input('0', Items.SLIME_BALL)
                 .criterion(hasItem(RegisterItems.LEAVES_CLAMP), conditionsFromItem(RegisterItems.LEAVES_CLAMP))
                 .criterion(hasItem(Items.SLIME_BALL), conditionsFromItem(Items.SLIME_BALL))
-                .offerTo(exporter, "grass_leggings");
+                .offerTo(exporter, new Identifier(getRecipeName(RegisterItems.GRASS_LEGGINGS)));
 
-        ShapedRecipeJsonBuilder.create(RecipeCategory.COMBAT, RegisterItems.GRASS_LEGGINGS, 1)
+        ShapedRecipeJsonBuilder.create(RecipeCategory.COMBAT, RegisterItems.GRASS_BOOTS, 1)
                 .pattern("S0S")
                 .pattern("S S")
                 .input('S', RegisterItems.LEAVES_CLAMP)
                 .input('0', Items.SLIME_BALL)
                 .criterion(hasItem(RegisterItems.LEAVES_CLAMP), conditionsFromItem(RegisterItems.LEAVES_CLAMP))
                 .criterion(hasItem(Items.SLIME_BALL), conditionsFromItem(Items.SLIME_BALL))
-                .offerTo(exporter, "grass_boots");
+                .offerTo(exporter, new Identifier(getRecipeName(RegisterItems.GRASS_BOOTS)));
     }
 }

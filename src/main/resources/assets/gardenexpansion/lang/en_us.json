@@ -4,10 +4,10 @@
   "item.gardenexpansion.shit_ingot": "brutha what even is this fuc i look like to u",
   "item.gardenexpansion.pruner": "Pruner",
   "item.gardenexpansion.leaves_clamp": "Clamp of Leaves",
-  "item.gardenexpansion.grass_helmet": "Grass Helmet",
-  "item.gardenexpansion.grass_chestplate": "Grass Chestplate",
-  "item.gardenexpansion.grass_leggings": "Grass Leggings",
-  "item.gardenexpansion.grass_boots": "Grass Boots",
+  "item.gardenexpansion.grass_helmet": "§aGrass Helmet",
+  "item.gardenexpansion.grass_chestplate": "§aGrass Chestplate",
+  "item.gardenexpansion.grass_leggings": "§aGrass Leggings",
+  "item.gardenexpansion.grass_boots": "§aGrass Boots",
 
 
   "block.gardenexpansion.water_collector": "Water Collector",
@@ -16,7 +16,10 @@
 
 
   "tooltip.gardenexpansion.cow_manure.tooltip": "§aFertilizes crops like bone meal",
-
+  "tooltip.gardenexpansion.grass_helmet.tooltip": "§a§kwwwwww",
+  "tooltip.gardenexpansion.grass_chestplate.tooltip": "§a♠",
+  "tooltip.gardenexpansion.grass_leggings.tooltip": "§a♠",
+  "tooltip.gardenexpansion.grass_boots.tooltip": "§a♠",
 
 
   "itemGroup.gardenexpansion.default": "Garden Expansion",

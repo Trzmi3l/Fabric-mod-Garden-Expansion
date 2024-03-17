@@ -12,7 +12,7 @@ public class GardenexpansionDataGenerator implements DataGeneratorEntrypoint {
 		pack.addProvider(BlockTagProvider::new);
 		pack.addProvider(ItemTagProvider::new);
 		pack.addProvider(LootTableProvider::new);
-		//pack.addProvider(ModelProvider::new);
+		pack.addProvider(ModelProvider::new);
 		pack.addProvider(RecipeProvider::new);
 	}
 }

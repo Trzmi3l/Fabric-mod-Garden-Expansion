@@ -21,9 +21,9 @@ public class Gardenexpansion implements ModInitializer {
 			.builder(new Identifier(Gardenexpansion.MOD_ID, "default"), () -> Icon.of(Items.FLOWERING_AZALEA))
 			.build();
 
-	public static final OwoItemGroup GRASS_ARMOR_GROUP = OwoItemGroup
-			.builder(new Identifier(Gardenexpansion.MOD_ID, "grass_armor_group"), () -> Icon.of(RegisterItems.GRASS_HELMET))
-			.build();
+	//public static final OwoItemGroup GRASS_ARMOR_GROUP = OwoItemGroup
+			//.builder(new Identifier(Gardenexpansion.MOD_ID, "grass_armor_group"), () -> Icon.of(RegisterItems.GRASS_HELMET))
+			//.build();
 
 
 	@Override

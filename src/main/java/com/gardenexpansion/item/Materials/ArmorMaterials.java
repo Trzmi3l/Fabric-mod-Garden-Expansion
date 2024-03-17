@@ -12,7 +12,7 @@ import java.util.function.Supplier;
 public enum ArmorMaterials implements ArmorMaterial {
 
     GRASS("grass", 33, new int[] {0,0,0,0}, 19,
-            SoundEvents.BLOCK_MOSS_PLACE, 0f, 0.1f, Ingredient::empty);
+            SoundEvents.BLOCK_MOSS_PLACE, 0f, 0f, Ingredient::empty);
 
     private final String name;
     private final int durabilityMultiplier;
