@@ -35,6 +35,9 @@ public class LootTableProvider extends FabricBlockLootTableProvider {
         addDrop(RegisterBlocks.MAPLE_STRIPPED_WOOD);
 
         addDrop(RegisterBlocks.MAPLE_LEAVES, leavesDrops(RegisterBlocks.MAPLE_LEAVES, RegisterBlocks.MAPLE_WOOD, 0.0025f)); // TODO
+
+        addDrop(RegisterBlocks.MAPLE_SAPLING);
+        //addPottedPlantDrops(RegisterBlocks.MAPLE_SAPLING.);
     }
 
     @SuppressWarnings({ "unchecked", "rawtypes" })

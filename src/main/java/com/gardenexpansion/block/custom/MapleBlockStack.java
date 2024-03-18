@@ -41,7 +41,7 @@ public class MapleBlockStack {
     }
 
     public static class MapleLeaves extends LeavesBlock {
-        public static final BlockColorProvider COLOR_PROVIDER = new CustomLeavesColorProvider();
+
         public MapleLeaves() {
             super(FabricBlockSettings.copy(Blocks.OAK_LEAVES).nonOpaque());
         }

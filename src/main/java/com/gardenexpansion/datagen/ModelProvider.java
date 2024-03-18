@@ -5,11 +5,11 @@ import com.gardenexpansion.item.RegisterItems;
 
 import net.fabricmc.fabric.api.datagen.v1.FabricDataOutput;
 import net.fabricmc.fabric.api.datagen.v1.provider.FabricModelProvider;
-import net.minecraft.data.client.BlockStateModelGenerator;
-import net.minecraft.data.client.ItemModelGenerator;
-import net.minecraft.data.client.Models;
+import net.minecraft.block.Blocks;
+import net.minecraft.data.client.*;
 import net.minecraft.scoreboard.AbstractTeam;
 import net.minecraft.util.Identifier;
+import net.minecraft.world.gen.stateprovider.BlockStateProvider;
 
 public class ModelProvider extends FabricModelProvider {
     public ModelProvider(FabricDataOutput output) {
@@ -24,8 +24,10 @@ public class ModelProvider extends FabricModelProvider {
 
         blockStateModelGenerator.registerLog(RegisterBlocks.MAPLE_LOG).log(RegisterBlocks.MAPLE_LOG).wood(RegisterBlocks.MAPLE_WOOD);
         blockStateModelGenerator.registerLog(RegisterBlocks.MAPLE_STRIPPED_LOG).log(RegisterBlocks.MAPLE_STRIPPED_LOG).wood(RegisterBlocks.MAPLE_STRIPPED_WOOD);
-        blockStateModelGenerator.registerSimpleCubeAll(RegisterBlocks.MAPLE_LEAVES);
+        //blockStateModelGenerator.(RegisterBlocks.MAPLE_LEAVES, BlockStateModelGenerator.TintType.TINTED, TextureMap.texture(Blocks.OAK_LEAVES));
+        blockStateModelGenerator.registerSingleton(RegisterBlocks.MAPLE_LEAVES, TexturedModel.LEAVES);
         blockStateModelGenerator.registerSimpleCubeAll(RegisterBlocks.MAPLE_PLANKS);
+        blockStateModelGenerator.registerTintableCross(RegisterBlocks.MAPLE_SAPLING, BlockStateModelGenerator.TintType.NOT_TINTED);
 
     }
 
@@ -39,7 +41,7 @@ public class ModelProvider extends FabricModelProvider {
         itemModelGenerator.register(RegisterBlocks.MAPLE_STRIPPED_WOOD.asItem(), Models.GENERATED);
         itemModelGenerator.register(RegisterBlocks.MAPLE_STRIPPED_LOG.asItem(), Models.GENERATED);
         itemModelGenerator.register(RegisterBlocks.WATER_COLLECTOR.asItem(), Models.GENERATED);
-        itemModelGenerator.register(RegisterBlocks.MAPLE_LEAVES.asItem(), Models.LEAVES);
+       // itemModelGenerator.register(RegisterBlocks.MAPLE_LEAVES.asItem(), Models.LEAVES);
 
     }
 }

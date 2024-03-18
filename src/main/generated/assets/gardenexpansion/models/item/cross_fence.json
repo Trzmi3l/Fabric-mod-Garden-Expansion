@@ -1,6 +1,6 @@
 {
   "parent": "minecraft:item/generated",
   "textures": {
-    "layer0": "gardenexpansion:item/maple_stripped_wood"
+    "layer0": "gardenexpansion:item/cross_fence"
   }
 }

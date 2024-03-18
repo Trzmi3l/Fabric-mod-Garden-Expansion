@@ -24,7 +24,7 @@ public class GardenexpansionClient implements ClientModInitializer {
 
        // ColorProviderRegistry.BLOCK.register(grassColorProvider, RegisterBlocks.WATER_COLLECTOR);
 
-
+        CustomLeavesColorProvider colorProvider = new CustomLeavesColorProvider();
 
         ColorProviderRegistry.BLOCK.register(((state, world, pos, tintIndex) -> {
             if(world == null || pos == null) {
@@ -33,6 +33,14 @@ public class GardenexpansionClient implements ClientModInitializer {
             return BiomeColors.getWaterColor(world, pos);
         }), RegisterBlocks.WATER_COLLECTOR
         );
+        ColorProviderRegistry.BLOCK.register(((state, world, pos, tintIndex) -> {
+            if(world == null || pos == null) {
+                return colorProvider.getColor(state, world, pos, tintIndex);
+            }
+                return colorProvider.getColor(state, world, pos, tintIndex);
+        }), RegisterBlocks.MAPLE_LEAVES
+        );
+
 
 
 
@@ -41,6 +49,7 @@ public class GardenexpansionClient implements ClientModInitializer {
         BlockRenderLayerMap.INSTANCE.putBlock(RegisterBlocks.WATER_COLLECTOR, RenderLayer.getCutoutMipped());
         BlockRenderLayerMap.INSTANCE.putBlock(RegisterBlocks.CROSS_FENCE, RenderLayer.getCutout());
         BlockRenderLayerMap.INSTANCE.putBlock(RegisterBlocks.MAPLE_LEAVES, RenderLayer.getCutout());
+        BlockRenderLayerMap.INSTANCE.putBlock(RegisterBlocks.MAPLE_SAPLING, RenderLayer.getCutout());
        // BlockRenderLayerMap.INSTANCE.putBlock(RegisterBlocks.WATER_COLLECTOR, RenderLayer.getCutout());
 
 
