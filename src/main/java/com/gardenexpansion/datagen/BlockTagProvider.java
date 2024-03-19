@@ -25,7 +25,8 @@ public class BlockTagProvider extends FabricTagProvider.BlockTagProvider {
 
         getOrCreateTagBuilder(BlockTags.AXE_MINEABLE)
                 .add(RegisterBlocks.WATER_COLLECTOR)
-                .add(RegisterBlocks.CROSS_FENCE);
+                .add(RegisterBlocks.CROSS_FENCE)
+                .add(RegisterBlocks.MAPLE_SAPLING);
 
 
         getOrCreateTagBuilder(GexTags.Blocks.PRUNER_PRUNABLE)
@@ -46,6 +47,11 @@ public class BlockTagProvider extends FabricTagProvider.BlockTagProvider {
                 .add(RegisterBlocks.MAPLE_STRIPPED_LOG)
                 .add(RegisterBlocks.MAPLE_STRIPPED_WOOD);
 
+        getOrCreateTagBuilder(BlockTags.SAPLINGS)
+                .add(RegisterBlocks.MAPLE_SAPLING);
+
+        getOrCreateTagBuilder(BlockTags.SWORD_EFFICIENT)
+                .add(RegisterBlocks.MAPLE_SAPLING);
 
         //getOrCreateTagBuilder(TagKey.of(RegistryKeys.BLOCK, new Identifier("fabric", "pruner_prunable")))
         //        .forceAddTag(BlockTags.LEAVES);

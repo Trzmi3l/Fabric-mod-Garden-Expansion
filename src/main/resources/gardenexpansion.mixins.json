@@ -5,7 +5,9 @@
   "mixins": [
     "CowManureMixin",
     "ExampleMixin",
-    "StripWoodMixin"
+    "FoliagePlacerTypeInvoker",
+    "StripWoodMixin",
+    "TrunkPlacerTypeInvoke"
   ],
   "injectors": {
     "defaultRequire": 1

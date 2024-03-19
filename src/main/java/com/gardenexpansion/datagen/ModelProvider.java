@@ -24,9 +24,11 @@ public class ModelProvider extends FabricModelProvider {
 
         blockStateModelGenerator.registerLog(RegisterBlocks.MAPLE_LOG).log(RegisterBlocks.MAPLE_LOG).wood(RegisterBlocks.MAPLE_WOOD);
         blockStateModelGenerator.registerLog(RegisterBlocks.MAPLE_STRIPPED_LOG).log(RegisterBlocks.MAPLE_STRIPPED_LOG).wood(RegisterBlocks.MAPLE_STRIPPED_WOOD);
-        //blockStateModelGenerator.(RegisterBlocks.MAPLE_LEAVES, BlockStateModelGenerator.TintType.TINTED, TextureMap.texture(Blocks.OAK_LEAVES));
+
         blockStateModelGenerator.registerSingleton(RegisterBlocks.MAPLE_LEAVES, TexturedModel.LEAVES);
+
         blockStateModelGenerator.registerSimpleCubeAll(RegisterBlocks.MAPLE_PLANKS);
+
         blockStateModelGenerator.registerTintableCross(RegisterBlocks.MAPLE_SAPLING, BlockStateModelGenerator.TintType.NOT_TINTED);
 
     }
@@ -38,10 +40,15 @@ public class ModelProvider extends FabricModelProvider {
         itemModelGenerator.register(RegisterItems.OAK_BARK, Models.GENERATED);
         itemModelGenerator.register(RegisterItems.PRUNER, Models.GENERATED);
         itemModelGenerator.register(RegisterBlocks.CROSS_FENCE.asItem(), Models.GENERATED);
-        itemModelGenerator.register(RegisterBlocks.MAPLE_STRIPPED_WOOD.asItem(), Models.GENERATED);
-        itemModelGenerator.register(RegisterBlocks.MAPLE_STRIPPED_LOG.asItem(), Models.GENERATED);
+
+
         itemModelGenerator.register(RegisterBlocks.WATER_COLLECTOR.asItem(), Models.GENERATED);
        // itemModelGenerator.register(RegisterBlocks.MAPLE_LEAVES.asItem(), Models.LEAVES);
+
+        //itemModelGenerator.register(RegisterBlocks.MAPLE_LEAVES.asItem(), Models.LEAVES);
+        //itemModelGenerator.register(RegisterBlocks.MAPLE_LOG.asItem(),Models.GENERATED);
+        //itemModelGenerator.register(RegisterBlocks.MAPLE_STRIPPED_WOOD.asItem(), Models.GENERATED);
+        //itemModelGenerator.register(RegisterBlocks.MAPLE_STRIPPED_LOG.asItem(), Models.GENERATED);
 
     }
 }

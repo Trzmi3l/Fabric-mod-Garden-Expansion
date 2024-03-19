@@ -1,6 +1,3 @@
 {
-  "parent": "minecraft:item/generated",
-  "textures": {
-    "layer0": "gardenexpansion:item/maple_stripped_log"
-  }
+  "parent": "gardenexpansion:block/maple_stripped_log"
 }
