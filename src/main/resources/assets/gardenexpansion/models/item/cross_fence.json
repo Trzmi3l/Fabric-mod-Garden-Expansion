@@ -1,6 +1,0 @@
-{
-  "parent": "item/generated",
-  "textures": {
-    "layer0": "gardenexpansion:block/cross_fence"
-  }
-}

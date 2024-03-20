@@ -15,7 +15,6 @@ import net.minecraft.text.Text;
 import net.minecraft.util.ActionResult;
 import net.minecraft.world.World;
 import org.jetbrains.annotations.Nullable;
-
 import java.util.List;
 
 public class CowManureItem extends Item {
@@ -30,6 +29,7 @@ public class CowManureItem extends Item {
 
 
 
+    @SuppressWarnings("resource")
     @Override
     public ActionResult useOnBlock(ItemUsageContext context) {
         //CowEntity

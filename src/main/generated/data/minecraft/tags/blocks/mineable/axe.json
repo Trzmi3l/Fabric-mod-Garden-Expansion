@@ -2,6 +2,7 @@
   "replace": false,
   "values": [
     "gardenexpansion:water_collector",
-    "gardenexpansion:cross_fence"
+    "gardenexpansion:cross_fence",
+    "gardenexpansion:maple_sapling"
   ]
 }

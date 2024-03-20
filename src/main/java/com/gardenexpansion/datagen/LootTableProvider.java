@@ -1,14 +1,11 @@
 package com.gardenexpansion.datagen;
 
 import com.gardenexpansion.block.RegisterBlocks;
-import com.gardenexpansion.block.custom.BarkBlock;
+
 import net.fabricmc.fabric.api.datagen.v1.FabricDataOutput;
 import net.fabricmc.fabric.api.datagen.v1.provider.FabricBlockLootTableProvider;
-import net.fabricmc.fabric.api.loot.v2.FabricLootTableBuilder;
 import net.minecraft.block.Block;
-import net.minecraft.block.Blocks;
 import net.minecraft.data.server.loottable.BlockLootTableGenerator;
-import net.minecraft.enchantment.Enchantment;
 import net.minecraft.enchantment.Enchantments;
 import net.minecraft.item.Item;
 import net.minecraft.loot.LootTable;
@@ -29,8 +26,19 @@ public class LootTableProvider extends FabricBlockLootTableProvider {
         addDrop(RegisterBlocks.BARK_BLOCK);
         addDrop(RegisterBlocks.WATER_COLLECTOR);
         addDrop(RegisterBlocks.CROSS_FENCE);
+
+        addDrop(RegisterBlocks.MAPLE_LOG);
+        addDrop(RegisterBlocks.MAPLE_PLANKS);
+        addDrop(RegisterBlocks.MAPLE_WOOD);
+        addDrop(RegisterBlocks.MAPLE_STRIPPED_LOG);
+        addDrop(RegisterBlocks.MAPLE_STRIPPED_WOOD);
+
+        addDrop(RegisterBlocks.MAPLE_LEAVES, leavesDrops(RegisterBlocks.MAPLE_LEAVES, RegisterBlocks.MAPLE_SAPLING, 0.0025f));
+        addDrop(RegisterBlocks.MAPLE_SAPLING);
+        //addPottedPlantDrops(RegisterBlocks.MAPLE_SAPLING.);
     }
 
+    @SuppressWarnings({ "unchecked", "rawtypes" })
     public LootTable.Builder copperLikeOreDrops(Block drop, Item item){
         return BlockLootTableGenerator.dropsWithSilkTouch(drop, (LootPoolEntry.Builder)this.applyExplosionDecay(drop,
                 ((LeafEntry.Builder)

@@ -21,9 +21,6 @@ public class GrassBootsItem extends GrassArmorItem {
         super(material, type, settings);
     }
     public void appendTooltip(ItemStack stack, @Nullable World world, List<Text> tooltip, TooltipContext context){
-        //tooltip.add(Text.translatable("tooltip.gardenexpansion.grass_helmet.tooltip"));
-        //tooltip.add(Text.translatable("tooltip.gardenexpansion.grass_chestplate.tooltip"));
-        //tooltip.add(Text.translatable("tooltip.gardenexpansion.grass_leggings.tooltip"));
         tooltip.add(Text.translatable("tooltip.gardenexpansion.grass_boots.tooltip"));
         super.appendTooltip(stack, world, tooltip, context);
     }

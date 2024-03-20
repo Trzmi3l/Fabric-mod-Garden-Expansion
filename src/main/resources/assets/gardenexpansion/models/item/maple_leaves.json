@@ -1,0 +1,6 @@
+{
+  "parent": "minecraft:block/oak_leaves",
+  "textures": {
+    "layer0": "gardenexpansion:block/maple_leaves"
+  }
+}

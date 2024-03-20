@@ -1,16 +1,18 @@
 package com.gardenexpansion;
 
+import org.slf4j.Logger;
+import org.slf4j.LoggerFactory;
+
 import com.gardenexpansion.block.RegisterBlocks;
 import com.gardenexpansion.blockEntities.BlockEntityRegister;
 import com.gardenexpansion.item.RegisterItems;
+
 import io.wispforest.owo.itemgroup.Icon;
 import io.wispforest.owo.itemgroup.OwoItemGroup;
 import io.wispforest.owo.registration.reflect.FieldRegistrationHandler;
 import net.fabricmc.api.ModInitializer;
 import net.minecraft.item.Items;
 import net.minecraft.util.Identifier;
-import org.slf4j.Logger;
-import org.slf4j.LoggerFactory;
 
 public class Gardenexpansion implements ModInitializer {
 	public static final String MOD_ID = "gardenexpansion";
@@ -29,37 +31,11 @@ public class Gardenexpansion implements ModInitializer {
 	@Override
 	public void onInitialize() {
 		ITEM_GROUP.initialize();
-
+			
 
 		FieldRegistrationHandler.register(RegisterItems.class, MOD_ID, false);
 		FieldRegistrationHandler.register(RegisterBlocks.class, MOD_ID,false);
 		FieldRegistrationHandler.register(BlockEntityRegister.class, MOD_ID,false);
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 
 		LOGGER.info("\n"+"Policjant mnie dusi, strach ściska mi gardło,\n" +

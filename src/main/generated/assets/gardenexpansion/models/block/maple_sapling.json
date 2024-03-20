@@ -1,0 +1,6 @@
+{
+  "parent": "minecraft:block/cross",
+  "textures": {
+    "cross": "gardenexpansion:block/maple_sapling"
+  }
+}
