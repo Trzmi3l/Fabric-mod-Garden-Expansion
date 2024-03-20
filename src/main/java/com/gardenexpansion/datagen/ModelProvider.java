@@ -7,7 +7,6 @@ import net.fabricmc.fabric.api.datagen.v1.provider.FabricModelProvider;
 import net.minecraft.data.client.BlockStateModelGenerator;
 import net.minecraft.data.client.ItemModelGenerator;
 import net.minecraft.data.client.Models;
-import net.minecraft.item.ArmorItem;
 import net.minecraft.util.Identifier;
 
 public class ModelProvider extends FabricModelProvider {
@@ -45,15 +44,16 @@ public class ModelProvider extends FabricModelProvider {
         //itemModelGenerator.register(RegisterItems.OAK_BARK, Models.GENERATED);
         //itemModelGenerator.register(RegisterItems.PRUNER, Models.GENERATED);
 
-        itemModelGenerator.registerArmor((ArmorItem) RegisterItems.GRASS_HELMET);
-        itemModelGenerator.registerArmor((ArmorItem) RegisterItems.GRASS_CHESTPLATE);
-        itemModelGenerator.registerArmor((ArmorItem) RegisterItems.GRASS_LEGGINGS);
-        itemModelGenerator.registerArmor((ArmorItem) RegisterItems.GRASS_BOOTS);
+        //itemModelGenerator.registerArmor((ArmorItem) RegisterItems.GRASS_HELMET);
+        //itemModelGenerator.registerArmor((ArmorItem) RegisterItems.GRASS_CHESTPLATE);
+        //itemModelGenerator.registerArmor((ArmorItem) RegisterItems.GRASS_LEGGINGS);
+        //itemModelGenerator.registerArmor((ArmorItem) RegisterItems.GRASS_BOOTS);
         itemModelGenerator.register(RegisterItems.COW_MANURE, Models.GENERATED);
         itemModelGenerator.register(RegisterItems.LEAVES_CLAMP, Models.GENERATED);
         itemModelGenerator.register(RegisterItems.OAK_BARK, Models.GENERATED);
-        itemModelGenerator.register(RegisterItems.PRUNER, Models.HANDHELD);
-        itemModelGenerator.register(RegisterBlocks.CROSS_FENCE.asItem(), RegisterBlocks.CROSS_FENCE.asItem(), Models.GENERATED);
+        itemModelGenerator.register(RegisterItems.CLONE_SYRUP, Models.GENERATED);
+        //itemModelGenerator.register(RegisterItems.PRUNER, Models.HANDHELD);
+        //itemModelGenerator.register(RegisterBlocks.CROSS_FENCE.asItem(), RegisterBlocks.CROSS_FENCE.asItem(), Models.GENERATED);
 
 
 

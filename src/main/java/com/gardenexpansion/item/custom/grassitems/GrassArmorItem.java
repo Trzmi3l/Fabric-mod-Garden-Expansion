@@ -1,5 +1,6 @@
 package com.gardenexpansion.item.custom.grassitems;
 
+import blue.endless.jankson.annotation.Nullable;
 import com.gardenexpansion.item.materials.ArmorMaterials;
 import com.google.common.collect.ImmutableMap;
 import net.minecraft.client.item.TooltipContext;
@@ -14,12 +15,11 @@ import net.minecraft.particle.ParticleTypes;
 import net.minecraft.server.world.ServerWorld;
 import net.minecraft.text.Text;
 import net.minecraft.world.World;
-import org.jetbrains.annotations.Nullable;
 
 import java.util.List;
 import java.util.Map;
 import java.util.Objects;
-
+@Deprecated
 public class GrassArmorItem extends ArmorItem {
 
     private static final Map<ArmorMaterial, StatusEffectInstance> MATERIAL_TO_EFFECT_MAP =
@@ -139,6 +139,9 @@ public class GrassArmorItem extends ArmorItem {
     }
     public void appendTooltip(ItemStack stack, @Nullable World world, List<Text> tooltip, TooltipContext context){
         tooltip.add(Text.translatable("tooltip.gardenexpansion.grass_helmet.tooltip"));
+        //tooltip.add(Text.translatable("tooltip.gardenexpansion.grass_chestplate.tooltip"));
+        //tooltip.add(Text.translatable("tooltip.gardenexpansion.grass_leggings.tooltip"));
+        //tooltip.add(Text.translatable("tooltip.gardenexpansion.grass_boots.tooltip"));
         super.appendTooltip(stack, world, tooltip, context);
     }
 }

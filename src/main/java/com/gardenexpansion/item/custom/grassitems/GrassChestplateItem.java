@@ -11,7 +11,7 @@ import org.jetbrains.annotations.Nullable;
 
 import java.util.List;
 
-public class GrassChestplateItem extends GrassArmorItem {
+public class GrassChestplateItem extends ArmorItem {
     public GrassChestplateItem(ArmorMaterial material, ArmorItem.Type type, Item.Settings settings){
         super(material, type, settings);
     }

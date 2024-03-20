@@ -10,7 +10,7 @@ import org.jetbrains.annotations.Nullable;
 
 import java.util.List;
 
-public class GrassLeggingsItem extends GrassArmorItem {
+public class GrassLeggingsItem extends ArmorItem {
 
 
     public GrassLeggingsItem(ArmorMaterial material, ArmorItem.Type type , Settings settings){

@@ -14,7 +14,7 @@ import org.jetbrains.annotations.Nullable;
 import java.util.List;
 
 
-public class GrassBootsItem extends GrassArmorItem {
+public class GrassBootsItem extends ArmorItem {
 
     static FabricItemSettings ItemSettings = new OwoItemSettings();
     public GrassBootsItem(ArmorMaterial material, ArmorItem.Type type, Item.Settings settings){
