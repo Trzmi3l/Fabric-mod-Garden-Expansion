@@ -41,4 +41,7 @@ public class CustomLeavesColorProvider implements BlockColorProvider {
 
              */
     }
+    public int getColor() {
+        return 0xDC143C;
+    };
 }

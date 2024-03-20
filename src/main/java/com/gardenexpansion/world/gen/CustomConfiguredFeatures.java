@@ -19,7 +19,6 @@ public class CustomConfiguredFeatures {
     public static void boostrap(Registerable<ConfiguredFeature<?,?>> context) {
         Gardenexpansion.LOGGER.debug("registering configured features");
 
-
         register(context, MAPLE_KEY , Feature.TREE, CustomSaplingsGenerators.Maple.treeFeatureConfig);
 
     }

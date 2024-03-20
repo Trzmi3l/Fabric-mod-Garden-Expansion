@@ -8,7 +8,9 @@ import net.minecraft.block.SaplingGenerator;
 import net.minecraft.util.math.intprovider.ConstantIntProvider;
 import net.minecraft.world.gen.feature.TreeFeatureConfig;
 import net.minecraft.world.gen.feature.size.TwoLayersFeatureSize;
+import net.minecraft.world.gen.foliage.BlobFoliagePlacer;
 import net.minecraft.world.gen.stateprovider.BlockStateProvider;
+import net.minecraft.world.gen.trunk.StraightTrunkPlacer;
 
 import java.util.Optional;
 
@@ -26,10 +28,12 @@ public class CustomSaplingsGenerators {
 
         public static TreeFeatureConfig treeFeatureConfig = new TreeFeatureConfig.Builder(
                 BlockStateProvider.of(RegisterBlocks.MAPLE_LOG),
-                new CustomTrunkPlacer.MapleTrunkPlacer(5,4,3),
+                //new CustomTrunkPlacer.MapleTrunkPlacer(5,4,3),
+                new StraightTrunkPlacer(4,3,2),
 
                 BlockStateProvider.of(RegisterBlocks.MAPLE_LEAVES),
-                new CustomFoliagePlacer.MapleFoliagePlacer(ConstantIntProvider.create(2), ConstantIntProvider.create(1),2),
+               // new CustomFoliagePlacer.MapleFoliagePlacer(ConstantIntProvider.create(2), ConstantIntProvider.create(1),2),
+                new BlobFoliagePlacer(ConstantIntProvider.create(2), ConstantIntProvider.create(1),2),
 
                 new TwoLayersFeatureSize(1, 0,2)).build();
     }
