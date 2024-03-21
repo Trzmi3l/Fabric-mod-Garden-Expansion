@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 // 1.20.4	2024-03-21T09:14:46.5228983	gardenexpansion/Recipes
 a19409527e793ef0396578e8a24963c05b7ee9d4 data\gardenexpansion\advancements\recipes\decorations\cross_fence.json
 7bd8cdc0da324afa782db86d5ae49b42bbd5c15f data\gardenexpansion\advancements\recipes\building_blocks\acacia_leaves.json
@@ -27,3 +28,24 @@ a16370c00e8cddb39df3d1122bce0b61bee167dd data\gardenexpansion\recipes\jungle_lea
 96b20133c9c1166ac174e40867ad4735f18608f2 data\gardenexpansion\advancements\recipes\building_blocks\jungle_leaves.json
 a4944c8d7476663dfd8442a5f14cadd66cd26ee7 data\gardenexpansion\recipes\cherry_leaves.json
 f34bf98c25ad1432e5584231dd2ddcd35e826b47 data\gardenexpansion\recipes\azalea_leaves.json
+=======
+// 1.20.4	2024-03-20T23:26:55.8673293	gardenexpansion/Recipes
+d5ea5ff83be11e768b5f0a7bf57de886dc95bd40 data\gardenexpansion\advancements\recipes\building_blocks\bark_block.json
+656bb60ebb27db37e52bf08ea378892f67d15613 data\gardenexpansion\recipes\grass_chestplate.json
+54581dfdb90d29de5315490839d743fc9eb4c4f1 data\gardenexpansion\advancements\recipes\combat\grass_chestplate.json
+866e437272ff60c6d6e484e786e458e2349460e1 data\gardenexpansion\recipes\oak_leaves.json
+6d48977fc3e45b18ef35b2c42208a82af5ff5f46 data\gardenexpansion\recipes\grass_leggings.json
+d5a9347ffd6bbebaf2b8416241726afc72af72ca data\gardenexpansion\advancements\recipes\combat\grass_leggings.json
+a19409527e793ef0396578e8a24963c05b7ee9d4 data\gardenexpansion\advancements\recipes\decorations\cross_fence.json
+9d549f96e1f8d590c18598b61178846ff355acda data\gardenexpansion\advancements\recipes\tools\pruner.json
+6dd9160d10bcb1408284f4b90c4acd5f6f979f7e data\gardenexpansion\recipes\cross_fence.json
+832181f89b2383d6412826a6d14db493d5720f16 data\gardenexpansion\advancements\recipes\building_blocks\oak_leaves.json
+2144816f25f9949d4e30f529fe347cc5c2eed4fc data\gardenexpansion\advancements\recipes\misc\oak_bark.json
+aa7bd783a03d65314aad653496c5ac695fff4cb1 data\gardenexpansion\recipes\pruner.json
+fd2983833ac1cf36cb42642631b382314e5385da data\gardenexpansion\advancements\recipes\combat\grass_boots.json
+c3e26bc2296a1b375a2a189499fb0815b227c1ae data\gardenexpansion\advancements\recipes\combat\grass_helmet.json
+a71d7c70d783280916a7835e3a5d253258d5983e data\gardenexpansion\recipes\bark_block.json
+ffe1f241a7911bd0948694200a903548141fc0f4 data\gardenexpansion\recipes\oak_bark.json
+f8a37b9ab8edb8d463b331f681d50bf4d47d0d1f data\gardenexpansion\recipes\grass_helmet.json
+0c493c01fea829ee492a55fc9732385966ec760e data\gardenexpansion\recipes\grass_boots.json
+>>>>>>> duolingo

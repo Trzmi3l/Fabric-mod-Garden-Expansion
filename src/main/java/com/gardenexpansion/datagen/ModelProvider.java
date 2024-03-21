@@ -2,18 +2,12 @@ package com.gardenexpansion.datagen;
 
 import com.gardenexpansion.block.RegisterBlocks;
 import com.gardenexpansion.item.RegisterItems;
-
 import net.fabricmc.fabric.api.datagen.v1.FabricDataOutput;
 import net.fabricmc.fabric.api.datagen.v1.provider.FabricModelProvider;
-import net.minecraft.block.Blocks;
-import net.minecraft.data.client.*;
-import net.minecraft.item.Item;
-import net.minecraft.scoreboard.AbstractTeam;
+import net.minecraft.data.client.BlockStateModelGenerator;
+import net.minecraft.data.client.ItemModelGenerator;
+import net.minecraft.data.client.Models;
 import net.minecraft.util.Identifier;
-import net.minecraft.world.gen.stateprovider.BlockStateProvider;
-
-import javax.swing.text.html.Option;
-import java.util.Optional;
 
 public class ModelProvider extends FabricModelProvider {
     public ModelProvider(FabricDataOutput output) {
@@ -22,6 +16,9 @@ public class ModelProvider extends FabricModelProvider {
 
     @Override
     public void generateBlockStateModels(BlockStateModelGenerator blockStateModelGenerator) {
+        //blockStateModelGenerator.registerSimpleCubeAll(RegisterBlocks.BARK_BLOCK);
+        //blockStateModelGenerator.registerBuiltin(new Identifier("block/cross_fence"), RegisterBlocks.CROSS_FENCE);
+
         blockStateModelGenerator.registerSimpleCubeAll(RegisterBlocks.BARK_BLOCK);
         blockStateModelGenerator.registerBuiltin(new Identifier("block/cross_fence"), RegisterBlocks.CROSS_FENCE);
 
@@ -45,12 +42,28 @@ public class ModelProvider extends FabricModelProvider {
 
     @Override
     public void generateItemModels(ItemModelGenerator itemModelGenerator) {
+        //itemModelGenerator.register(RegisterItems.COW_MANURE, Models.GENERATED);
+        //itemModelGenerator.register(RegisterItems.LEAVES_CLAMP, Models.GENERATED);
+        //itemModelGenerator.register(RegisterItems.OAK_BARK, Models.GENERATED);
+        //itemModelGenerator.register(RegisterItems.PRUNER, Models.GENERATED);
+
+        //itemModelGenerator.registerArmor((ArmorItem) RegisterItems.GRASS_HELMET);
+        //itemModelGenerator.registerArmor((ArmorItem) RegisterItems.GRASS_CHESTPLATE);
+        //itemModelGenerator.registerArmor((ArmorItem) RegisterItems.GRASS_LEGGINGS);
+        //itemModelGenerator.registerArmor((ArmorItem) RegisterItems.GRASS_BOOTS);
         itemModelGenerator.register(RegisterItems.COW_MANURE, Models.GENERATED);
         itemModelGenerator.register(RegisterItems.LEAVES_CLAMP, Models.GENERATED);
         itemModelGenerator.register(RegisterItems.OAK_BARK, Models.GENERATED);
+<<<<<<< HEAD
         itemModelGenerator.register(RegisterItems.PRUNER, Models.HANDHELD);
         itemModelGenerator.register(RegisterBlocks.CROSS_FENCE.asItem(), RegisterBlocks.CROSS_FENCE.asItem(), Models.GENERATED);
         itemModelGenerator.register(RegisterItems.SYRUP_TAP, Models.HANDHELD);
+=======
+        itemModelGenerator.register(RegisterItems.CLONE_SYRUP, Models.GENERATED);
+        //itemModelGenerator.register(RegisterItems.PRUNER, Models.HANDHELD);
+        //itemModelGenerator.register(RegisterBlocks.CROSS_FENCE.asItem(), RegisterBlocks.CROSS_FENCE.asItem(), Models.GENERATED);
+
+>>>>>>> duolingo
 
 
         //itemModelGenerator.register(RegisterBlocks.CROSS_FENCE.asItem(),);

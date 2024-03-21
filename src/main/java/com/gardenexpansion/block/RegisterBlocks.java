@@ -39,7 +39,6 @@ public class RegisterBlocks implements BlockRegistryContainer {
 
     @Override
     public BlockItem createBlockItem(Block block, String identifier) {
-
         return new BlockItem(block, new OwoItemSettings().group(Gardenexpansion.ITEM_GROUP));
     }
 }
