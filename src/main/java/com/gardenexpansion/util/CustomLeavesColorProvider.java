@@ -41,6 +41,13 @@ public class CustomLeavesColorProvider implements BlockColorProvider {
 
              */
     }
+
+    public int getColorForBiome(BlockState state, @Nullable BlockRenderView world, @Nullable BlockPos pos, int tintIndex) {
+
+      //  if(world.getBiomeFabric(pos).isIn(Biome))
+
+        return 0xffffff;
+    }
     public int getColor() {
         return 0xDC143C;
     };
