@@ -1,5 +1,4 @@
-<<<<<<< HEAD
-// 1.20.4	2024-03-21T09:14:46.5268873	gardenexpansion/Block Loot Tables
+// 1.20.4	2024-03-21T11:17:00.0662175	gardenexpansion/Block Loot Tables
 b2f1b21e54285849709d835739fe4ce2c5244975 data\gardenexpansion\loot_tables\blocks\maple_wood.json
 d24cebd9fd3f4ea979d18827d6f7aaf73d2a461b data\gardenexpansion\loot_tables\blocks\maple_stripped_wood.json
 ed17388e7ea3872394eb23db04d710f54b5fc6ba data\gardenexpansion\loot_tables\blocks\maple_log.json
@@ -10,16 +9,3 @@ cc68ef86da6b4ee75e54897ccd97e5e1c297549b data\gardenexpansion\loot_tables\blocks
 3ab545f51fb6174f810170fb85664c11b39bb613 data\gardenexpansion\loot_tables\blocks\maple_leaves.json
 9a6128b71c4d79ed2d073bd9b165fee894eda1d6 data\gardenexpansion\loot_tables\blocks\bark_block.json
 fd1bc1f8bd38d1c562517d0b5df4e4e4c95e6db1 data\gardenexpansion\loot_tables\blocks\maple_planks.json
-=======
-// 1.20.4	2024-03-20T23:26:55.8690691	gardenexpansion/Block Loot Tables
-238c2f55950c63e9901df5edd4d73167a0023dda data\gardenexpansion\loot_tables\blocks\water_collector.json
-fd1bc1f8bd38d1c562517d0b5df4e4e4c95e6db1 data\gardenexpansion\loot_tables\blocks\maple_planks.json
-d24cebd9fd3f4ea979d18827d6f7aaf73d2a461b data\gardenexpansion\loot_tables\blocks\maple_stripped_wood.json
-b2f1b21e54285849709d835739fe4ce2c5244975 data\gardenexpansion\loot_tables\blocks\maple_wood.json
-ed17388e7ea3872394eb23db04d710f54b5fc6ba data\gardenexpansion\loot_tables\blocks\maple_log.json
-9a6128b71c4d79ed2d073bd9b165fee894eda1d6 data\gardenexpansion\loot_tables\blocks\bark_block.json
-bfcb3764c5dc90852dad40cf0f0f614148c667cc data\gardenexpansion\loot_tables\blocks\cross_fence.json
-cc68ef86da6b4ee75e54897ccd97e5e1c297549b data\gardenexpansion\loot_tables\blocks\maple_stripped_log.json
-1429ff1a4632d4db5fb4badee52d67e08f04a991 data\gardenexpansion\loot_tables\blocks\maple_sapling.json
-3ab545f51fb6174f810170fb85664c11b39bb613 data\gardenexpansion\loot_tables\blocks\maple_leaves.json
->>>>>>> duolingo

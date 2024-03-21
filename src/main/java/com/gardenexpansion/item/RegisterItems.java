@@ -1,14 +1,13 @@
 package com.gardenexpansion.item;
 
-<<<<<<< HEAD
 import com.gardenexpansion.item.custom.*;
 
-=======
+
 import com.gardenexpansion.Gardenexpansion;
 import com.gardenexpansion.item.custom.*;
 import com.gardenexpansion.item.custom.grassitems.*;
 import com.gardenexpansion.item.materials.ArmorMaterials;
->>>>>>> duolingo
+
 import io.wispforest.owo.itemgroup.OwoItemSettings;
 import io.wispforest.owo.registration.reflect.ItemRegistryContainer;
 import net.minecraft.item.ArmorItem;
@@ -17,7 +16,7 @@ import net.minecraft.item.Item;
 public class RegisterItems implements ItemRegistryContainer  {
     public static final Item COW_MANURE = new CowManureItem();
     public static final Item OAK_BARK = new OakBarkItem();
-    public static final Item SHIT_INGOT = new Item(new OwoItemSettings());
+
     public static final Item PRUNER = new PrunerItem(); //rzytnia bezglutenowa
     public static final Item LEAVES_CLAMP = new LeavesClampItem();
     public static final Item GRASS_HELMET = new GrassHelmetItem(ArmorMaterials.GRASS, ArmorItem.Type.HELMET, new OwoItemSettings().group(Gardenexpansion.ITEM_GROUP));
@@ -28,17 +27,14 @@ public class RegisterItems implements ItemRegistryContainer  {
 
 
 
-<<<<<<< HEAD
     public static final Item SYRUP_TAP = new SyrupTap();
 
-    public static final Item SYRUP = new SyrupTap();
 
-/*
+
     public Item createItem(Item item, String Identifier) {
         return new Item(new OwoItemSettings().group(Gardenexpansion.ITEM_GROUP));
     }
-=======
->>>>>>> duolingo
+
 
 }
 

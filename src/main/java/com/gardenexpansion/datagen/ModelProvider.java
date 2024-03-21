@@ -54,16 +54,16 @@ public class ModelProvider extends FabricModelProvider {
         itemModelGenerator.register(RegisterItems.COW_MANURE, Models.GENERATED);
         itemModelGenerator.register(RegisterItems.LEAVES_CLAMP, Models.GENERATED);
         itemModelGenerator.register(RegisterItems.OAK_BARK, Models.GENERATED);
-<<<<<<< HEAD
-        itemModelGenerator.register(RegisterItems.PRUNER, Models.HANDHELD);
-        itemModelGenerator.register(RegisterBlocks.CROSS_FENCE.asItem(), RegisterBlocks.CROSS_FENCE.asItem(), Models.GENERATED);
+
+        //itemModelGenerator.register(RegisterItems.PRUNER, Models.HANDHELD);
+        //itemModelGenerator.register(RegisterBlocks.CROSS_FENCE.asItem(), RegisterBlocks.CROSS_FENCE.asItem(), Models.GENERATED);
         itemModelGenerator.register(RegisterItems.SYRUP_TAP, Models.HANDHELD);
-=======
+
         itemModelGenerator.register(RegisterItems.CLONE_SYRUP, Models.GENERATED);
         //itemModelGenerator.register(RegisterItems.PRUNER, Models.HANDHELD);
         //itemModelGenerator.register(RegisterBlocks.CROSS_FENCE.asItem(), RegisterBlocks.CROSS_FENCE.asItem(), Models.GENERATED);
 
->>>>>>> duolingo
+
 
 
         //itemModelGenerator.register(RegisterBlocks.CROSS_FENCE.asItem(),);

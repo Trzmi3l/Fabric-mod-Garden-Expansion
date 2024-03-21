@@ -40,10 +40,10 @@ public class SyrupTap extends Item {
 
                 ServerWorld serverWorld = ((ServerWorld) context.getWorld()).toServerWorld();
 
-                serverWorld.spawnEntity(new ItemEntity(serverWorld, bp.getX() + 0.5, bp.getY() + 1, bp.getZ() + 0.5, new ItemStack(RegisterItems.SYRUP, 1)));
+                serverWorld.spawnEntity(new ItemEntity(serverWorld, bp.getX() + 0.5, bp.getY() + 1, bp.getZ() + 0.5, new ItemStack(RegisterItems.CLONE_SYRUP, 1)));
                 context.getPlayer().playSound(SoundEvents.BLOCK_HONEY_BLOCK_BREAK, SoundCategory.BLOCKS, 1, 1);
                 context.getStack().damage(1, Objects.requireNonNull(context.getPlayer()), p -> p.sendToolBreakStatus(context.getHand()));
-                context.getPlayer().getItemCooldownManager().set(this, 30);
+                context.getPlayer().getItemCooldownManager().set(this, 120);
 
             }
         }

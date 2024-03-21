@@ -1,15 +1,7 @@
-<<<<<<< HEAD
-// 1.20.4	2024-03-21T09:14:46.5219007	gardenexpansion/Tags for minecraft:item
+// 1.20.4	2024-03-21T11:17:00.0582393	gardenexpansion/Tags for minecraft:item
 b0ea3080ffe4b718023394a88232362b75ca22a8 data\minecraft\tags\items\logs.json
-26f1b98815a2e556d6c1b42d77baa8ad058cb481 data\minecraft\tags\items\planks.json
-ddd296941312f7f1aa318eb322fc37982fc3ea16 data\minecraft\tags\items\logs_that_burn.json
-5c31662a641cb93df86a64ac8173994046fe5595 data\minecraft\tags\items\leaves.json
-=======
-// 1.20.4	2024-03-20T23:26:55.8663288	gardenexpansion/Tags for minecraft:item
 26f1b98815a2e556d6c1b42d77baa8ad058cb481 data\minecraft\tags\items\planks.json
 2cfc98b756f83437847668e347a93d6e7a333358 data\minecraft\tags\items\trimmable_armor.json
-5c31662a641cb93df86a64ac8173994046fe5595 data\minecraft\tags\items\leaves.json
-b0ea3080ffe4b718023394a88232362b75ca22a8 data\minecraft\tags\items\logs.json
-2cfc98b756f83437847668e347a93d6e7a333358 data\gardenexpansion\tags\items\grass_tier.json
 ddd296941312f7f1aa318eb322fc37982fc3ea16 data\minecraft\tags\items\logs_that_burn.json
->>>>>>> duolingo
+2cfc98b756f83437847668e347a93d6e7a333358 data\gardenexpansion\tags\items\grass_tier.json
+5c31662a641cb93df86a64ac8173994046fe5595 data\minecraft\tags\items\leaves.json
