@@ -29,12 +29,15 @@ public class ModelProvider extends FabricModelProvider {
         blockStateModelGenerator.registerLog(RegisterBlocks.MAPLE_LOG).log(RegisterBlocks.MAPLE_LOG).wood(RegisterBlocks.MAPLE_WOOD);
         blockStateModelGenerator.registerLog(RegisterBlocks.MAPLE_STRIPPED_LOG).log(RegisterBlocks.MAPLE_STRIPPED_LOG).wood(RegisterBlocks.MAPLE_STRIPPED_WOOD);
 
+
         //blockStateModelGenerator.registerSingleton(RegisterBlocks.MAPLE_LEAVES, TexturedModel.LEAVES);
         // ^^^^^ zakomentowane bo cos sie sra do gaci ^^^^^^^^^^
 
         blockStateModelGenerator.registerSimpleCubeAll(RegisterBlocks.MAPLE_PLANKS);
 
         blockStateModelGenerator.registerTintableCross(RegisterBlocks.MAPLE_SAPLING, BlockStateModelGenerator.TintType.NOT_TINTED);
+
+
 
         //blockStateModelGenerator.registerItemModel(RegisterBlocks.MAPLE_LEAVES);
 
@@ -47,7 +50,7 @@ public class ModelProvider extends FabricModelProvider {
         itemModelGenerator.register(RegisterItems.OAK_BARK, Models.GENERATED);
         itemModelGenerator.register(RegisterItems.PRUNER, Models.HANDHELD);
         itemModelGenerator.register(RegisterBlocks.CROSS_FENCE.asItem(), RegisterBlocks.CROSS_FENCE.asItem(), Models.GENERATED);
-
+        itemModelGenerator.register(RegisterItems.SYRUP_TAP, Models.HANDHELD);
 
 
         //itemModelGenerator.register(RegisterBlocks.CROSS_FENCE.asItem(),);

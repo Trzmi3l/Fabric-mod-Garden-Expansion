@@ -4,6 +4,8 @@
   "item.gardenexpansion.shit_ingot": "brutha what even is this fuc i look like to u",
   "item.gardenexpansion.pruner": "Pruner",
   "item.gardenexpansion.leaves_clamp": "Clamp of Leaves",
+  "item.gardenexpansion.syrup": "Mape Syrup",
+  "item.gardenexpansion.syrup_tap": "Tap",
 
   "block.gardenexpansion.water_collector": "Water Collector",
   "block.gardenexpansion.bark_block": "Bark Block",
@@ -18,6 +20,7 @@
   "block.gardenexpansion.maple_leaves": "Maple leaves",
 
   "block.gardenexpansion.maple_sapling": "Maple sampling",
+
 
   "tooltip.gardenexpansion.cow_manure.tooltip": "§aFertilizes crops like bone meal",
 

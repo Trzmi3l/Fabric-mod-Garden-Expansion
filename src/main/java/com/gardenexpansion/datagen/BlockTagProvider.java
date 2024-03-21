@@ -1,6 +1,7 @@
 package com.gardenexpansion.datagen;
 
 import com.gardenexpansion.block.RegisterBlocks;
+import com.gardenexpansion.item.RegisterItems;
 import com.gardenexpansion.util.GexTags;
 import net.fabricmc.fabric.api.datagen.v1.FabricDataOutput;
 import net.fabricmc.fabric.api.datagen.v1.provider.FabricTagProvider;
@@ -31,6 +32,10 @@ public class BlockTagProvider extends FabricTagProvider.BlockTagProvider {
 
         getOrCreateTagBuilder(GexTags.Blocks.PRUNER_PRUNABLE)
                 .forceAddTag(BlockTags.LEAVES);
+
+        getOrCreateTagBuilder(GexTags.Blocks.SYRUP_GATHERABLE)
+                .add(RegisterBlocks.MAPLE_LOG);
+
 
         getOrCreateTagBuilder(BlockTags.PLANKS)
                 .add(RegisterBlocks.MAPLE_PLANKS);

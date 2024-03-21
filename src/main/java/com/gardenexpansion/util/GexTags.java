@@ -11,6 +11,7 @@ import net.minecraft.util.Identifier;
 public class GexTags {
     public static class Blocks {
         public static final TagKey<Block> PRUNER_PRUNABLE = createTag("pruner_prunable");
+        public static final TagKey<Block> SYRUP_GATHERABLE = createTag("syrup_gatherable");
         private static TagKey<Block> createTag(String name) {
             return TagKey.of(RegistryKeys.BLOCK, new Identifier(Gardenexpansion.MOD_ID, name));
         }

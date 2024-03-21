@@ -1,9 +1,6 @@
 package com.gardenexpansion.item;
 
-import com.gardenexpansion.item.custom.CowManureItem;
-import com.gardenexpansion.item.custom.LeavesClampItem;
-import com.gardenexpansion.item.custom.OakBarkItem;
-import com.gardenexpansion.item.custom.PrunerItem;
+import com.gardenexpansion.item.custom.*;
 
 import io.wispforest.owo.itemgroup.OwoItemSettings;
 import io.wispforest.owo.registration.reflect.ItemRegistryContainer;
@@ -15,6 +12,10 @@ public class RegisterItems implements ItemRegistryContainer {
     public static final Item SHIT_INGOT = new Item(new OwoItemSettings());
     public static final Item PRUNER = new PrunerItem(); //rzytnia bezglutenowa
     public static final Item LEAVES_CLAMP = new LeavesClampItem();
+
+    public static final Item SYRUP_TAP = new SyrupTap();
+
+    public static final Item SYRUP = new SyrupTap();
 
 /*
     public Item createItem(Item item, String Identifier) {
