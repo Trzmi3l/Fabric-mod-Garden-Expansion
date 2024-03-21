@@ -5,7 +5,7 @@
   "item.gardenexpansion.pruner": "Pruner",
   "item.gardenexpansion.leaves_clamp": "Clamp of Leaves",
 
-  "item.gardenexpansion.syrup": "Mape Syrup",
+  "item.gardenexpansion.syrup": "Maple Syrup",
   "item.gardenexpansion.syrup_tap": "Tap",
 
   "item.gardenexpansion.grass_helmet": "§aGrass Helmet",
@@ -19,14 +19,14 @@
   "block.gardenexpansion.cross_fence": "Cross Fence",
 
 
-  "block.gardenexpansion.maple_log": "Maple log",
-  "block.gardenexpansion.maple_stripped_log": "Maple stripped log",
-  "block.gardenexpansion.maple_planks": "Maple planks",
-  "block.gardenexpansion.maple_wood": "Maple wood",
-  "block.gardenexpansion.maple_stripped_wood": "Maple stripped wood",
-  "block.gardenexpansion.maple_leaves": "Maple leaves",
+  "block.gardenexpansion.maple_log": "Maple Log",
+  "block.gardenexpansion.maple_stripped_log": "Maple Stripped Log",
+  "block.gardenexpansion.maple_planks": "Maple Planks",
+  "block.gardenexpansion.maple_wood": "Maple Wood",
+  "block.gardenexpansion.maple_stripped_wood": "Maple Stripped Wood",
+  "block.gardenexpansion.maple_leaves": "Maple Leaves",
 
-  "block.gardenexpansion.maple_sapling": "Maple sampling",
+  "block.gardenexpansion.maple_sapling": "Maple Sampling",
 
 
   "tooltip.gardenexpansion.cow_manure.tooltip": "§aFertilizes crops like bone meal",
