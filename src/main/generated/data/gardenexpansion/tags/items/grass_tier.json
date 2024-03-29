@@ -1,0 +1,9 @@
+{
+  "replace": false,
+  "values": [
+    "gardenexpansion:grass_helmet",
+    "gardenexpansion:grass_chestplate",
+    "gardenexpansion:grass_leggings",
+    "gardenexpansion:grass_boots"
+  ]
+}

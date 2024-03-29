@@ -1,0 +1,7 @@
+{
+  "parent": "minecraft:block/cube_column",
+  "textures": {
+    "end": "gardenexpansion:block/maple_stripped_log",
+    "side": "gardenexpansion:block/maple_stripped_log"
+  }
+}

@@ -1,0 +1,20 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "equipment",
+  "key": {
+    "0": {
+      "item": "minecraft:slime_ball"
+    },
+    "S": {
+      "item": "gardenexpansion:leaves_clamp"
+    }
+  },
+  "pattern": [
+    "SSS",
+    "S0S",
+    "S S"
+  ],
+  "result": {
+    "item": "gardenexpansion:grass_leggings"
+  }
+}
