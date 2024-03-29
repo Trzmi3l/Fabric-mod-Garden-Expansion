@@ -115,6 +115,27 @@ Metoda getColor zwraca int i nadaje kolor liściom. Metoda nadawania koloru w te
 
    ![Zestawienie wszystkich funkcji](images/showcase.png)
 
+  
+## Build
+
+  Clone project
+
+```bash
+git clone https://github.com/Trzmi3l/Fabric-mod-Garden-Expansion
+```
+
+   Open IDE and import existing Gradle project
+
+   Run gradle tasks:
+   ```
+   > build > build
+   ```
+
+   For starting minecraft run:
+   ```
+   > fabric > runClient
+   ```
+
 ## TODO
 
 - Naturalny spawn drzew klonu
