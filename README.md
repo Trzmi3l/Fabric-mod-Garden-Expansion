@@ -153,5 +153,5 @@ Modyfikacja do gry Minecraft dodajaca troche nowej funkcjonalnosci do gry
 
 - Zestawienie wszytskich featurow
 
-   ![](images/zestawienie.png)
+   ![](images/showcase.png)
 
