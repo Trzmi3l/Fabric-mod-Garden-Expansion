@@ -131,7 +131,7 @@ Modyfikacja do gry Minecraft dodajaca troche nowej funkcjonalnosci do gry
 
    ![](images/grassarmor.png)
 
-- Zebranie garstki lisci prunerem
+- Zebranie garstki lisci sekatorem
 
    ![](images/prunerUsage.gif)
 
@@ -153,5 +153,5 @@ Modyfikacja do gry Minecraft dodajaca troche nowej funkcjonalnosci do gry
 
 - Zestawienie wszytskich featurow
 
-   ![](images/zestawienei.png)
+   ![](images/zestawienie.png)
 
