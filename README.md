@@ -26,10 +26,11 @@ Modyfikacja do gry Minecraft dodajaca troche nowej funkcjonalnosci do gry
 - Kratka do roślin pnących
 - Osobna karta w menu kreatywnym dla przedmiotów z modyfikacji
 
-## Użyte biblioteki i dokumentacja
+## Użyte biblioteki, programy i dokumentacje
 
 - OwoLib: [Dokumentacja](https://docs.wispforest.io/), [GitHub](https://github.com/wisp-forest/owo-lib)
 - GeckoLib: [GitHub](https://github.com/bernie-g/geckolib), [Wiki](https://github.com/bernie-g/geckolib/wiki)
+- Blockbench [Blockbench](https://www.blockbench.net/)
 
 ## Wymagania
 
