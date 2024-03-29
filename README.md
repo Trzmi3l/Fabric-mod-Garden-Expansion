@@ -128,23 +128,30 @@ Modyfikacja do gry Minecraft dodajaca troche nowej funkcjonalnosci do gry
 # Graficzne przedstawienie dodanych funkcji
 
 - Zbroja z trawy
-   ![](images/grassarmor.gif)
+
+   ![](images/grassarmor.png)
 
 - Zebranie garstki lisci prunerem
+
    ![](images/prunerUsage.gif)
 
 - Zebranie kory poprzec okoronowanie drzewa
+
    ![](images/barkobtain.gif)
 
 - Pozyskiwanie obornika
+
    ![](images/manureobtain.gif)
 
 - Uzycie obornika
+
    ![](images/manureusage.gif)
 
 - Uzycie kranika do zbierania syropu
+
    ![](images/tapusage.gif)
 
 - Zestawienie wszytskich featurow
-   ![](images/showcase.png)
+
+   ![](images/zestawienei.png)
 
