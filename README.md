@@ -35,11 +35,11 @@ Modyfikacja do gry Minecraft dodajaca troche nowej funkcjonalnosci do gry
 ## Wymagania
 
 - Minecraft 1.20.4 z Fabric Loaderem [FabricMC](https://fabricmc.net/)
-- Fabric API: [CurseForge](https://www.curseforge.com/minecraft/mc-mods/fabric-api/files/5045131)
-- Owo Lib: [CurseForge](https://www.curseforge.com/minecraft/mc-mods/owo-lib/files/5043211)
-- GeckoLib: [CurseForge](https://www.curseforge.com/minecraft/mc-mods/geckolib/files/5188390)
+- Fabric API: [Pobierz z CurseForge](https://www.curseforge.com/minecraft/mc-mods/fabric-api/files/5045131)
+- Owo Lib: [Pobierz z CurseForge](https://www.curseforge.com/minecraft/mc-mods/owo-lib/files/5043211)
+- GeckoLib: [Pobierz z CurseForge](https://www.curseforge.com/minecraft/mc-mods/geckolib/files/5188390)
 
-## Usprawnienia w kodzie
+## Usprawnienia w procesie tworzenia
 
 ### Rejestracja przedmiotów i bloków
 
@@ -57,17 +57,17 @@ public class RegisterBlocks implements BlockRegistryContainer {
     }
 }
 ```
-Oszczędzamy miejsce na potencjalne błędy i usprawniamy pracę, rejestrując prosto każdy blok i przedmiot, który chcemy dodać. Więcej o rejestracji [tutaj](https://docs.wispforest.io/owo/registration/). Używając OwoLib, dodajemy za jednym zamachem wszystko do zakładki w menu kreatywnym.
+Oszczędzamy miejsce i minimalizujemy ryzyko wystepowania potencjalnytch błędów i usprawniamy pracę, rejestrując prosto każdy blok i przedmiot, który chcemy dodać praktycznie w jednej linijce kodu. Więcej o rejestracji przy uzyciu [tutaj <- link do dokumentacji OwoLib](https://docs.wispforest.io/owo/registration/). Używając OwoLib, dodajemy takżę za jednym zamachem wszystko do zakładki w menu kreatywnym.
 
 ### Generowanie danych
 
-Generowanie danych takich jak tagi, tabele dropów, modele, statystyki bloków i craftingi zamiast pisania ich ręcznie daje możliwość tworzenia masowej ilości danych JSON, które są potrzebne do prawidłowego zachowania bloku/przedmiotu.
+Generowanie danych takich jak tagi, tabele dropów, modele, blockstates i craftingi zamiast pisania ich ręcznie daje możliwość tworzenia masowej ilości danych JSON, które są potrzebne do prawidłowego działania bloku/przedmiotu.
 
-Wszystkie klasy generujące znajdują się [tutaj](https://github.com/Trzmi3l/Fabric-mod-Garden-Expansion/tree/Master/src/main/java/com/gardenexpansion/datagen).
+Wszystkie klasy generujące znajdują się [tutaj <- odnosnik do lokalizacji w repozytorium](https://github.com/Trzmi3l/Fabric-mod-Garden-Expansion/tree/Master/src/main/java/com/gardenexpansion/datagen).
 
 ### Nadawanie koloru bloku liści klonu
 
-Kolor liści nadawany jest przez ColorProvider zamiast przez osobną teksturę.
+Kolor liści nadawany jest przez [ColorProvider](https://fabricmc.net/wiki/tutorial:colorprovider) zamiast przez osobną teksturę.
 
 Dla bloku:
 ```Java
@@ -78,13 +78,19 @@ ColorProviderRegistry.BLOCK.register((state, world, pos, tintIndex) -> {
     return colorProvider.getColor(state, world, pos, tintIndex);
 }), RegisterBlocks.MAPLE_LEAVES;
 ```
-Dla przedmiotu:
+Dla itemu:
 ```Java
 ColorProviderRegistry.ITEM.register((stack, tintIndex) -> {
     return colorProvider.getColor();
 }, RegisterBlocks.MAPLE_LEAVES.asItem());
 ```
-Metoda getColor zwraca int i nadaje kolor liściom. Metoda nadawania koloru w ten sposób umożliwia zmianę koloru zmieniając tylko jedną wartość, dzięki czemu nie trzeba wielokrotnie tworzyć tekstur dla jednego bloku/przedmiotu.
+```Java
+@Override
+    public int getColor(BlockState state, @Nullable BlockRenderView world, @Nullable BlockPos pos, int tintIndex) {
+            return 0xDC143C;
+    }
+```
+Metoda getColor zwraca int i nadaje kolor liściom. Metoda nadawania koloru w ten sposób umożliwia zmianę koloru zmieniając tylko jedną wartość w kodzie, dzięki czemu nie trzeba wielokrotnie tworzyć tekstur dla jednego bloku/przedmiotu.
 
 ## Graficzne przedstawienie dodanych funkcji
 
