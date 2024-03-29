@@ -146,5 +146,5 @@ Modyfikacja do gry Minecraft dodajaca troche nowej funkcjonalnosci do gry
    ![](images/tapusage.gif)
 
 - Zestawienie wszytskich featurow
-   ![](images/zestawienei.png)
+   ![](images/showcase.png)
 
