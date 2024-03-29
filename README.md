@@ -102,4 +102,29 @@ Modyfikacja do gry Minecraft dodajaca troche nowej funkcjonalnosci do gry
       
    Generujac dane takie jak Tagi, Tabele dropow, modele, blockstaty i craftingi zamiast pisania ich recznie daje mozliwosci tworzenia masowej ilosci dancyh json, ktore sa potrzebne do rpawidlowego zachowania bloku/itemu.
    - Wszytskie klasy generujace znajduja sie tutaj: (https://github.com/Trzmi3l/Fabric-mod-Garden-Expansion/tree/Master/src/main/java/com/gardenexpansion/datagen)
+
+- Nadawanie koloru bloku lisci klonu
    
+   Kolor lisci nadawany jest przez ColorProvider zamiast przez osobna teksture
+     - Dla bloku
+         ```Java
+       ColorProviderRegistry.BLOCK.register(((state, world, pos, tintIndex) -> {
+            if(world == null || pos == null) {
+                return colorProvider.getColor(state, world, pos, tintIndex);
+            }
+                return colorProvider.getColor(state, world, pos, tintIndex);
+        }), RegisterBlocks.MAPLE_LEAVES
+        );
+         ```
+      
+   - Dla itemu
+      ```Java
+        ColorProviderRegistry.ITEM.register((stack, tintIndex) -> {
+            return colorProvider.getColor();
+        }, RegisterBlocks.MAPLE_LEAVES.asItem());
+      ```
+
+      Metoda getColor zwraca Int i nadaje tym samym kolor lisciom.
+      
+      Metoda nadania kolou w ten sposob umozliwia zmiane koloru zmieniajac tylko jedna wartosc dzieki czemu nie trzeba wiele razy tworzyc tekstury dla jednego bloku/itemu
+      
