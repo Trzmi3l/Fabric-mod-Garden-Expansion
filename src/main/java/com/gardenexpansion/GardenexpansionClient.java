@@ -33,6 +33,8 @@ public class GardenexpansionClient implements ClientModInitializer {
             return BiomeColors.getWaterColor(world, pos);
         }), RegisterBlocks.WATER_COLLECTOR
         );
+
+
         ColorProviderRegistry.BLOCK.register(((state, world, pos, tintIndex) -> {
             if(world == null || pos == null) {
                 return colorProvider.getColor(state, world, pos, tintIndex);
@@ -40,6 +42,8 @@ public class GardenexpansionClient implements ClientModInitializer {
                 return colorProvider.getColor(state, world, pos, tintIndex);
         }), RegisterBlocks.MAPLE_LEAVES
         );
+
+
         ColorProviderRegistry.ITEM.register((stack, tintIndex) -> {
             return colorProvider.getColor();
         }, RegisterBlocks.MAPLE_LEAVES.asItem());
