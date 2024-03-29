@@ -1,4 +1,48 @@
 
+# Garden Expansion
+
+Modyfikacja do gry Minecraft dodajaca troche nowej funkcjonalnosci do gry
+
+
+
+
+## Autorzy
+
+- [@Keameleek](https://github.com/Trzmi3l) Kamil Marzenowski
+- [@vinamon](https://github.com/vinamon) Marceli Denysiuk
+
+
+
+## Wymagania
+
+   - Minecraft 1.20.4 z Fabric loaderem (https://fabricmc.net/)
+   - Fabric API: (https://www.curseforge.com/minecraft/mc-mods/fabric-api/files/5045131)
+   - Owo Lib: (https://www.curseforge.com/minecraft/mc-mods/owo-lib/files/5043211)
+   - GeckoLib: (https://www.curseforge.com/minecraft/mc-mods/geckolib/files/5188390)
+
+
+## Co dodane
+
+- Garsc lisci
+- Zestaw zbroi z lisci, ktory przy pelnym zalozeniu dale Szczescie 2
+- Calkowicie nowe drewno i drzewa - Klon
+- Obornik
+- Blok blota
+- Sekator
+- Kore
+- Syrop klonowy
+- Kranik do pozyskiwania syropu klonowego
+- Zbieracz wody deszczowej
+- Krate do rosnil pnacych
+- Osobna karta w menu kreatywnym dla itemow z modyfikacji
+
+
+
+
+
+
+
+
 ## Usprawnienia w kodzie 
 
 - Rejestracja itemow i blokow
