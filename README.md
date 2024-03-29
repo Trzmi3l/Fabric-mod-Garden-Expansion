@@ -148,4 +148,6 @@ git clone https://github.com/Trzmi3l/Fabric-mod-Garden-Expansion
 - Google Gemini
 
 
+## Jakis dopisek
+Celem robienia tego moda było po prostu nauczenie się, o co chodzi z Fabric API i jak tworzy sie modyfikacje do mc. Podczas robienia projektu staralismy się ogarnąć każdy kawałek api i dodawania nowych rzeczy. Oczywiscie nie udało się zrobić wszystkiego, ale większość ważnych rzeczy, zarówno tych trudnych, jak i łatwiejszych, udało nam się ogarnąć. Do zredagowania readme i poprawek po mnie (kamilu hehe) uzylismy chata gpt :33
 
