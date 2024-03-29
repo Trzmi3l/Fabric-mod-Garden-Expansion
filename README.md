@@ -155,3 +155,19 @@ Modyfikacja do gry Minecraft dodajaca troche nowej funkcjonalnosci do gry
 
    ![](images/showcase.png)
 
+
+## TODO
+
+- Naturalny spawn drzew klonu
+- Poprawienie zbugowanego water collectora
+
+## Skad czerpalismy wiedze
+
+   - https://fabricmc.net/wiki/tutorial:start#creating_your_first_mod
+   - https://www.youtube.com/watch?v=0Pr_iHlVKsI&list=PLKGarocXCE1EO43Dlf5JGh7Yk-kRAXUEJ
+   - https://maven.fabricmc.net/docs/yarn-1.20-pre4+build.3/allclasses-index.html
+   - https://github.com/Tutorials-By-Kaupenjoe/Fabric-Tutorial-1.20.X/tree/main
+   - Chat GPT
+   - Google Gemini
+
+
