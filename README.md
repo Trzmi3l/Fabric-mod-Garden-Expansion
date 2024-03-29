@@ -128,7 +128,6 @@ Metoda getColor zwraca int i nadaje kolor liściom. Metoda nadawania koloru w te
 - [Fabric Tutorial GitHub](https://github.com/Tutorials-By-Kaupenjoe/Fabric-Tutorial-1.20.X/tree/main)
 - Chat GPT
 - Google Gemini
-   - Chat GPT
-   - Google Gemini
+
 
 
