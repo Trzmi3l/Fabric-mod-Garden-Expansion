@@ -38,11 +38,6 @@ Modyfikacja do gry Minecraft dodajaca troche nowej funkcjonalnosci do gry
 
 
 
-
-
-
-
-
 ## Usprawnienia w kodzie 
 
 - Rejestracja itemow i blokow
@@ -128,3 +123,28 @@ Modyfikacja do gry Minecraft dodajaca troche nowej funkcjonalnosci do gry
       
       Metoda nadania kolou w ten sposob umozliwia zmiane koloru zmieniajac tylko jedna wartosc dzieki czemu nie trzeba wiele razy tworzyc tekstury dla jednego bloku/itemu
       
+
+
+# Graficzne przedstawienie dodanych funkcji
+
+- Zbroja z trawy
+   ![](images/grassarmor.gif)
+
+- Zebranie garstki lisci prunerem
+   ![](images/prunerUsage.gif)
+
+- Zebranie kory poprzec okoronowanie drzewa
+   ![](images/barkobtain.gif)
+
+- Pozyskiwanie obornika
+   ![](images/manureobtain.gif)
+
+- Uzycie obornika
+   ![](images/manureusage.gif)
+
+- Uzycie kranika do zbierania syropu
+   ![](images/tapusage.gif)
+
+- Zestawienie wszytskich featurow
+   ![](images/zestawienei.png)
+
