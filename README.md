@@ -35,6 +35,7 @@ Modyfikacja do gry Minecraft dodajaca troche nowej funkcjonalnosci
 - OwoLib: [Dokumentacja](https://docs.wispforest.io/), [GitHub](https://github.com/wisp-forest/owo-lib)
 - GeckoLib: [GitHub](https://github.com/bernie-g/geckolib), [Wiki](https://github.com/bernie-g/geckolib/wiki)
 - Blockbench [Blockbench](https://www.blockbench.net/)
+- Shields do dokumentacji [Shields.io](https://shields.io/badges)
 
 ## 🍁Wymagania
 
