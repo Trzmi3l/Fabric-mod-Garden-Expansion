@@ -1,6 +1,7 @@
 
 # Garden Expansion 
-![Static Badge](https://img.shields.io/badge/CurseForge_Mod_Page-orange?style=for-the-badge)
+![Static Badge](https://img.shields.io/badge/CurseForge_Mod_Page-orange?style=for-the-badge&link=https%3A%2F%2Flegacy.curseforge.com%2Fminecraft%2Fmc-mods%2Fgarden-expansion)
+
 
 Modyfikacja do gry Minecraft dodajaca troche nowej funkcjonalnosci do gry
 
