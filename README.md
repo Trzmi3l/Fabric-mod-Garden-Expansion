@@ -5,7 +5,7 @@
 
 
 
-Modyfikacja do gry Minecraft dodajaca troche nowej funkcjonalnosci do gry
+Modyfikacja do gry Minecraft dodajaca troche nowej funkcjonalnosci 
 
 
 
