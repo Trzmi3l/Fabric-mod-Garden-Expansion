@@ -98,28 +98,28 @@ Metoda getColor zwraca int i nadaje kolor liściom. Metoda nadawania koloru w te
 
 ## 🍁Graficzne przedstawienie dodanych funkcji
 
-### Zbroja z trawy
+### 🌿Zbroja z trawy
 
    ![Zbroja z trawy](images/grassarmor.png)
 
-### Zebranie garści liści sekatorem
+### 🌿Zebranie garści liści sekatorem
 
    ![Zebranie garści liści sekatorem](images/prunerusage.gif)
 
-### Zebranie kory poprzez okorowanie drzewa
+### 🌿Zebranie kory poprzez okorowanie drzewa
 
    ![Zebranie kory poprzez okorowanie drzewa](images/barkobtain.gif)
 
-### Pozyskiwanie i użycie obornika
+### 🌿Pozyskiwanie i użycie obornika
 
    ![uage](images/manureusage.gif)
 
 
-### Użycie kranika do zbierania syropu
+### 🌿Użycie kranika do zbierania syropu
 
    ![Użycie kranika do zbierania syropu](images/tapusage.gif)
 
-### Zestawienie wszystkich funkcji
+### 🌿Zestawienie wszystkich funkcji
 
    ![Zestawienie wszystkich funkcji](images/showcase.png)
 
