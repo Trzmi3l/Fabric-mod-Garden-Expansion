@@ -57,7 +57,7 @@ public class RegisterBlocks implements BlockRegistryContainer {
     }
 }
 ```
-Oszczędzamy miejsce i minimalizujemy ryzyko wystepowania potencjalnytch błędów i usprawniamy pracę, rejestrując prosto każdy blok i przedmiot, który chcemy dodać praktycznie w jednej linijce kodu. Więcej o rejestracji przy uzyciu [tutaj <- link do dokumentacji OwoLib](https://docs.wispforest.io/owo/registration/). Używając OwoLib, dodajemy takżę za jednym zamachem wszystko do zakładki w menu kreatywnym.
+Oszczędzamy pisanie kolejnych linijek kodu i manualnego wstukiwania contentu do rejestrów, minimalizujemy ryzyko wystepowania potencjalnytch błędów i usprawniamy pracę, rejestrując każdy blok i przedmiot, który chcemy dodać praktycznie w jednej linijce kodu. Więcej o rejestracji przy uzyciu [tutaj <- link do dokumentacji OwoLib](https://docs.wispforest.io/owo/registration/). Używając OwoLib, dodajemy takżę za jednym zamachem wszystko do zakładki w menu kreatywnym.
 
 ### Generowanie danych
 
@@ -120,7 +120,7 @@ Metoda getColor zwraca int i nadaje kolor liściom. Metoda nadawania koloru w te
    ![Zestawienie wszystkich funkcji](images/showcase.png)
 
   
-## Build
+## Lokalne uruchamianie
 
   Clone project
 
@@ -132,12 +132,12 @@ git clone https://github.com/Trzmi3l/Fabric-mod-Garden-Expansion
 
    Run gradle tasks:
    ```
-   > build > build
+   > Tasks > build > build
    ```
 
    For starting minecraft run:
    ```
-   > fabric > runClient
+   > Tasks > fabric > runClient
    ```
 
 ## TODO
@@ -155,6 +155,6 @@ git clone https://github.com/Trzmi3l/Fabric-mod-Garden-Expansion
 - Google Gemini
 
 
-## Jakis dopisek
+## Dopisek końcowy
 Celem robienia tego moda było po prostu nauczenie się, o co chodzi z Fabric API i jak tworzy sie modyfikacje do mc. Podczas robienia projektu staralismy się ogarnąć każdy kawałek api i dodawania nowych rzeczy. Oczywiscie nie udało się zrobić wszystkiego, ale większość ważnych rzeczy, zarówno tych trudnych, jak i łatwiejszych, udało nam się ogarnąć. Do zredagowania readme i poprawek po mnie (kamilu hehe) uzylismy chata gpt :33
 
