@@ -10,12 +10,12 @@ Modyfikacja do gry Minecraft dodajaca troche nowej funkcjonalnosci
 
 
 
-## Autorzy
+## 🍁Autorzy
 
 - [@Keameleek](https://github.com/Trzmi3l) - Kamil Marzenowski
 - [@vinamon](https://github.com/vinamon) - Marceli Denysiuk
 
-## Co dodane
+## 🍁Co dodane
 
 - Garść liści
 - Zestaw zbroi z liści, który przy pełnym założeniu daje Szczęście 2
@@ -30,20 +30,20 @@ Modyfikacja do gry Minecraft dodajaca troche nowej funkcjonalnosci
 - Kratka do roślin pnących
 - Osobna karta w menu kreatywnym dla przedmiotów z modyfikacji
 
-## Użyte biblioteki, programy i dokumentacje
+## 🍁Użyte biblioteki, programy i dokumentacje
 
 - OwoLib: [Dokumentacja](https://docs.wispforest.io/), [GitHub](https://github.com/wisp-forest/owo-lib)
 - GeckoLib: [GitHub](https://github.com/bernie-g/geckolib), [Wiki](https://github.com/bernie-g/geckolib/wiki)
 - Blockbench [Blockbench](https://www.blockbench.net/)
 
-## Wymagania
+## 🍁Wymagania
 
 - Minecraft 1.20.4 z Fabric Loaderem [FabricMC](https://fabricmc.net/)
 - Fabric API: [Pobierz z CurseForge](https://www.curseforge.com/minecraft/mc-mods/fabric-api/files/5045131)
 - Owo Lib: [Pobierz z CurseForge](https://www.curseforge.com/minecraft/mc-mods/owo-lib/files/5043211)
 - GeckoLib: [Pobierz z CurseForge](https://www.curseforge.com/minecraft/mc-mods/geckolib/files/5188390)
 
-## Usprawnienia w procesie tworzenia
+## 🍁Usprawnienia w procesie tworzenia
 
 ### Rejestracja przedmiotów i bloków
 
@@ -96,7 +96,7 @@ ColorProviderRegistry.ITEM.register((stack, tintIndex) -> {
 ```
 Metoda getColor zwraca int i nadaje kolor liściom. Metoda nadawania koloru w ten sposób umożliwia zmianę koloru zmieniając tylko jedną wartość w kodzie, dzięki czemu nie trzeba wielokrotnie tworzyć tekstur dla jednego bloku/przedmiotu.
 
-## Graficzne przedstawienie dodanych funkcji
+## 🍁Graficzne przedstawienie dodanych funkcji
 
 - Zbroja z trawy
 
@@ -124,7 +124,7 @@ Metoda getColor zwraca int i nadaje kolor liściom. Metoda nadawania koloru w te
    ![Zestawienie wszystkich funkcji](images/showcase.png)
 
   
-## Lokalne uruchamianie
+## 🍁Lokalne uruchamianie
 
   Clone project
 
@@ -144,12 +144,12 @@ git clone https://github.com/Trzmi3l/Fabric-mod-Garden-Expansion
    > Tasks > fabric > runClient
    ```
 
-## TODO
+## 🍁TODO
 
 - Naturalny spawn drzew klonu
 - Poprawienie zbugowanego water collectora
 
-## Skąd czerpaliśmy wiedzę
+## 🍁Skąd czerpaliśmy wiedzę
 
 - [FabricMC Tutorial](https://fabricmc.net/wiki/tutorial:start#creating_your_first_mod)
 - [YouTube FabricMC Tutorial Series](https://www.youtube.com/watch?v=0Pr_iHlVKsI&list=PLKGarocXCE1EO43Dlf5JGh7Yk-kRAXUEJ)
@@ -159,6 +159,6 @@ git clone https://github.com/Trzmi3l/Fabric-mod-Garden-Expansion
 - Google Gemini
 
 
-## Dopisek końcowy
+## 🍁Dopisek końcowy
 Celem robienia tego moda było po prostu nauczenie się, o co chodzi z Fabric API i jak tworzy sie modyfikacje do mc. Podczas robienia projektu staralismy się ogarnąć każdy kawałek api i dodawania nowych rzeczy. Oczywiscie nie udało się zrobić wszystkiego, ale większość ważnych rzeczy, zarówno tych trudnych, jak i łatwiejszych, udało nam się ogarnąć. Do zredagowania readme i poprawek po mnie (kamilu hehe) uzylismy chata gpt :33
 
