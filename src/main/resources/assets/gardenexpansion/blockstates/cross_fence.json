@@ -1,34 +1,72 @@
 {
   "variants": {
-    "facing=up": {
-      "model": "gardenexpansion:block/cross_fence",
-      "x": 90,
-      "uvlock": true
+    "flowered=false": {
+      "variants": {
+        "facing=up": {
+          "model": "gardenexpansion:block/cross_fence",
+          "x": 90,
+          "uvlock": true
+        },
+        "facing=down": {
+          "model": "gardenexpansion:block/cross_fence",
+          "x": -90,
+          "uvlock": true
+        },
+        "facing=north": {
+          "model": "gardenexpansion:block/cross_fence",
+          "y": 180,
+          "uvlock": true
+        },
+        "facing=east": {
+          "model": "gardenexpansion:block/cross_fence",
+          "y": -90,
+          "uvlock": true
+        },
+        "facing=south": {
+          "model": "gardenexpansion:block/cross_fence",
+          "y": 0,
+          "uvlock": true
+        },
+        "facing=west": {
+          "model": "gardenexpansion:block/cross_fence",
+          "y": 90,
+          "uvlock": true
+        }
+      }
     },
-    "facing=down": {
-      "model": "gardenexpansion:block/cross_fence",
-      "x": -90,
-      "uvlock": true
-    },
-    "facing=north": {
-      "model": "gardenexpansion:block/cross_fence",
-      "y": 180,
-      "uvlock": true
-    },
-    "facing=east": {
-      "model": "gardenexpansion:block/cross_fence",
-      "y": -90,
-      "uvlock": true
-    },
-    "facing=south": {
-      "model": "gardenexpansion:block/cross_fence",
-      "y": 0,
-      "uvlock": true
-    },
-    "facing=west": {
-      "model": "gardenexpansion:block/cross_fence",
-      "y": 90,
-      "uvlock": true
+    "flowered=true": {
+      "variants": {
+        "facing=up": {
+          "model": "gardenexpansion:block/cross_fence_flowered",
+          "x": 90,
+          "uvlock": true
+        },
+        "facing=down": {
+          "model": "gardenexpansion:block/cross_fence_flowered",
+          "x": -90,
+          "uvlock": true
+        },
+        "facing=north": {
+          "model": "gardenexpansion:block/cross_fence_flowered",
+          "y": 180,
+          "uvlock": true
+        },
+        "facing=east": {
+          "model": "gardenexpansion:block/cross_fence_flowered",
+          "y": -90,
+          "uvlock": true
+        },
+        "facing=south": {
+          "model": "gardenexpansion:block/cross_fence_flowered",
+          "y": 0,
+          "uvlock": true
+        },
+        "facing=west": {
+          "model": "gardenexpansion:block/cross_fence_flowered",
+          "y": 90,
+          "uvlock": true
+        }
+      }
     }
   }
 }
