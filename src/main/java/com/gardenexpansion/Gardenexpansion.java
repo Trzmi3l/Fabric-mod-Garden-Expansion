@@ -31,11 +31,11 @@ public class Gardenexpansion implements ModInitializer {
 	@Override
 	public void onInitialize() {
 		ITEM_GROUP.initialize();
-			
+
 
 		FieldRegistrationHandler.register(RegisterItems.class, MOD_ID, false);
-		FieldRegistrationHandler.register(RegisterBlocks.class, MOD_ID,false);
-		FieldRegistrationHandler.register(BlockEntityRegister.class, MOD_ID,false);
+		FieldRegistrationHandler.register(RegisterBlocks.class, MOD_ID, false);
+		FieldRegistrationHandler.register(BlockEntityRegister.class, MOD_ID, false);
 
-
+	}
 }

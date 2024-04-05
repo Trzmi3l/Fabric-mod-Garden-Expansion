@@ -1,12 +1,13 @@
 {
   "item.gardenexpansion.cow_manure": "Cow Manure",
   "item.gardenexpansion.oak_bark": "Oak Bark",
-  "item.gardenexpansion.shit_ingot": "brutha what even is this fuc i look like to u",
   "item.gardenexpansion.pruner": "Pruner",
   "item.gardenexpansion.leaves_clamp": "Clamp of Leaves",
 
   "item.gardenexpansion.syrup": "Maple Syrup",
   "item.gardenexpansion.syrup_tap": "Tap",
+
+
 
   "item.gardenexpansion.grass_helmet": "§aGrass Helmet",
   "item.gardenexpansion.grass_chestplate": "§aGrass Chestplate",
@@ -17,6 +18,7 @@
   "block.gardenexpansion.water_collector": "Water Collector",
   "block.gardenexpansion.bark_block": "Bark Block",
   "block.gardenexpansion.cross_fence": "Cross Fence",
+  "block.gardenexpansion.small_grass": "Small Grass",
 
 
   "block.gardenexpansion.maple_log": "Maple Log",

@@ -4,6 +4,7 @@ import com.gardenexpansion.Gardenexpansion;
 import com.gardenexpansion.block.custom.*;
 
 import io.wispforest.owo.itemgroup.OwoItemSettings;
+import io.wispforest.owo.registration.annotations.AssignedName;
 import io.wispforest.owo.registration.reflect.BlockRegistryContainer;
 import net.minecraft.block.Block;
 import net.minecraft.item.BlockItem;
@@ -36,6 +37,7 @@ public class RegisterBlocks implements BlockRegistryContainer {
 
     public static final Block MAPLE_SAPLING = new MapleSapling();
     //public static final Block MAPLE_SAPLING = new SaplingBlock(SaplingGenerator.ACACIA, FabricBlockSettings.copyOf(Blocks.OAK_SAPLING));
+    //public static final Block SMALL_GRASS = new ShortGrass();
 
     @Override
     public BlockItem createBlockItem(Block block, String identifier) {
