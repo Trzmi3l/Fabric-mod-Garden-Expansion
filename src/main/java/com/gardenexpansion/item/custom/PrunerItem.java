@@ -2,6 +2,8 @@ package com.gardenexpansion.item.custom;
 
 
 import com.gardenexpansion.Gardenexpansion;
+import com.gardenexpansion.block.RegisterBlocks;
+import com.gardenexpansion.block.custom.CrossFence;
 import com.gardenexpansion.item.RegisterItems;
 import io.wispforest.owo.itemgroup.OwoItemSettings;
 import net.minecraft.block.BlockState;
@@ -57,7 +59,22 @@ public class PrunerItem extends Item {
                         itemDrop = new ItemStack(RegisterItems.LEAVES_CLAMP, dropcount);
                     } else if(blockState.isIn(BlockTags.FLOWERS)) {
                         itemDrop = new ItemStack(blockState.getBlock(), dropcount);
-                    } else  {
+                    } else if(blockState.isOf(RegisterBlocks.CROSS_FENCE)) {
+                        itemDrop = new ItemStack(RegisterItems.LEAVES_CLAMP, 1);
+
+                        if(blockState.get(CrossFence.FLOWERED)) {
+                            ServerWorld serverWorld = ((ServerWorld) context.getWorld()).toServerWorld();
+                            serverWorld.spawnEntity(new ItemEntity(serverWorld, positionClicked.getX() + 0.5, positionClicked.getY() + 1, positionClicked.getZ() + 0.5, itemDrop));
+                            context.getWorld().setBlockState(positionClicked, blockState.with(CrossFence.FLOWERED, false));
+                            context.getPlayer().playSound(SoundEvents.ENTITY_SHEEP_SHEAR, SoundCategory.BLOCKS, 1, 1);
+                            context.getStack().damage(1, Objects.requireNonNull(context.getPlayer()), p -> p.sendToolBreakStatus(context.getHand()));
+                            return ActionResult.SUCCESS;
+                        } else {
+                            return ActionResult.FAIL;
+                        }
+
+                    }
+                    else  {
                         return ActionResult.FAIL;
                     }
 

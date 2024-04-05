@@ -49,7 +49,6 @@ public class WaterCollectorBlock extends BlockWithEntity {
         setDefaultState(getDefaultState().with(IS_FILLED, false));
 
     }
-
     @Override
     public ActionResult onUse(BlockState state, World world, BlockPos pos, PlayerEntity player, Hand hand,
             BlockHitResult hit) {
@@ -61,9 +60,6 @@ public class WaterCollectorBlock extends BlockWithEntity {
             // Blokuj dodawanie wody do WaterCollectorBlock
             return ActionResult.FAIL;
         }
-
-        // if(player.getActiveItem().getItem() == Items.WATER_BUCKET) return
-        // ActionResult.PASS ;
         BlockEntity be = world.getBlockEntity(pos);
         if (be instanceof WaterCollectorEntity) {
             ActionResult result = ((WaterCollectorEntity) be).onUse(player, hand, hit);

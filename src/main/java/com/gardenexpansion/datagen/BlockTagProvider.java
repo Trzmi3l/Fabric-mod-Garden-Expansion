@@ -36,6 +36,12 @@ public class BlockTagProvider extends FabricTagProvider.BlockTagProvider {
         getOrCreateTagBuilder(GexTags.Blocks.SYRUP_GATHERABLE)
                 .add(RegisterBlocks.MAPLE_LOG);
 
+        getOrCreateTagBuilder(BlockTags.REPLACEABLE)
+        //        .add(RegisterBlocks.SMALL_GRASS);
+;
+        getOrCreateTagBuilder(BlockTags.ENCHANTMENT_POWER_TRANSMITTER)
+        //        .add(RegisterBlocks.SMALL_GRASS);
+;
 
         getOrCreateTagBuilder(BlockTags.PLANKS)
                 .add(RegisterBlocks.MAPLE_PLANKS);
@@ -57,6 +63,7 @@ public class BlockTagProvider extends FabricTagProvider.BlockTagProvider {
 
         getOrCreateTagBuilder(BlockTags.SWORD_EFFICIENT)
                 .add(RegisterBlocks.MAPLE_SAPLING);
+                //.add(RegisterBlocks.SMALL_GRASS);
 
         //getOrCreateTagBuilder(TagKey.of(RegistryKeys.BLOCK, new Identifier("fabric", "pruner_prunable")))
         //        .forceAddTag(BlockTags.LEAVES);

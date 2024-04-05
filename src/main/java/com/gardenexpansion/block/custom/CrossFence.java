@@ -1,14 +1,14 @@
 package com.gardenexpansion.block.custom;
 
+import com.gardenexpansion.block.states.CrossFenceFlowerType;
 import net.fabricmc.fabric.api.object.builder.v1.block.FabricBlockSettings;
-import net.minecraft.block.Block;
-import net.minecraft.block.BlockState;
-import net.minecraft.block.Blocks;
-import net.minecraft.block.ShapeContext;
+import net.minecraft.block.*;
 import net.minecraft.block.piston.PistonBehavior;
 import net.minecraft.item.ItemPlacementContext;
 import net.minecraft.state.StateManager;
+import net.minecraft.state.property.BooleanProperty;
 import net.minecraft.state.property.DirectionProperty;
+import net.minecraft.state.property.EnumProperty;
 import net.minecraft.state.property.Properties;
 import net.minecraft.util.math.BlockPos;
 import net.minecraft.util.math.Direction;
@@ -27,10 +27,15 @@ public class CrossFence extends Block {
     protected static VoxelShape DOWN_SHAPE;
     protected static VoxelShape UP_SHAPE;
     static FabricBlockSettings crossFenceSettings = FabricBlockSettings.copyOf(Blocks.OAK_TRAPDOOR).pistonBehavior(PistonBehavior.DESTROY).nonOpaque();
-    public CrossFence() {
 
+    public static final BooleanProperty FLOWERED = BooleanProperty.of("flowered");
+
+
+
+    public CrossFence() {
         super(crossFenceSettings);
         this.setDefaultState(this.getDefaultState().with(FACING, Direction.NORTH));
+        this.setDefaultState(this.getDefaultState().with(FLOWERED, false));
     }
 
     @Override
@@ -62,12 +67,20 @@ public class CrossFence extends Block {
         DOWN_SHAPE = VoxelShapes.cuboid(0, 0.9375, 0, 1, 1, 1);
     }
     protected void appendProperties(StateManager.Builder<Block, BlockState> builder) {
+        builder.add(FLOWERED);
         builder.add(FACING);
+
     }
     @Override
     public BlockState getPlacementState(ItemPlacementContext context) {
         return super.getPlacementState(context).with(Properties.FACING, context.getPlayerLookDirection().getOpposite());
     }
+
+    @Override
+    public BlockRenderType getRenderType(BlockState state) {
+        return BlockRenderType.MODEL;
+    }
+
 
 
 }

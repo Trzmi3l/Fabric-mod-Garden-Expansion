@@ -21,11 +21,13 @@ public class ModelProvider extends FabricModelProvider {
         //blockStateModelGenerator.registerBuiltin(new Identifier("block/cross_fence"), RegisterBlocks.CROSS_FENCE);
 
         blockStateModelGenerator.registerSimpleCubeAll(RegisterBlocks.BARK_BLOCK);
-        blockStateModelGenerator.registerBuiltin(new Identifier("block/cross_fence"), RegisterBlocks.CROSS_FENCE);
+        //blockStateModelGenerator.registerBuiltin(new Identifier("block/cross_fence"), RegisterBlocks.CROSS_FENCE);
 
 
         blockStateModelGenerator.registerLog(RegisterBlocks.MAPLE_LOG).log(RegisterBlocks.MAPLE_LOG).wood(RegisterBlocks.MAPLE_WOOD);
         blockStateModelGenerator.registerLog(RegisterBlocks.MAPLE_STRIPPED_LOG).log(RegisterBlocks.MAPLE_STRIPPED_LOG).wood(RegisterBlocks.MAPLE_STRIPPED_WOOD);
+
+        //blockStateModelGenerator.registerTintableCross(RegisterBlocks.SMALL_GRASS, BlockStateModelGenerator.TintType.NOT_TINTED);
 
 
         //blockStateModelGenerator.registerSingleton(RegisterBlocks.MAPLE_LEAVES, TexturedModel.LEAVES);
