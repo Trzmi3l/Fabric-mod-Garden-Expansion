@@ -2,10 +2,7 @@ package com.gardenexpansion.block.custom;
 
 import com.gardenexpansion.block.states.CrossFenceFlowerType;
 import net.fabricmc.fabric.api.object.builder.v1.block.FabricBlockSettings;
-import net.minecraft.block.Block;
-import net.minecraft.block.BlockState;
-import net.minecraft.block.Blocks;
-import net.minecraft.block.ShapeContext;
+import net.minecraft.block.*;
 import net.minecraft.block.piston.PistonBehavior;
 import net.minecraft.item.ItemPlacementContext;
 import net.minecraft.state.StateManager;
@@ -36,7 +33,6 @@ public class CrossFence extends Block {
 
 
     public CrossFence() {
-
         super(crossFenceSettings);
         this.setDefaultState(this.getDefaultState().with(FACING, Direction.NORTH));
         this.setDefaultState(this.getDefaultState().with(FLOWERED, false));
@@ -79,6 +75,12 @@ public class CrossFence extends Block {
     public BlockState getPlacementState(ItemPlacementContext context) {
         return super.getPlacementState(context).with(Properties.FACING, context.getPlayerLookDirection().getOpposite());
     }
+
+    @Override
+    public BlockRenderType getRenderType(BlockState state) {
+        return BlockRenderType.MODEL;
+    }
+
 
 
 }

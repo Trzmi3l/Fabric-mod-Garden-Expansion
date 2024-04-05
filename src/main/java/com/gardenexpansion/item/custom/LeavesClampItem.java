@@ -25,9 +25,9 @@ public class LeavesClampItem extends Item {
             BlockState bstate = context.getWorld().getBlockState(bp);
 
             if(bstate.isOf(RegisterBlocks.CROSS_FENCE)) {
-                if(!bstate.get(CrossFence.FLOWERED)) {
-                    bstate.with(CrossFence.FLOWERED, true);
-
+                if(!bstate.get(CrossFence.FLOWERED).booleanValue()) {
+                    context.getWorld().setBlockState(bp, bstate.with(CrossFence.FLOWERED, true));
+                    System.out.println(bstate.get(CrossFence.FLOWERED).booleanValue());
                     context.getStack().decrement(1);
 
                     return ActionResult.SUCCESS;
