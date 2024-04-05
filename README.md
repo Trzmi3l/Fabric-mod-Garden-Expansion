@@ -27,7 +27,7 @@ Modyfikacja do gry Minecraft dodajaca troche nowej funkcjonalnosci
 - Syrop klonowy
 - Kranik do pozyskiwania syropu klonowego
 - Zbieracz wody deszczowej
-- Kratka do roślin pnących
+- Kratka do roślin pnących (można nacisnąć na nią trzymając garść liści aby nałożyc na nią liście. Aby zabrać liście nacisnij prunerem prawym przyciskiem myszy)
 - Osobna karta w menu kreatywnym dla przedmiotów z modyfikacji
 
 ## 🍁Użyte biblioteki, programy i dokumentacje
