@@ -120,6 +120,10 @@ Metoda getColor zwraca int i nadaje kolor liściom. Metoda nadawania koloru w te
 
    ![Użycie kranika do zbierania syropu](images/tapusage.gif)
 
+### 🌿Nowe klonowe drewno
+
+    ![Klonowe drewno](images/maple.png)
+
 ### 🌿Zestawienie wszystkich funkcji
 
    ![Zestawienie wszystkich funkcji](images/showcase.png)
