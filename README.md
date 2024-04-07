@@ -161,7 +161,13 @@ git clone https://github.com/Trzmi3l/Fabric-mod-Garden-Expansion
 - [Maven FabricMC Documentation](https://maven.fabricmc.net/docs/yarn-1.20-pre4+build.3/allclasses-index.html)
 - [Fabric Tutorial GitHub](https://github.com/Tutorials-By-Kaupenjoe/Fabric-Tutorial-1.20.X/tree/main)
 - [Chat GPT](https://chat.openai.com/)
-- [Google Gemini](https://gemini.google.com/app) 
+- [Google Gemini](https://gemini.google.com/app)
+
+## 🍁 Co dodane
+### ver. 1.2
+- tekstura sadzonki klonu
+- zestaw bloków z drewna klonowego
+- dodanie funkcjonalnosci kratki do roślin
 
 
 ## 🍁Dopisek końcowy
