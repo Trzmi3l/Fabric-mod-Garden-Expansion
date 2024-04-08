@@ -1,0 +1,7 @@
+{
+  "parent": "minecraft:block/door_bottom_right_open",
+  "textures": {
+    "bottom": "gardenexpansion:block/maple_doors_bottom",
+    "top": "gardenexpansion:block/maple_doors_top"
+  }
+}

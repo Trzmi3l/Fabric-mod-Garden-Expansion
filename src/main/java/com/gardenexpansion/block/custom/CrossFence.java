@@ -20,6 +20,7 @@ import net.minecraft.world.BlockView;
 public class CrossFence extends Block {
 
     public static DirectionProperty FACING = Properties.FACING;
+
     protected static VoxelShape EAST_SHAPE;
     protected static VoxelShape WEST_SHAPE;
     protected static VoxelShape SOUTH_SHAPE;
@@ -29,6 +30,7 @@ public class CrossFence extends Block {
     static FabricBlockSettings crossFenceSettings = FabricBlockSettings.copyOf(Blocks.OAK_TRAPDOOR).pistonBehavior(PistonBehavior.DESTROY).nonOpaque();
 
     public static final BooleanProperty FLOWERED = BooleanProperty.of("flowered");
+
 
 
 

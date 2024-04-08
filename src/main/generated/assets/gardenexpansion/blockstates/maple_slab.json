@@ -1,0 +1,13 @@
+{
+  "variants": {
+    "type=bottom": {
+      "model": "gardenexpansion:block/maple_slab"
+    },
+    "type=double": {
+      "model": "gardenexpansion:block/maple_planks"
+    },
+    "type=top": {
+      "model": "gardenexpansion:block/maple_slab_top"
+    }
+  }
+}
