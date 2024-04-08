@@ -27,7 +27,18 @@ public class BlockTagProvider extends FabricTagProvider.BlockTagProvider {
         getOrCreateTagBuilder(BlockTags.AXE_MINEABLE)
                 .add(RegisterBlocks.WATER_COLLECTOR)
                 .add(RegisterBlocks.CROSS_FENCE)
-                .add(RegisterBlocks.MAPLE_SAPLING);
+                .add(RegisterBlocks.MAPLE_SAPLING)
+                .add(RegisterBlocks.MAPLE_STAIRS)
+                .add(RegisterBlocks.MAPLE_SLAB)
+                .add(RegisterBlocks.MAPLE_FENCE)
+                .add(RegisterBlocks.MAPLE_GATE)
+                .add(RegisterBlocks.MAPLE_WALL)
+                .add(RegisterBlocks.MAPLE_BUTTON)
+                .add(RegisterBlocks.MAPLE_DOORS)
+                .add(RegisterBlocks.MAPLE_SIGN)
+                //.add(RegisterBlocks.MAPLE_WALL_SIGN)
+                .add(RegisterBlocks.MAPLE_PRESSURE_PLATE)
+                .add(RegisterBlocks.MAPLE_TRAPDOOR);
 
 
         getOrCreateTagBuilder(GexTags.Blocks.PRUNER_PRUNABLE)
@@ -45,6 +56,34 @@ public class BlockTagProvider extends FabricTagProvider.BlockTagProvider {
 
         getOrCreateTagBuilder(BlockTags.PLANKS)
                 .add(RegisterBlocks.MAPLE_PLANKS);
+
+        getOrCreateTagBuilder(BlockTags.STAIRS)
+                .add(RegisterBlocks.MAPLE_STAIRS);
+
+        getOrCreateTagBuilder(BlockTags.FENCES)
+                .add(RegisterBlocks.MAPLE_FENCE);
+
+        getOrCreateTagBuilder(BlockTags.FENCE_GATES)
+                .add(RegisterBlocks.MAPLE_GATE);
+
+        getOrCreateTagBuilder(BlockTags.SLABS)
+                .add(RegisterBlocks.MAPLE_SLAB);
+
+        getOrCreateTagBuilder(BlockTags.DOORS)
+                .add(RegisterBlocks.MAPLE_DOORS);
+
+        getOrCreateTagBuilder(BlockTags.PRESSURE_PLATES)
+                .add(RegisterBlocks.MAPLE_PRESSURE_PLATE);
+
+        getOrCreateTagBuilder(BlockTags.WALLS)
+                .add(RegisterBlocks.MAPLE_WALL);
+
+
+        getOrCreateTagBuilder(BlockTags.TRAPDOORS)
+                .add(RegisterBlocks.MAPLE_TRAPDOOR);
+
+        getOrCreateTagBuilder(BlockTags.BUTTONS)
+                .add(RegisterBlocks.MAPLE_BUTTON);
 
         getOrCreateTagBuilder(BlockTags.LOGS)
                 .add(RegisterBlocks.MAPLE_LOG);

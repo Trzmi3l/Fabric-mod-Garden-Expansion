@@ -1,0 +1,17 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "redstone",
+  "key": {
+    "X": {
+      "item": "gardenexpansion:maple_planks"
+    }
+  },
+  "pattern": [
+    "   ",
+    " X ",
+    "   "
+  ],
+  "result": {
+    "item": "gardenexpansion:maple_button"
+  }
+}

@@ -66,6 +66,8 @@ public class GardenexpansionClient implements ClientModInitializer {
 
         BlockRenderLayerMap.INSTANCE.putBlock(RegisterBlocks.MAPLE_LEAVES, RenderLayer.getCutout());
         BlockRenderLayerMap.INSTANCE.putBlock(RegisterBlocks.MAPLE_SAPLING, RenderLayer.getCutout());
+        BlockRenderLayerMap.INSTANCE.putBlock(RegisterBlocks.MAPLE_TRAPDOOR, RenderLayer.getCutout());
+        BlockRenderLayerMap.INSTANCE.putBlock(RegisterBlocks.MAPLE_DOORS, RenderLayer.getCutout());
        // BlockRenderLayerMap.INSTANCE.putBlock(RegisterBlocks.SMALL_GRASS, RenderLayer.getCutoutMipped());
        // BlockRenderLayerMap.INSTANCE.putBlock(RegisterBlocks.WATER_COLLECTOR, RenderLayer.getCutout());
 

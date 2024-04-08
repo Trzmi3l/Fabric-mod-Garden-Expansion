@@ -3,6 +3,16 @@
   "values": [
     "gardenexpansion:water_collector",
     "gardenexpansion:cross_fence",
-    "gardenexpansion:maple_sapling"
+    "gardenexpansion:maple_sapling",
+    "gardenexpansion:maple_stairs",
+    "gardenexpansion:maple_slab",
+    "gardenexpansion:maple_fence",
+    "gardenexpansion:maple_gate",
+    "gardenexpansion:maple_wall",
+    "gardenexpansion:maple_button",
+    "gardenexpansion:maple_doors",
+    "gardenexpansion:maple_sign",
+    "gardenexpansion:maple_pressure_plate",
+    "gardenexpansion:maple_trapdoor"
   ]
 }

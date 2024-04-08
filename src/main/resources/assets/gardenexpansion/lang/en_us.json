@@ -14,6 +14,7 @@
   "item.gardenexpansion.grass_leggings": "§aGrass Leggings",
   "item.gardenexpansion.grass_boots": "§aGrass Boots",
   "item.gardenexpansion.clone_syrup": "§6Clone Syrup",
+  "item.gardenexpansion.maple_wall_sign": "Maple Wall Sign",
 
   "block.gardenexpansion.water_collector": "Water Collector",
   "block.gardenexpansion.bark_block": "Bark Block",
@@ -27,6 +28,19 @@
   "block.gardenexpansion.maple_wood": "Maple Wood",
   "block.gardenexpansion.maple_stripped_wood": "Maple Stripped Wood",
   "block.gardenexpansion.maple_leaves": "Maple Leaves",
+
+  "block.gardenexpansion.maple_stairs": "Maple Stairs",
+  "block.gardenexpansion.maple_slab": "Maple Slab",
+  "block.gardenexpansion.maple_button": "Maple Button",
+  "block.gardenexpansion.maple_pressure_plate": "Maple Pressure Plate",
+  "block.gardenexpansion.maple_fence": "Maple Fence",
+  "block.gardenexpansion.maple_gate": "Maple Gate",
+  "block.gardenexpansion.maple_wall": "Maple Wall",
+  "block.gardenexpansion.maple_sign": "Maple Sign",
+  "block.gardenexpansion.maple_wall_sign": "Maple Wall Sign",
+
+  "block.gardenexpansion.maple_doors": "Maple Doors",
+  "block.gardenexpansion.maple_trapdoor": "Maple Trapdoor",
 
   "block.gardenexpansion.maple_sapling": "Maple Sampling",
 

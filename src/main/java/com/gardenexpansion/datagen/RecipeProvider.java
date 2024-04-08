@@ -9,6 +9,7 @@ import net.minecraft.block.Blocks;
 import net.minecraft.data.server.recipe.RecipeExporter;
 import net.minecraft.data.server.recipe.ShapedRecipeJsonBuilder;
 import net.minecraft.item.Items;
+import net.minecraft.recipe.Ingredient;
 import net.minecraft.recipe.book.RecipeCategory;
 import net.minecraft.util.Identifier;
 
@@ -94,5 +95,23 @@ public class RecipeProvider extends FabricRecipeProvider {
                 .criterion(hasItem(RegisterItems.LEAVES_CLAMP), conditionsFromItem(RegisterItems.LEAVES_CLAMP))
                 .criterion(hasItem(Items.SLIME_BALL), conditionsFromItem(Items.SLIME_BALL))
                 .offerTo(exporter, new Identifier(getRecipeName(RegisterItems.GRASS_BOOTS)));
+
+        createStairsRecipe(RegisterBlocks.MAPLE_STAIRS, Ingredient.ofItems(RegisterBlocks.MAPLE_PLANKS.asItem())).criterion(hasItem(RegisterBlocks.MAPLE_PLANKS.asItem()), conditionsFromItem(RegisterBlocks.MAPLE_PLANKS.asItem())).offerTo(exporter, new Identifier(getRecipeName(RegisterBlocks.MAPLE_STAIRS)));
+        createSlabRecipe(RecipeCategory.BUILDING_BLOCKS,RegisterBlocks.MAPLE_SLAB, Ingredient.ofItems(RegisterBlocks.MAPLE_PLANKS.asItem())).criterion(hasItem(RegisterBlocks.MAPLE_PLANKS.asItem()), conditionsFromItem(RegisterBlocks.MAPLE_PLANKS.asItem())).offerTo(exporter, new Identifier(getRecipeName(RegisterBlocks.MAPLE_SLAB)));
+        createDoorRecipe(RegisterBlocks.MAPLE_DOORS, Ingredient.ofItems(RegisterBlocks.MAPLE_PLANKS.asItem())).criterion(hasItem(RegisterBlocks.MAPLE_PLANKS.asItem()), conditionsFromItem(RegisterBlocks.MAPLE_PLANKS.asItem())).offerTo(exporter, new Identifier(getRecipeName(RegisterBlocks.MAPLE_DOORS)));
+        createFenceRecipe(RegisterBlocks.MAPLE_FENCE, Ingredient.ofItems(RegisterBlocks.MAPLE_PLANKS.asItem())).criterion(hasItem(RegisterBlocks.MAPLE_PLANKS.asItem()), conditionsFromItem(RegisterBlocks.MAPLE_PLANKS.asItem())).offerTo(exporter, new Identifier(getRecipeName(RegisterBlocks.MAPLE_FENCE)));
+        createFenceGateRecipe(RegisterBlocks.MAPLE_GATE, Ingredient.ofItems(RegisterBlocks.MAPLE_PLANKS.asItem())).criterion(hasItem(RegisterBlocks.MAPLE_PLANKS.asItem()), conditionsFromItem(RegisterBlocks.MAPLE_PLANKS.asItem())).offerTo(exporter, new Identifier(getRecipeName(RegisterBlocks.MAPLE_GATE)));
+        createTrapdoorRecipe(RegisterBlocks.MAPLE_TRAPDOOR, Ingredient.ofItems(RegisterBlocks.MAPLE_PLANKS.asItem())).criterion(hasItem(RegisterBlocks.MAPLE_PLANKS.asItem()), conditionsFromItem(RegisterBlocks.MAPLE_PLANKS.asItem())).offerTo(exporter, new Identifier(getRecipeName(RegisterBlocks.MAPLE_TRAPDOOR)));
+        createPressurePlateRecipe(RecipeCategory.REDSTONE,RegisterBlocks.MAPLE_PRESSURE_PLATE, Ingredient.ofItems(RegisterBlocks.MAPLE_PLANKS.asItem())).criterion(hasItem(RegisterBlocks.MAPLE_PLANKS.asItem()), conditionsFromItem(RegisterBlocks.MAPLE_PLANKS.asItem())).offerTo(exporter, new Identifier(getRecipeName(RegisterBlocks.MAPLE_PRESSURE_PLATE)));
+
+
+
+        ShapedRecipeJsonBuilder.create(RecipeCategory.REDSTONE, RegisterBlocks.MAPLE_BUTTON.asItem(), 1)
+                .pattern("   ")
+                .pattern(" X ")
+                .pattern("   ")
+                .input('X', RegisterBlocks.MAPLE_PLANKS.asItem())
+                .criterion(hasItem(RegisterBlocks.MAPLE_PLANKS.asItem()), conditionsFromItem(RegisterBlocks.MAPLE_PLANKS.asItem()))
+                .offerTo(exporter, new Identifier(getRecipeName(RegisterBlocks.MAPLE_BUTTON)));
     }
 }
