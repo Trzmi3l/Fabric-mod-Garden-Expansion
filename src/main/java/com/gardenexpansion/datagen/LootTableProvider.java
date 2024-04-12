@@ -36,6 +36,8 @@ public class LootTableProvider extends FabricBlockLootTableProvider {
         addDrop(RegisterBlocks.MAPLE_LEAVES, leavesDrops(RegisterBlocks.MAPLE_LEAVES, RegisterBlocks.MAPLE_SAPLING, 0.0025f));
         addDrop(RegisterBlocks.MAPLE_SAPLING);
 
+        addDrop(RegisterBlocks.SMALL_GRASS);
+
         addDrop(RegisterBlocks.MAPLE_STAIRS);
         addDrop(RegisterBlocks.MAPLE_PRESSURE_PLATE);
         addDrop(RegisterBlocks.MAPLE_BUTTON);

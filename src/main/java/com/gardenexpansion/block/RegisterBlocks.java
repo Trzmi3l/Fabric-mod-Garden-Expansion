@@ -65,7 +65,8 @@ public class RegisterBlocks implements BlockRegistryContainer {
 
     public static final Block MAPLE_SAPLING = new MapleSapling();
     //public static final Block MAPLE_SAPLING = new SaplingBlock(SaplingGenerator.ACACIA, FabricBlockSettings.copyOf(Blocks.OAK_SAPLING));
-    //public static final Block SMALL_GRASS = new ShortGrass();
+
+    public static final Block SMALL_GRASS = new ShortGrass();
 
     @Override
     public BlockItem createBlockItem(Block block, String identifier) {
