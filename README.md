@@ -33,7 +33,6 @@ Modyfikacja do gry Minecraft dodajaca troche nowej funkcjonalnosci
 ## 🍁Użyte biblioteki, programy i dokumentacje
 
 - OwoLib: [Dokumentacja](https://docs.wispforest.io/), [GitHub](https://github.com/wisp-forest/owo-lib)
-- GeckoLib: [GitHub](https://github.com/bernie-g/geckolib), [Wiki](https://github.com/bernie-g/geckolib/wiki)
 - Blockbench [Blockbench](https://www.blockbench.net/)
 - Shields do dokumentacji [Shields.io](https://shields.io/badges)
 
@@ -42,7 +41,6 @@ Modyfikacja do gry Minecraft dodajaca troche nowej funkcjonalnosci
 - Minecraft 1.20.4 z Fabric Loaderem [FabricMC](https://fabricmc.net/)
 - Fabric API: [Pobierz z CurseForge](https://www.curseforge.com/minecraft/mc-mods/fabric-api/files/5045131)
 - Owo Lib: [Pobierz z CurseForge](https://www.curseforge.com/minecraft/mc-mods/owo-lib/files/5043211)
-- GeckoLib: [Pobierz z CurseForge](https://www.curseforge.com/minecraft/mc-mods/geckolib/files/5188390)
 
 ## 🍁Usprawnienia w procesie tworzenia
 
