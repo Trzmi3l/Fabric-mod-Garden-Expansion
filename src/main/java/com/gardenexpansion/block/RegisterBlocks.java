@@ -7,6 +7,7 @@ import io.wispforest.owo.itemgroup.OwoItemSettings;
 import io.wispforest.owo.registration.annotations.AssignedName;
 import io.wispforest.owo.registration.reflect.BlockRegistryContainer;
 import net.minecraft.block.Block;
+import net.minecraft.block.SlabBlock;
 import net.minecraft.data.family.BlockFamilies;
 import net.minecraft.data.family.BlockFamily;
 import net.minecraft.item.BlockItem;
@@ -38,6 +39,7 @@ public class RegisterBlocks implements BlockRegistryContainer {
     public static final Block MAPLE_LEAVES = new MapleBlockStack.MapleLeaves();
 
     public static final Block MAPLE_STAIRS = new MapleBlockStack.MapleThings.MapleStairs();
+
     public static final Block MAPLE_SLAB= new MapleBlockStack.MapleThings.MapleSlab();
     public static final Block MAPLE_BUTTON = new MapleBlockStack.MapleThings.MapleButton();
     public static final Block MAPLE_DOORS = new MapleBlockStack.MapleThings.MapleDoors();

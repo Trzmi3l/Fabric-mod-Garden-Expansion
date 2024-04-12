@@ -75,7 +75,7 @@ public class CrossFence extends Block {
     }
     @Override
     public BlockState getPlacementState(ItemPlacementContext context) {
-        return super.getPlacementState(context).with(Properties.FACING, context.getPlayerLookDirection().getOpposite());
+        return super.getPlacementState(context).with(Properties.FACING, context.getSide());
     }
 
     @Override
