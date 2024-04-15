@@ -11,7 +11,7 @@ import net.minecraft.registry.Registry;
 public class BlockEntityRegister implements AutoRegistryContainer<BlockEntityType<?>> {
 
     public static BlockEntityType<WaterCollectorEntity> WATER_COLLECTOR_BLOCK_ENITY = FabricBlockEntityTypeBuilder.create(WaterCollectorEntity::new, RegisterBlocks.WATER_COLLECTOR).build();
-
+   // public static BlockEntityType<TreetapEntity> TREETAP_BLOCK_ENITTY = FabricBlockEntityTypeBuilder.create(TreetapEntity::new, RegisterBlocks.TREETAP).build();
 
     @Override
     public Registry<BlockEntityType<?>> getRegistry() {

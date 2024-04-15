@@ -16,7 +16,6 @@ public class CustomConfiguredFeatures {
 
     public static final RegistryKey<ConfiguredFeature<?, ?>> MAPLE_KEY = registerKey("maple_tree");
 
-    public static final RegistryKey<ConfiguredFeature<?,?>> SMALL_GRASS_BONEMEAL = registerKey("sgrass_bonemeal");
     public static void boostrap(Registerable<ConfiguredFeature<?,?>> context) {
         Gardenexpansion.LOGGER.debug("registering configured features");
 

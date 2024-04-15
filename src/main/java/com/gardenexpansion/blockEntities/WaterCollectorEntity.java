@@ -19,7 +19,7 @@ import org.jetbrains.annotations.Nullable;
 
 import java.util.Optional;
 
-public class WaterCollectorEntity extends BlockEntity implements FluidDrainable {
+public class WaterCollectorEntity extends BlockEntity{
     public WaterCollectorEntity(BlockPos pos, BlockState state) {
         super(BlockEntityRegister.WATER_COLLECTOR_BLOCK_ENITY, pos, state);
     }
@@ -59,11 +59,12 @@ public class WaterCollectorEntity extends BlockEntity implements FluidDrainable 
             ItemStack handled = p.getStackInHand(h);
 
             if (handled.getItem() == Items.BUCKET) {
-                FluidDrainable drainable = (FluidDrainable) this;
-                ItemStack filledBucket = drainable.tryDrainFluid(p, world, pos, world.getBlockState(pos));
 
+                //ItemStack filledBucket = drainable.tryDrainFluid(p, world, pos, world.getBlockState(pos));
+                ItemStack filledBucket = new ItemStack(Items.WATER_BUCKET, 1);
                 if (handled.getItem() == Items.BUCKET && handled.getItem() != Items.WATER_BUCKET) {
                     p.setStackInHand(h, filledBucket);
+                    waterStored = 0;
                     world.setBlockState(pos, world.getBlockState(pos).with(WaterCollectorBlock.IS_FILLED, isFull));
                     return ActionResult.SUCCESS;
                 } else {
@@ -76,7 +77,7 @@ public class WaterCollectorEntity extends BlockEntity implements FluidDrainable 
     }
 
 
-
+    /*
     @Override
     public ItemStack tryDrainFluid(@Nullable PlayerEntity player, WorldAccess world, BlockPos pos, BlockState state) {
         if (isFull) {
@@ -90,9 +91,10 @@ public class WaterCollectorEntity extends BlockEntity implements FluidDrainable 
         }
     }
 
-
     @Override
     public Optional<SoundEvent> getBucketFillSound() {
         return Optional.empty();
     }
+    */
+
 }
